@@ -64,6 +64,7 @@ pages:
           - Pictures Request: 'objects/request/anime/episodes.md'
           - Forum Request: 'objects/request/anime/episodes.md'
           - News Request: 'objects/request/anime/episodes.md'
+          - Stats Request: 'objects/request/anime/stats.md'
           - More Info Request: 'objects/request/anime/episodes.md'
       - Model:
           - Anime:
