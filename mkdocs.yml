@@ -59,19 +59,22 @@ pages:
         - Anime:
           - Anime Request: 'objects/request/anime/anime.md'
           - Characters And Staff Request: 'objects/request/anime/characters-and-staff.md'
+          - Episodes Request: 'objects/request/anime/episodes.md'
       - Model:
           - Anime:
               - Anime Model: 'objects/model/anime/anime.md'
               - Characters And Staff Model: 'objects/model/anime/characters-and-staff.md'
+              - Episodes Model: 'objects/model/anime/episodes.md'
               - Sub Models:
                 - StaffListItem: 'objects/model/anime/staff-list-item.md'
+                - EpisodeListItem: 'objects/model/anime/episode-list-item.md'
           - Character:
               - Sub Models:
                   - CharacterListItem: 'objects/model/character/character-list-item.md'
                   - VoiceActor: 'objects/model/character/voice-actor.md'
-      - Misc:
-          - DateRange: 'objects/misc//date-range.md'
-          - MalUrl: 'objects/misc/mal-url.md'
+          - Common:
+              - DateRange: 'objects/model/common/date-range.md'
+              - MalUrl: 'objects/model/common/mal-url.md'
   - Getting Help: 'getting-help.md'
     
 
