@@ -1,0 +1,109 @@
+# Project information
+site_name: 'Jikan API Documentation'
+site_description: 'PHP API Documentation for Jikan, the unofficial MyAnimeList.net API'
+site_author: '@irfanDahir'
+site_url: 'https://squidfunk.github.io/mkdocs-material/'
+
+## Pages
+pages:
+  - Home: index.md 
+  - Installation: installation.md
+  - Getting Started: 'getting-started.md'
+  - Usage:
+    - Anime: 
+      - Anime: 'usage/anime/main.md'
+      - Characters & Staff: 'usage/anime/characters-and-staff.md'
+      - Episodes: 'usage/anime/episodes.md'
+      - News: 'usage/anime/news.md'
+      - Forum: 'usage/anime/forum.md'
+      - Videos: 'usage/anime/videos.md'
+      - Pictures: 'usage/anime/pictures.md'
+      - Stats: 'usage/anime/stats.md'
+      - More Info: 'usage/anime/more-info.md'
+    - Manga:
+      - Manga: 'usage/manga/main.md'
+      - Characters: 'usage/manga/characters.md'
+      - News: 'usage/manga/news.md'
+      - Forum: 'usage/manga/forum.md'
+      - Pictures: 'usage/manga/pictures.md'
+      - Stats: 'usage/manga/stats.md'
+      - More Info: 'usage/manga/more-info.md'
+    - Character:
+      - Character: 'usage/character/main.md'
+      - Pictures: 'usage/character/pictures.md'
+    - Person:
+      - Person: 'usage/person/main.md'
+      - Pictures: 'usage/person/pictures.md'
+    - Search:
+      - Anime: 'usage/search/anime.md'
+      - Manga: 'usage/search/manga.md'
+      - Character: 'usage/search/character.md'
+      - Person: 'usage/search/person.md'
+    - Seasonal: 'usage/seasonal.md'
+    - Schedule: 'usage/schedule.md'
+    - Top:
+      - Anime: 'usage/top/anime.md'
+      - Manga: 'usage/top/manga.md'
+      - Character: 'usage/top/character.md'
+      - Person: 'usage/top/person.md'
+    - Genre:
+      - Anime: 'usage/genre/anime.md'
+      - Manga: 'usage/genre/manga.md'
+    - User:
+      - Profile: 'usage/user/profile.md'
+      - Friends: 'usage/user/friends.md'
+    - Producers: 'usage/producers.md'
+    - Magazines: 'usage/magazines.md'
+  - Objects:
+      - Request:
+        - Anime:
+          - 'Anime Request': 'objects/request/anime/anime.md'
+      - Model:
+          - Anime:
+              - Anime Model: 'objects/model/anime/anime.md'
+      - Misc:
+          - DateRange: 'objects/misc//date-range.md'
+          - MalUrl: 'objects/misc/mal-url.md'
+  - Getting Help: 'getting-help.md'
+    
+
+# Repository
+repo_name: 'jikan-me/jikan'
+repo_url: 'https://github.com/jikan-me/jikan'
+
+# Copyright
+copyright: 'Copyright &copy; 2017 - 2018 @irfanDahir'
+
+# Configuration
+theme:
+  name: 'material'
+  language: 'en'
+  palette:
+    primary: 'indigo'
+    accent: 'indigo'
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
+
+# Customization
+extra:
+  social:
+    - type: 'github'
+      link: 'https://github.com/jikan-me'
+    - type: 'twitter'
+      link: 'https://twitter.com/irfanDahir'
+
+# Google Analytics
+google_analytics:
+  - 'UA-99574439-3'
+  - 'auto'
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: true
+      linenums: false
+  - footnotes
+  - toc:
+      permalink: true
