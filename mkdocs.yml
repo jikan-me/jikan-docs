@@ -60,12 +60,18 @@ pages:
           - Anime Request: 'objects/request/anime/anime.md'
           - Characters And Staff Request: 'objects/request/anime/characters-and-staff.md'
           - Episodes Request: 'objects/request/anime/episodes.md'
+          - Videos Request: 'objects/request/anime/episodes.md'
+          - Pictures Request: 'objects/request/anime/episodes.md'
+          - Forum Request: 'objects/request/anime/episodes.md'
+          - News Request: 'objects/request/anime/episodes.md'
+          - More Info Request: 'objects/request/anime/episodes.md'
       - Model:
           - Anime:
               - Anime Model: 'objects/model/anime/anime.md'
               - Characters And Staff Model: 'objects/model/anime/characters-and-staff.md'
               - Episodes Model: 'objects/model/anime/episodes.md'
               - Videos Model: 'objects/model/anime/videos.md'
+              - MoreInfo Model: 'objects/model/anime/more-info.md'
               - Sub Models:
                 - StaffListItem: 'objects/model/anime/staff-list-item.md'
                 - EpisodeListItem: 'objects/model/anime/episode-list-item.md'

@@ -10,18 +10,13 @@
 $jikan = new Jikan\Jikan;
 
 // Fetch pictures related to One Piece
-// Request: https://myanimelist.net/anime/21/_/pics
-$pics = $jikan->AnimePictures(
-    (new \Jikan\Request\Anime\AnimePicturesRequest(21))
+// Request: https://myanimelist.net/anime/21/_/moreinfo
+$anime = $jikan->AnimeMoreInfo(
+    (new \Jikan\Request\Anime\AnimeMoreInfoRequest(21))
 );
 
-foreach($pictures as $picture) {
-    echo "<img src='" . $picture->getLarge() ."'>";
-}
+echo $anime->getMoreInfo();
 ```
 
-## Methods
-None. Refer to [^1]\Jikan\Model\Common\Picture
-
-
-[^1]: [\Jikan\Model\Common\Picture](/objects/model/common/picture)
+[^1]: Request: [\Jikan\Request\Anime\AnimeMoreInfo](/objects/request/anime/more-info.md)
+[^2]: Model: [\Jikan\Model\Anime\AnimeMoreInfo](/objects/model/anime/more-info.md)
