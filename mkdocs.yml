@@ -72,8 +72,12 @@ pages:
               - Sub Models:
                   - CharacterListItem: 'objects/model/character/character-list-item.md'
                   - VoiceActor: 'objects/model/character/voice-actor.md'
+          - News:
+              - NewsListItem: 'objects/model/news/news-list-item.md'
+          - Forum:
+              - ForumTopic: 'objects/model/forum/forum-topic.md'
+              - ForumPost: 'objects/model/forum/forum-post.md'
           - Common:
-              - NewsListItem: 'objects/model/common/news-list-item.md'
               - DateRange: 'objects/model/common/date-range.md'
               - MalUrl: 'objects/model/common/mal-url.md'
   - Getting Help: 'getting-help.md'

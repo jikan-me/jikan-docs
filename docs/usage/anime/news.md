@@ -1,4 +1,9 @@
 ## Usage
+
+| Argument | Response |
+| -------- | -------- |
+| `\Jikan\Request\Anime\AnimeNews` | `\Jikan\Model\News\NewsListItem[]` |
+
 ```
 <?php
 
@@ -23,4 +28,4 @@ foreach($news as $topic) {
 None. Refer to [^1]NewsListItem
 
 
-[^1]: [\Jikan\Model\News\NewsListItem](/objects/model/common/news-list-item)
+[^1]: [\Jikan\Model\News\NewsListItem](/objects/model/news/news-list-item)

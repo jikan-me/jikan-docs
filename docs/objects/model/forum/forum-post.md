@@ -1,9 +1,4 @@
 ## Usage
-
-| Argument | Response |
-| -------- | -------- |
-| `\Jikan\Request\Anime\AnimeForum` | `\Jikan\Model\Forum\ForumTopic[]` |
-
 ```
 <?php
 
@@ -24,7 +19,13 @@ foreach($topics as $topic) {
 ```
 
 ## Methods
-None. Refer to [^1]ForumTopic
+### `getUrl() : string`
+**Description:** Permalink URL to forum post
 
+### `getAuthorName() : string`
+**Description:** Author's name for the post
 
-[^1]: [\Jikan\Model\Forum\ForumTopic](/objects/model/forum/forum-topic)
+### `getAuthorUrl() : string`
+**Description:** Author's profile URL for the post
+
+### `getRelativeDate() : DateTimeImmutable`
