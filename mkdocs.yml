@@ -73,6 +73,7 @@ pages:
                   - CharacterListItem: 'objects/model/character/character-list-item.md'
                   - VoiceActor: 'objects/model/character/voice-actor.md'
           - Common:
+              - NewsListItem: 'objects/model/common/news-list-item.md'
               - DateRange: 'objects/model/common/date-range.md'
               - MalUrl: 'objects/model/common/mal-url.md'
   - Getting Help: 'getting-help.md'
