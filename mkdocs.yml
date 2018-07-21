@@ -65,9 +65,12 @@ pages:
               - Anime Model: 'objects/model/anime/anime.md'
               - Characters And Staff Model: 'objects/model/anime/characters-and-staff.md'
               - Episodes Model: 'objects/model/anime/episodes.md'
+              - Videos Model: 'objects/model/anime/videos.md'
               - Sub Models:
                 - StaffListItem: 'objects/model/anime/staff-list-item.md'
                 - EpisodeListItem: 'objects/model/anime/episode-list-item.md'
+                - StreamEpisodeListItem: 'objects/model/anime/stream-episode-list-item.md'
+                - PromoListItem: 'objects/model/anime/promo-list-item.md'
           - Character:
               - Sub Models:
                   - CharacterListItem: 'objects/model/character/character-list-item.md'
