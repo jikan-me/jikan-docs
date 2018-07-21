@@ -111,9 +111,9 @@ echo $anime->getTitle();
 ### `getProducers() : array`
 **Description:** Producers as [^1]`\Jikan\Model\MalUrl`
 
-### getOpeningTheme() : `string[]`
+### `getOpeningTheme() : string[]`
 
-### getEndingTheme() : `string[]`
+### `getEndingTheme() : string[]`
 
 [^1]: [\Jikan\Model\MalUrl](/objects/misc/mal-url.md)
 [^2]: [\Jikan\Model\DateRange](/objects/misc/date-range.md)
