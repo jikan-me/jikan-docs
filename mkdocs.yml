@@ -81,6 +81,7 @@ pages:
               - ForumTopic: 'objects/model/forum/forum-topic.md'
               - ForumPost: 'objects/model/forum/forum-post.md'
           - Common:
+              - Picture: 'objects/model/common/picture.md'
               - DateRange: 'objects/model/common/date-range.md'
               - MalUrl: 'objects/model/common/mal-url.md'
   - Getting Help: 'getting-help.md'
