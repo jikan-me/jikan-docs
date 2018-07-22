@@ -12,7 +12,7 @@ $jikan = new Jikan;
 
 
 
-## Migration
+## Migration Notes
 Jikan v2's usage is completely different from v1.
 
 - All main methods in Jikan have to pass their respective `Jikan\Request` objects which hold request information. More onto that on the next page.

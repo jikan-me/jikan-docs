@@ -60,12 +60,20 @@ pages:
           - Anime Request: 'objects/request/anime/anime.md'
           - Characters And Staff Request: 'objects/request/anime/characters-and-staff.md'
           - Episodes Request: 'objects/request/anime/episodes.md'
-          - Videos Request: 'objects/request/anime/episodes.md'
-          - Pictures Request: 'objects/request/anime/episodes.md'
-          - Forum Request: 'objects/request/anime/episodes.md'
-          - News Request: 'objects/request/anime/episodes.md'
+          - Videos Request: 'objects/request/anime/videos.md'
+          - Pictures Request: 'objects/request/anime/pictures.md'
+          - Forum Request: 'objects/request/anime/forum.md'
+          - News Request: 'objects/request/anime/news.md'
           - Stats Request: 'objects/request/anime/stats.md'
-          - More Info Request: 'objects/request/anime/episodes.md'
+          - More Info Request: 'objects/request/anime/moreinfo.md'
+        - Manga:
+          - Manga Request: 'objects/request/manga/manga.md'
+          - Characters And Staff Request: 'objects/request/manga/characters.md'
+          - Pictures Request: 'objects/request/manga/pictures.md'
+          - Forum Request: 'objects/request/manga/forum.md'
+          - News Request: 'objects/request/manga/news.md'
+          - Stats Request: 'objects/request/manga/stats.md'
+          - More Info Request: 'objects/request/manga/more-info.md'          
       - Model:
           - Anime:
               - Anime Model: 'objects/model/anime/anime.md'
@@ -79,6 +87,11 @@ pages:
                 - EpisodeListItem: 'objects/model/anime/episode-list-item.md'
                 - StreamEpisodeListItem: 'objects/model/anime/stream-episode-list-item.md'
                 - PromoListItem: 'objects/model/anime/promo-list-item.md'
+          - Manga:
+              - Manga Model: 'objects/model/manga/manga.md'
+              - Characters Model: 'objects/model/manga/characters.md'
+              - Stats Model: 'objects/model/manga/stats.md'
+              - MoreInfo Model: 'objects/model/manga/more-info.md'
           - Character:
               - Sub Models:
                   - CharacterListItem: 'objects/model/character/character-list-item.md'
