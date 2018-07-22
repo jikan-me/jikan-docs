@@ -10,7 +10,7 @@ This method parses item data by ID from `https://myanimelist.net/anime/{id}/_/ch
 
 $jikan = new Jikan\Jikan;
 
-// Fetch One Piece's characters and staff
+// Fetch One Piece's characters & staff
 // Request: https://myanimelist.net/anime/21
 $anime = $jikan->AnimeCharactersAndStaff(
     (new \Jikan\Request\Anime\AnimeCharactersAndStaffRequest(21))
@@ -18,4 +18,4 @@ $anime = $jikan->AnimeCharactersAndStaff(
 ```
 
 [^1]: Request: [\Jikan\Request\Anime\AnimeCharactersAndStaffRequest](/objects/request/anime/characters-and-staff.md)
-[^2]: Model: [\Jikan\Model\Anime\AnimeCharactersAndStaffRequest](/objects/model/anime/characters-and-staff.md)
+[^2]: Model: [\Jikan\Model\Anime\AnimeCharactersAndStaff](/objects/model/anime/characters-and-staff.md)

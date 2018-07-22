@@ -65,7 +65,7 @@ pages:
           - Forum Request: 'objects/request/anime/forum.md'
           - News Request: 'objects/request/anime/news.md'
           - Stats Request: 'objects/request/anime/stats.md'
-          - More Info Request: 'objects/request/anime/moreinfo.md'
+          - More Info Request: 'objects/request/anime/more-info.md'
         - Manga:
           - Manga Request: 'objects/request/manga/manga.md'
           - Characters And Staff Request: 'objects/request/manga/characters.md'
@@ -92,8 +92,10 @@ pages:
               - Characters Model: 'objects/model/manga/characters.md'
               - Stats Model: 'objects/model/manga/stats.md'
               - MoreInfo Model: 'objects/model/manga/more-info.md'
-          - Character:
               - Sub Models:
+                  - CharacterListItem: 'objects/model/manga/character-list-item.md'
+              - Character:
+                - Sub Models:
                   - CharacterListItem: 'objects/model/character/character-list-item.md'
                   - VoiceActor: 'objects/model/character/voice-actor.md'
           - News:
