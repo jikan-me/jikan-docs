@@ -68,7 +68,7 @@ pages:
           - More Info Request: 'objects/request/anime/more-info.md'
         - Manga:
           - Manga Request: 'objects/request/manga/manga.md'
-          - Characters And Staff Request: 'objects/request/manga/characters.md'
+          - Characters Request: 'objects/request/manga/characters.md'
           - Pictures Request: 'objects/request/manga/pictures.md'
           - Forum Request: 'objects/request/manga/forum.md'
           - News Request: 'objects/request/manga/news.md'

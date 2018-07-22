@@ -2,7 +2,7 @@
 
 | Argument | Response |
 | -------- | -------- |
-| `\Jikan\Request\Anime\AnimeMoreInfo` | `\Jikan\Model\Anime\AnimeMoreInfo[]` |
+| `\Jikan\Request\Anime\AnimeMoreInfo` | `\Jikan\Model\Anime\AnimeMoreInfo` |
 
 ```
 <?php

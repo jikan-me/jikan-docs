@@ -17,5 +17,5 @@ $manga = $jikan->MangaCharacters(
 );
 ```
 
-[^1]: Request: [\Jikan\Request\Manga\MangaCharactersRequest](/objects/request/manga/characters-and-staff.md)
+[^1]: Request: [\Jikan\Request\Manga\MangaCharactersRequest](/objects/request/manga/characters.md)
 [^2]: Model: [\Jikan\Model\Manga\CharacterListItem](/objects/model/manga/character-list-item.md)
