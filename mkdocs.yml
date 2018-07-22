@@ -72,6 +72,7 @@ pages:
               - Characters And Staff Model: 'objects/model/anime/characters-and-staff.md'
               - Episodes Model: 'objects/model/anime/episodes.md'
               - Videos Model: 'objects/model/anime/videos.md'
+              - Stats Model: 'objects/model/anime/stats.md'
               - MoreInfo Model: 'objects/model/anime/more-info.md'
               - Sub Models:
                 - StaffListItem: 'objects/model/anime/staff-list-item.md'
