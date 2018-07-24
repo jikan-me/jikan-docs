@@ -75,7 +75,7 @@ pages:
           - Stats Request: 'objects/request/manga/stats.md'
           - More Info Request: 'objects/request/manga/more-info.md'
         - Character:
-          - Character Request: 'objects/request/character/person.md'
+          - Character Request: 'objects/request/character/character.md'
           - Pictures Request: 'objects/request/character/pictures.md'
         - Person:
           - Person Request: 'objects/request/person/person.md'
