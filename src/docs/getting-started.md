@@ -2,6 +2,7 @@
 We get started by instantiating Jikan
 ```
 <?php
+require __DIR__ . '/vendor/autoload.php';
 use Jikan\Jikan;
 
 $jikan = new Jikan;
@@ -23,5 +24,5 @@ Jikan v2's usage is completely different from v1.
 - Date ranges are returned as `\Jikan\Model\Common\DateRange`
 - Common URLs are parsed as `\Jikan\Model\Common\MalUrl`
 
-[^1]: [DateRange](/misc/date-range.md)
-[^2]: [MalUrl]()
+[^1]: [DateRange](/object/model/common/date-range.md)
+[^2]: [MalUrl](/object/model/common/mal-url.md)
