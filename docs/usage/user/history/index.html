@@ -13,7 +13,7 @@
         <meta name="description" content="PHP API Documentation for Jikan, the unofficial MyAnimeList.net API">
       
       
-        <link rel="canonical" href="https://squidfunk.github.io/mkdocs-material/usage/user/friends/">
+        <link rel="canonical" href="https://squidfunk.github.io/mkdocs-material/usage/user/history/">
       
       
         <meta name="author" content="@irfanDahir">
@@ -42,7 +42,7 @@
     
     
       
-        <title>Friends - Jikan API Documentation</title>
+        <title>History - Jikan API Documentation</title>
       
     
     
@@ -130,7 +130,7 @@
                 Jikan API Documentation
               </span>
               <span class="md-header-nav__topic">
-                Friends
+                History
               </span>
             
           
@@ -887,6 +887,18 @@
           
           
 
+
+  <li class="md-nav__item">
+    <a href="../friends/" title="Friends" class="md-nav__link">
+      Friends
+    </a>
+  </li>
+
+        
+          
+          
+          
+
   
 
 
@@ -896,11 +908,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        Friends
+        History
       </label>
     
-    <a href="./" title="Friends" class="md-nav__link md-nav__link--active">
-      Friends
+    <a href="./" title="History" class="md-nav__link md-nav__link--active">
+      History
     </a>
     
       
@@ -926,18 +938,6 @@
   
 </nav>
     
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../history/" title="History" class="md-nav__link">
-      History
-    </a>
   </li>
 
         
@@ -2000,12 +2000,12 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/jikan-me/jikan/edit/master/docs/usage/user/friends.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/jikan-me/jikan/edit/master/docs/usage/user/history.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                  <h1>Friends</h1>
+                  <h1>History</h1>
                 
-                <p>This method parses search results from <code>https://myanimelist.net/profile/{username}/friends</code></p>
+                <p>This method parses search results from <code>https://myanimelist.net/history/{username}</code></p>
 <table>
 <thead>
 <tr>
@@ -2015,8 +2015,8 @@
 </thead>
 <tbody>
 <tr>
-<td><code>\Jikan\Request\User\UserFriendsRequest</code></td>
-<td><code>\Jikan\Model\User\Friend[]</code></td>
+<td><code>\Jikan\Request\User\UserHistoryRequest</code></td>
+<td><code>\Jikan\Model\User\History[]</code></td>
 </tr>
 </tbody>
 </table>
@@ -2025,10 +2025,10 @@
 
 <span class="nv">$jikan</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Jikan\Jikan</span><span class="p">;</span>
 
-<span class="c1">// User friends</span>
-<span class="c1">// Request: https://myanimelist.net/profile/nekomata1037/friends</span>
-<span class="nv">$friends</span> <span class="o">=</span> <span class="nv">$jikan</span><span class="o">-&gt;</span><span class="na">UserFriends</span><span class="p">(</span>
-    <span class="p">(</span><span class="k">new</span> <span class="nx">\Jikan\Request\User\UserFriendsRequest</span><span class="p">(</span><span class="s2">&quot;nekomata1037))</span>
+<span class="c1">// User profile</span>
+<span class="c1">// Request: https://myanimelist.net/history/nekomata1037</span>
+<span class="nv">$user</span> <span class="o">=</span> <span class="nv">$jikan</span><span class="o">-&gt;</span><span class="na">UserHistory</span><span class="p">(</span>
+    <span class="p">(</span><span class="k">new</span> <span class="nx">\Jikan\Request\User\UserHistoryRequest</span><span class="p">(</span><span class="s2">&quot;nekomata1037))</span>
 <span class="s2">);</span>
 </pre></div>
 
@@ -2037,10 +2037,10 @@
 <hr />
 <ol>
 <li id="fn:1">
-<p>Request: <a href="/objects/request/user/friends.md">\Jikan\Request\User\UserFriendsRequest</a>&#160;<a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+<p>Request: <a href="/objects/request/user/history.md">\Jikan\Request\User\UserHistoryRequest</a>&#160;<a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
 </li>
 <li id="fn:2">
-<p>Model: <a href="/objects/model/user/friends.md">\Jikan\Model\User\Friend</a>&#160;<a class="footnote-backref" href="#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+<p>Model: <a href="/objects/model/user/history.md">\Jikan\Model\User\History</a>&#160;<a class="footnote-backref" href="#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text">&#8617;</a></p>
 </li>
 </ol>
 </div>
@@ -2064,7 +2064,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../profile/" title="Profile" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../friends/" title="Friends" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -2073,19 +2073,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Profile
+                Friends
               </span>
             </div>
           </a>
         
         
-          <a href="../history/" title="History" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../producers/" title="Producers" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                History
+                Producers
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

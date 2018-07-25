@@ -104,6 +104,10 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
+      <a href="#usage" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -675,9 +679,36 @@
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Manga
+      </label>
+    
     <a href="./" title="Manga" class="md-nav__link md-nav__link--active">
       Manga
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#usage" title="Usage" class="md-nav__link">
+    Usage
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -894,6 +925,18 @@
   <li class="md-nav__item">
     <a href="../../user/friends/" title="Friends" class="md-nav__link">
       Friends
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user/history/" title="History" class="md-nav__link">
+      History
     </a>
   </li>
 
@@ -1923,6 +1966,35 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#usage" title="Usage" class="md-nav__link">
+    Usage
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -1933,7 +2005,45 @@
                 
                   <h1>Manga</h1>
                 
-                
+                <p>This method parses search results from <code>https://myanimelist.net/manga.php?q=</code></p>
+<table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Response</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>\Jikan\Request\Search\MangaSearchRequest</code></td>
+<td><code>\Jikan\Model\Search\MangaSearch</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+
+<span class="nv">$jikan</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Jikan\Jikan</span><span class="p">;</span>
+
+<span class="c1">// Search for &quot;Oyasumi Punpun&quot;</span>
+<span class="c1">// Request: https://myanimelist.net/manga.php?q=Oyasumi Punpun</span>
+<span class="nv">$anime</span> <span class="o">=</span> <span class="nv">$jikan</span><span class="o">-&gt;</span><span class="na">MangaSearch</span><span class="p">(</span>
+    <span class="p">(</span><span class="k">new</span> <span class="nx">\Jikan\Request\Search\MangaSearchRequest</span><span class="p">(</span><span class="s2">&quot;Oyasumi Punpun&quot;</span><span class="p">))</span>
+<span class="p">);</span>
+</pre></div>
+
+
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>Request: <a href="/objects/request/search/manga.md">\Jikan\Request\Search\MangaSearchRequest</a>&#160;<a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>Model: <a href="/objects/model/search/manga.md">\Jikan\Model\Search\MangaSearch</a>&#160;<a class="footnote-backref" href="#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
                 
                   
                 

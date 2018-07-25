@@ -2,12 +2,12 @@
     "docs": [
         {
             "location": "/", 
-            "text": "Welcome to JikanDocs\n\n\n\n\nInfo\n\n\nThis documentation is for Jikan 2.x. For v1.x, refer \nhere\n.\n\n\n\n\nJikan is an \nunofficial\n \nMyAnimeList\n PHP API. It does \nnot\n require any authentication and parses the data via scraping. It provides what the official API lacks.\n\n\nThe raison d'\u00eatre of Jikan is to help developers easily get the data they need for their apps and projects without having to depend on the lackluster official API, unstable APIs, or sidetracking their projects to develop parsers.\n\n\nThe word Jikan literally translates to Time in Japanese (\u6642\u9593). And that's what this API saves you of.\n\n\nREST API\n\n\nIf you're not interested in using the PHP API, a REST API service as available as well.\n\n\n\n\nREST API DOCUMENTATION\n\n\n\n\nDisclaimer\n\n\n\n\nJikan is \nnot\n affiliated with MyAnimeList.net\n\n\nI am not responible for what you with this library, thus use it responsibly as per \nMyAnimeList's Terms Of Service", 
+            "text": "Welcome to JikanDocs\n\n\n\n\nInfo\n\n\nThis documentation is for Jikan \n2.0.0 RC1\n. For v1.x, refer \nhere\n.\n\n\n\n\nJikan is an \nunofficial\n \nMyAnimeList\n PHP API. It does \nnot\n require any authentication and parses the data via scraping. It provides what the official API lacks.\n\n\nThe raison d'\u00eatre of Jikan is to help developers easily get the data they need for their apps and projects without having to depend on the lackluster official API, unstable APIs, or sidetracking their projects to develop parsers.\n\n\nThe word Jikan literally translates to Time in Japanese (\u6642\u9593). And that's what this API saves you of.\n\n\nREST API\n\n\nIf you're not interested in using the PHP API, a REST API service as available as well.\n\n\n\n\nREST API DOCUMENTATION\n\n\n\n\nDisclaimer\n\n\n\n\nJikan is \nnot\n affiliated with MyAnimeList.net\n\n\nI am not liable for how you utilize this library. Use it responsibly as per MyAnimeList's \nTerms Of Service", 
             "title": "Home"
         }, 
         {
             "location": "/#welcome-to-jikandocs", 
-            "text": "Info  This documentation is for Jikan 2.x. For v1.x, refer  here .   Jikan is an  unofficial   MyAnimeList  PHP API. It does  not  require any authentication and parses the data via scraping. It provides what the official API lacks.  The raison d'\u00eatre of Jikan is to help developers easily get the data they need for their apps and projects without having to depend on the lackluster official API, unstable APIs, or sidetracking their projects to develop parsers.  The word Jikan literally translates to Time in Japanese (\u6642\u9593). And that's what this API saves you of.", 
+            "text": "Info  This documentation is for Jikan  2.0.0 RC1 . For v1.x, refer  here .   Jikan is an  unofficial   MyAnimeList  PHP API. It does  not  require any authentication and parses the data via scraping. It provides what the official API lacks.  The raison d'\u00eatre of Jikan is to help developers easily get the data they need for their apps and projects without having to depend on the lackluster official API, unstable APIs, or sidetracking their projects to develop parsers.  The word Jikan literally translates to Time in Japanese (\u6642\u9593). And that's what this API saves you of.", 
             "title": "Welcome to JikanDocs"
         }, 
         {
@@ -17,7 +17,7 @@
         }, 
         {
             "location": "/#disclaimer", 
-            "text": "Jikan is  not  affiliated with MyAnimeList.net  I am not responible for what you with this library, thus use it responsibly as per  MyAnimeList's Terms Of Service", 
+            "text": "Jikan is  not  affiliated with MyAnimeList.net  I am not liable for how you utilize this library. Use it responsibly as per MyAnimeList's  Terms Of Service", 
             "title": "Disclaimer"
         }, 
         {
@@ -42,12 +42,12 @@
         }, 
         {
             "location": "/getting-started/", 
-            "text": "Instantiating\n\n\nWe get started by instantiating Jikan\n\n\n?php\n\n\nuse\n \nJikan\\Jikan\n;\n\n\n\n$jikan\n \n=\n \nnew\n \nJikan\n;\n\n\n\n\n\n\n\n\nTip\n\n\nv2 has return types added everywhere, this enables you to autocomplete anything in your IDE\n\n\n\n\nMigration Notes\n\n\nJikan v2's usage is completely different from v1.\n\n\n\n\nAll main methods in Jikan have to pass their respective \nJikan\\Request\n objects which hold request information. More onto that on the next page.\n\n\nResponses are returned as \nPHP objects\n, no longer as arrays\n\n\nExtended Requests \nno longer\n exist. They're now as seperate requests.\n\n\nAll object properties are \nprivate\n and must be accessed via getters\n\n\nDate/Timestamps are now returned as \n\\DateTimeImmutable\n objects\n\n\nDate ranges are returned as \n\\Jikan\\Model\\Common\\DateRange\n\n\nCommon URLs are parsed as \n\\Jikan\\Model\\Common\\MalUrl\n\n\n\n\n\n\n\n\n\n\n\n\nDateRange\n\n\n\n\n\n\nMalUrl", 
+            "text": "Instantiating\n\n\nWe get started by instantiating Jikan\n\n\n?php\n\n\nrequire\n \n__DIR__\n \n.\n \n/vendor/autoload.php\n;\n\n\nuse\n \nJikan\\Jikan\n;\n\n\n\n$jikan\n \n=\n \nnew\n \nJikan\n;\n\n\n\n\n\n\n\n\nTip\n\n\nv2 has return types added everywhere, this enables you to autocomplete anything in your IDE\n\n\n\n\nMigration Notes\n\n\nJikan v2's usage is completely different from v1.\n\n\n\n\nAll main methods in Jikan have to pass their respective \nJikan\\Request\n objects which hold request information. More onto that on the next page.\n\n\nResponses are returned as \nPHP objects\n, no longer as arrays\n\n\nExtended Requests \nno longer\n exist. They're now as seperate requests.\n\n\nAll object properties are \nprivate\n and must be accessed via getters\n\n\nDate/Timestamps are now returned as \n\\DateTimeImmutable\n objects\n\n\nDate ranges are returned as \n\\Jikan\\Model\\Common\\DateRange\n\n\nCommon URLs are parsed as \n\\Jikan\\Model\\Common\\MalUrl\n\n\n\n\n\n\n\n\n\n\n\n\nDateRange\n\n\n\n\n\n\nMalUrl", 
             "title": "Getting Started"
         }, 
         {
             "location": "/getting-started/#instantiating", 
-            "text": "We get started by instantiating Jikan  ?php  use   Jikan\\Jikan ;  $jikan   =   new   Jikan ;    Tip  v2 has return types added everywhere, this enables you to autocomplete anything in your IDE", 
+            "text": "We get started by instantiating Jikan  ?php  require   __DIR__   .   /vendor/autoload.php ;  use   Jikan\\Jikan ;  $jikan   =   new   Jikan ;    Tip  v2 has return types added everywhere, this enables you to autocomplete anything in your IDE", 
             "title": "Instantiating"
         }, 
         {
@@ -297,83 +297,173 @@
         }, 
         {
             "location": "/usage/search/anime/", 
-            "text": "", 
+            "text": "This method parses search results from \nhttps://myanimelist.net/anime.php?q=\n\n\n\n\n\n\n\n\nArgument\n\n\nResponse\n\n\n\n\n\n\n\n\n\n\n\\Jikan\\Request\\Search\\AnimeSearchRequest\n\n\n\\Jikan\\Model\\Search\\AnimeSearch\n\n\n\n\n\n\n\n\nUsage\n\n\n?php\n\n\n\n$jikan\n \n=\n \nnew\n \nJikan\\Jikan\n;\n\n\n\n// Search for \nNo Game No Life\n\n\n// Request: https://myanimelist.net/anime.php?q=No Game No Life\n\n\n$anime\n \n=\n \n$jikan\n-\nAnimeSearch\n(\n\n    \n(\nnew\n \n\\Jikan\\Request\\Search\\AnimeSearchRequest\n(\nNo Game No Life\n))\n\n\n);\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRequest: \n\\Jikan\\Request\\Search\\AnimeSearchRequest\n\n\n\n\n\n\nModel: \n\\Jikan\\Model\\Search\\AnimeSearch", 
             "title": "Anime"
+        }, 
+        {
+            "location": "/usage/search/anime/#usage", 
+            "text": "?php  $jikan   =   new   Jikan\\Jikan ;  // Search for  No Game No Life  // Request: https://myanimelist.net/anime.php?q=No Game No Life  $anime   =   $jikan - AnimeSearch ( \n     ( new   \\Jikan\\Request\\Search\\AnimeSearchRequest ( No Game No Life ))  );       Request:  \\Jikan\\Request\\Search\\AnimeSearchRequest    Model:  \\Jikan\\Model\\Search\\AnimeSearch", 
+            "title": "Usage"
         }, 
         {
             "location": "/usage/search/manga/", 
-            "text": "", 
+            "text": "This method parses search results from \nhttps://myanimelist.net/manga.php?q=\n\n\n\n\n\n\n\n\nArgument\n\n\nResponse\n\n\n\n\n\n\n\n\n\n\n\\Jikan\\Request\\Search\\MangaSearchRequest\n\n\n\\Jikan\\Model\\Search\\MangaSearch\n\n\n\n\n\n\n\n\nUsage\n\n\n?php\n\n\n\n$jikan\n \n=\n \nnew\n \nJikan\\Jikan\n;\n\n\n\n// Search for \nOyasumi Punpun\n\n\n// Request: https://myanimelist.net/manga.php?q=Oyasumi Punpun\n\n\n$anime\n \n=\n \n$jikan\n-\nMangaSearch\n(\n\n    \n(\nnew\n \n\\Jikan\\Request\\Search\\MangaSearchRequest\n(\nOyasumi Punpun\n))\n\n\n);\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRequest: \n\\Jikan\\Request\\Search\\MangaSearchRequest\n\n\n\n\n\n\nModel: \n\\Jikan\\Model\\Search\\MangaSearch", 
             "title": "Manga"
+        }, 
+        {
+            "location": "/usage/search/manga/#usage", 
+            "text": "?php  $jikan   =   new   Jikan\\Jikan ;  // Search for  Oyasumi Punpun  // Request: https://myanimelist.net/manga.php?q=Oyasumi Punpun  $anime   =   $jikan - MangaSearch ( \n     ( new   \\Jikan\\Request\\Search\\MangaSearchRequest ( Oyasumi Punpun ))  );       Request:  \\Jikan\\Request\\Search\\MangaSearchRequest    Model:  \\Jikan\\Model\\Search\\MangaSearch", 
+            "title": "Usage"
         }, 
         {
             "location": "/usage/search/character/", 
-            "text": "", 
+            "text": "This method parses search results from \nhttps://myanimelist.net/character.php?q=\n\n\n\n\n\n\n\n\nArgument\n\n\nResponse\n\n\n\n\n\n\n\n\n\n\n\\Jikan\\Request\\Search\\CharacterSearchRequest\n\n\n\\Jikan\\Model\\Search\\CharacterSearch\n\n\n\n\n\n\n\n\nUsage\n\n\n?php\n\n\n\n$jikan\n \n=\n \nnew\n \nJikan\\Jikan\n;\n\n\n\n// Search for \nLelouch\n\n\n// Request: https://myanimelist.net/character.php?q=Lelouch\n\n\n$anime\n \n=\n \n$jikan\n-\nCharacterSearch\n(\n\n    \n(\nnew\n \n\\Jikan\\Request\\Search\\CharacterSearchRequest\n(\nlelouch\n))\n\n\n);\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRequest: \n\\Jikan\\Request\\Search\\CharacterSearchRequest\n\n\n\n\n\n\nModel: \n\\Jikan\\Model\\Search\\CharacterSearch", 
             "title": "Character"
+        }, 
+        {
+            "location": "/usage/search/character/#usage", 
+            "text": "?php  $jikan   =   new   Jikan\\Jikan ;  // Search for  Lelouch  // Request: https://myanimelist.net/character.php?q=Lelouch  $anime   =   $jikan - CharacterSearch ( \n     ( new   \\Jikan\\Request\\Search\\CharacterSearchRequest ( lelouch ))  );       Request:  \\Jikan\\Request\\Search\\CharacterSearchRequest    Model:  \\Jikan\\Model\\Search\\CharacterSearch", 
+            "title": "Usage"
         }, 
         {
             "location": "/usage/search/person/", 
-            "text": "", 
+            "text": "This method parses search results from \nhttps://myanimelist.net/people.php?q=\n\n\n\n\n\n\n\n\nArgument\n\n\nResponse\n\n\n\n\n\n\n\n\n\n\n\\Jikan\\Request\\Search\\PersonSearchRequest\n\n\n\\Jikan\\Model\\Search\\PersonSearch\n\n\n\n\n\n\n\n\nUsage\n\n\n?php\n\n\n\n$jikan\n \n=\n \nnew\n \nJikan\\Jikan\n;\n\n\n\n// Search for \nsawashiro\n\n\n// Request: https://myanimelist.net/people.php?q=sawashiro\n\n\n$anime\n \n=\n \n$jikan\n-\nPersonSearch\n(\n\n    \n(\nnew\n \n\\Jikan\\Request\\Search\\PersonSearchRequest\n(\nsawashiro\n))\n\n\n);\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRequest: \n\\Jikan\\Request\\Search\\PersonSearchRequest\n\n\n\n\n\n\nModel: \n\\Jikan\\Model\\Search\\PersonSearch", 
             "title": "Person"
+        }, 
+        {
+            "location": "/usage/search/person/#usage", 
+            "text": "?php  $jikan   =   new   Jikan\\Jikan ;  // Search for  sawashiro  // Request: https://myanimelist.net/people.php?q=sawashiro  $anime   =   $jikan - PersonSearch ( \n     ( new   \\Jikan\\Request\\Search\\PersonSearchRequest ( sawashiro ))  );       Request:  \\Jikan\\Request\\Search\\PersonSearchRequest    Model:  \\Jikan\\Model\\Search\\PersonSearch", 
+            "title": "Usage"
         }, 
         {
             "location": "/usage/seasonal/", 
-            "text": "", 
+            "text": "This method parses search results from \nhttps://myanimelist.net/anime/season\n\n\n\n\n\n\n\n\nArgument\n\n\nResponse\n\n\n\n\n\n\n\n\n\n\n\\Jikan\\Request\\Seasonal\\SeasonalRequest\n\n\n\\Jikan\\Model\\Seasonal\\Seasonal\n\n\n\n\n\n\n\n\nUsage\n\n\n?php\n\n\n\n$jikan\n \n=\n \nnew\n \nJikan\\Jikan\n;\n\n\n\n// Anime this season\n\n\n// Request: https://myanimelist.net/anime/season\n\n\n$season\n \n=\n \n$jikan\n-\nSeasonal\n(\n\n    \n(\nnew\n \n\\Jikan\\Request\\Seasonal\\SeasonalRequest\n(\n\n        \n2017\n,\n\n        \n\\Jikan\\Helper\\Constants\n::\nWINTER\n\n    \n))\n\n\n);\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRequest: \n\\Jikan\\Request\\Seasonal\\SeasonalRequest\n\n\n\n\n\n\nModel: \n\\Jikan\\Model\\Seasonal\\Producer", 
             "title": "Seasonal"
         }, 
         {
+            "location": "/usage/seasonal/#usage", 
+            "text": "?php  $jikan   =   new   Jikan\\Jikan ;  // Anime this season  // Request: https://myanimelist.net/anime/season  $season   =   $jikan - Seasonal ( \n     ( new   \\Jikan\\Request\\Seasonal\\SeasonalRequest ( \n         2017 , \n         \\Jikan\\Helper\\Constants :: WINTER \n     ))  );       Request:  \\Jikan\\Request\\Seasonal\\SeasonalRequest    Model:  \\Jikan\\Model\\Seasonal\\Producer", 
+            "title": "Usage"
+        }, 
+        {
             "location": "/usage/schedule/", 
-            "text": "", 
+            "text": "This method parses search results from \nhttps://myanimelist.net/anime/season/schedule\n\n\n\n\n\n\n\n\nArgument\n\n\nResponse\n\n\n\n\n\n\n\n\n\n\n\\Jikan\\Request\\Schedule\\ScheduleRequest\n\n\n\\Jikan\\Model\\Schedule\\Schedule\n\n\n\n\n\n\n\n\nUsage\n\n\n?php\n\n\n\n$jikan\n \n=\n \nnew\n \nJikan\\Jikan\n;\n\n\n\n// Weekly Anime Schedule\n\n\n// Request: https://myanimelist.net/anime/season/schedule\n\n\n$schedule\n \n=\n \n$jikan\n-\nSchedule\n(\n\n    \n(\nnew\n \n\\Jikan\\Request\\Schedule\\ScheduleRequest\n())\n\n\n);\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRequest: \n\\Jikan\\Request\\Schedule\\ScheduleRequest\n\n\n\n\n\n\nModel: \n\\Jikan\\Model\\Schedule\\Producer", 
             "title": "Schedule"
         }, 
         {
+            "location": "/usage/schedule/#usage", 
+            "text": "?php  $jikan   =   new   Jikan\\Jikan ;  // Weekly Anime Schedule  // Request: https://myanimelist.net/anime/season/schedule  $schedule   =   $jikan - Schedule ( \n     ( new   \\Jikan\\Request\\Schedule\\ScheduleRequest ())  );       Request:  \\Jikan\\Request\\Schedule\\ScheduleRequest    Model:  \\Jikan\\Model\\Schedule\\Producer", 
+            "title": "Usage"
+        }, 
+        {
             "location": "/usage/top/anime/", 
-            "text": "", 
+            "text": "This method parses search results from \nhttps://myanimelist.net/topanime.php\n\n\n\n\n\n\n\n\nArgument\n\n\nResponse\n\n\n\n\n\n\n\n\n\n\n\\Jikan\\Request\\Top\\TopAnime\n\n\n\\Jikan\\Model\\Top\\TopAnime[]\n\n\n\n\n\n\n\n\nUsage\n\n\n?php\n\n\n\n$jikan\n \n=\n \nnew\n \nJikan\\Jikan\n;\n\n\n\n// Top Upcoming Anime listing\n\n\n// Request: https://myanimelist.net/topanime.php\n\n\n$anime\n \n=\n \n$jikan\n-\nTopAnime\n(\n\n    \n(\nnew\n \n\\Jikan\\Request\\Top\\TopAnime\n(\n\n        \n1\n,\n\n        \n\\Jikan\\Helper\\Constants\n::\nTOP_UPCOMING\n\n    \n))\n\n\n);\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRequest: \n\\Jikan\\Request\\Top\\TopAnime\n\n\n\n\n\n\nModel: \n\\Jikan\\Model\\Top\\TopAnime", 
             "title": "Anime"
+        }, 
+        {
+            "location": "/usage/top/anime/#usage", 
+            "text": "?php  $jikan   =   new   Jikan\\Jikan ;  // Top Upcoming Anime listing  // Request: https://myanimelist.net/topanime.php  $anime   =   $jikan - TopAnime ( \n     ( new   \\Jikan\\Request\\Top\\TopAnime ( \n         1 , \n         \\Jikan\\Helper\\Constants :: TOP_UPCOMING \n     ))  );       Request:  \\Jikan\\Request\\Top\\TopAnime    Model:  \\Jikan\\Model\\Top\\TopAnime", 
+            "title": "Usage"
         }, 
         {
             "location": "/usage/top/manga/", 
-            "text": "", 
+            "text": "This method parses search results from \nhttps://myanimelist.net/topmanga.php\n\n\n\n\n\n\n\n\nArgument\n\n\nResponse\n\n\n\n\n\n\n\n\n\n\n\\Jikan\\Request\\Top\\TopManga\n\n\n\\Jikan\\Model\\Top\\TopManga[]\n\n\n\n\n\n\n\n\nUsage\n\n\n?php\n\n\n\n$jikan\n \n=\n \nnew\n \nJikan\\Jikan\n;\n\n\n\n// Top Manga listing\n\n\n// Request: https://myanimelist.net/topmanga.php\n\n\n$manga\n \n=\n \n$jikan\n-\nTopManga\n(\n\n    \n(\nnew\n \n\\Jikan\\Request\\Top\\TopManga\n())\n\n\n);\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRequest: \n\\Jikan\\Request\\Top\\TopManga\n\n\n\n\n\n\nModel: \n\\Jikan\\Model\\Top\\TopManga", 
             "title": "Manga"
+        }, 
+        {
+            "location": "/usage/top/manga/#usage", 
+            "text": "?php  $jikan   =   new   Jikan\\Jikan ;  // Top Manga listing  // Request: https://myanimelist.net/topmanga.php  $manga   =   $jikan - TopManga ( \n     ( new   \\Jikan\\Request\\Top\\TopManga ())  );       Request:  \\Jikan\\Request\\Top\\TopManga    Model:  \\Jikan\\Model\\Top\\TopManga", 
+            "title": "Usage"
         }, 
         {
             "location": "/usage/top/character/", 
-            "text": "", 
+            "text": "This method parses search results from \nhttps://myanimelist.net/character.php\n\n\n\n\n\n\n\n\nArgument\n\n\nResponse\n\n\n\n\n\n\n\n\n\n\n\\Jikan\\Request\\Top\\TopCharacters\n\n\n\\Jikan\\Model\\Top\\TopCharacter[]\n\n\n\n\n\n\n\n\nUsage\n\n\n?php\n\n\n\n$jikan\n \n=\n \nnew\n \nJikan\\Jikan\n;\n\n\n\n// Top Characters listing\n\n\n// Request: https://myanimelist.net/character.php\n\n\n$topCharacters\n \n=\n \n$jikan\n-\nTopCharacters\n(\n\n    \n(\nnew\n \n\\Jikan\\Request\\Top\\TopCharacters\n())\n\n\n);\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRequest: \n\\Jikan\\Request\\Top\\TopCharacters\n\n\n\n\n\n\nModel: \n\\Jikan\\Model\\Top\\TopCharacter", 
             "title": "Character"
         }, 
         {
+            "location": "/usage/top/character/#usage", 
+            "text": "?php  $jikan   =   new   Jikan\\Jikan ;  // Top Characters listing  // Request: https://myanimelist.net/character.php  $topCharacters   =   $jikan - TopCharacters ( \n     ( new   \\Jikan\\Request\\Top\\TopCharacters ())  );       Request:  \\Jikan\\Request\\Top\\TopCharacters    Model:  \\Jikan\\Model\\Top\\TopCharacter", 
+            "title": "Usage"
+        }, 
+        {
             "location": "/usage/top/person/", 
-            "text": "", 
+            "text": "This method parses search results from \nhttps://myanimelist.net/person.php\n\n\n\n\n\n\n\n\nArgument\n\n\nResponse\n\n\n\n\n\n\n\n\n\n\n\\Jikan\\Request\\Top\\TopPeople\n\n\n\\Jikan\\Model\\Top\\TopPerson[]\n\n\n\n\n\n\n\n\nUsage\n\n\n?php\n\n\n\n$jikan\n \n=\n \nnew\n \nJikan\\Jikan\n;\n\n\n\n// Top People listing\n\n\n// Request: https://myanimelist.net/people.php\n\n\n$topPeople\n \n=\n \n$jikan\n-\nTopPeople\n(\n\n    \n(\nnew\n \n\\Jikan\\Request\\Top\\TopPeople\n())\n\n\n);\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRequest: \n\\Jikan\\Request\\Top\\TopPeople\n\n\n\n\n\n\nModel: \n\\Jikan\\Model\\Top\\TopPerson", 
             "title": "Person"
         }, 
         {
+            "location": "/usage/top/person/#usage", 
+            "text": "?php  $jikan   =   new   Jikan\\Jikan ;  // Top People listing  // Request: https://myanimelist.net/people.php  $topPeople   =   $jikan - TopPeople ( \n     ( new   \\Jikan\\Request\\Top\\TopPeople ())  );       Request:  \\Jikan\\Request\\Top\\TopPeople    Model:  \\Jikan\\Model\\Top\\TopPerson", 
+            "title": "Usage"
+        }, 
+        {
             "location": "/usage/genre/anime/", 
-            "text": "", 
+            "text": "This method parses search results from \nhttps://myanimelist.net/profile/{anime/genre/{id}\n\n\n\n\n\n\n\n\nArgument\n\n\nResponse\n\n\n\n\n\n\n\n\n\n\n\\Jikan\\Request\\Genre\\AnimeGenre\n\n\n\\Jikan\\Model\\Genre\\AnimeGenre\n\n\n\n\n\n\n\n\nUsage\n\n\n?php\n\n\n\n$jikan\n \n=\n \nnew\n \nJikan\\Jikan\n;\n\n\n\n// Action Anime\n\n\n// Request: https://myanimelist.net/anime/genre/1\n\n\n$actionAnime\n \n=\n \n$jikan\n-\nAnimeGenre\n(\n\n    \n(\nnew\n \n\\Jikan\\Request\\Genre\\AnimeGenreRequest\n(\n1\n))\n\n\n);\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRequest: \n\\Jikan\\Request\\Genre\\AnimeGenreRequest\n\n\n\n\n\n\nModel: \n\\Jikan\\Model\\Genre\\AnimeGenre", 
             "title": "Anime"
         }, 
         {
+            "location": "/usage/genre/anime/#usage", 
+            "text": "?php  $jikan   =   new   Jikan\\Jikan ;  // Action Anime  // Request: https://myanimelist.net/anime/genre/1  $actionAnime   =   $jikan - AnimeGenre ( \n     ( new   \\Jikan\\Request\\Genre\\AnimeGenreRequest ( 1 ))  );       Request:  \\Jikan\\Request\\Genre\\AnimeGenreRequest    Model:  \\Jikan\\Model\\Genre\\AnimeGenre", 
+            "title": "Usage"
+        }, 
+        {
             "location": "/usage/genre/manga/", 
-            "text": "", 
+            "text": "This method parses search results from \nhttps://myanimelist.net/profile/{anime/genre/{id}\n\n\n\n\n\n\n\n\nArgument\n\n\nResponse\n\n\n\n\n\n\n\n\n\n\n\\Jikan\\Request\\Genre\\MangaGenre\n\n\n\\Jikan\\Model\\Genre\\MangaGenre\n\n\n\n\n\n\n\n\nUsage\n\n\n?php\n\n\n\n$jikan\n \n=\n \nnew\n \nJikan\\Jikan\n;\n\n\n\n// Action Manga\n\n\n// Request: https://myanimelist.net/manga/genre/1\n\n\n$actionManga\n \n=\n \n$jikan\n-\nMangaGenre\n(\n\n    \n(\nnew\n \n\\Jikan\\Request\\Genre\\MangaGenreRequest\n(\n1\n))\n\n\n);\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRequest: \n\\Jikan\\Request\\Genre\\MangaGenreRequest\n\n\n\n\n\n\nModel: \n\\Jikan\\Model\\Genre\\MangaGenre", 
             "title": "Manga"
         }, 
         {
+            "location": "/usage/genre/manga/#usage", 
+            "text": "?php  $jikan   =   new   Jikan\\Jikan ;  // Action Manga  // Request: https://myanimelist.net/manga/genre/1  $actionManga   =   $jikan - MangaGenre ( \n     ( new   \\Jikan\\Request\\Genre\\MangaGenreRequest ( 1 ))  );       Request:  \\Jikan\\Request\\Genre\\MangaGenreRequest    Model:  \\Jikan\\Model\\Genre\\MangaGenre", 
+            "title": "Usage"
+        }, 
+        {
             "location": "/usage/user/profile/", 
-            "text": "", 
+            "text": "This method parses search results from \nhttps://myanimelist.net/profile/{username}\n\n\n\n\n\n\n\n\nArgument\n\n\nResponse\n\n\n\n\n\n\n\n\n\n\n\\Jikan\\Request\\User\\UserProfileRequest\n\n\n\\Jikan\\Model\\User\\UserProfile[]\n\n\n\n\n\n\n\n\nUsage\n\n\n?php\n\n\n\n$jikan\n \n=\n \nnew\n \nJikan\\Jikan\n;\n\n\n\n// User profile\n\n\n// Request: https://myanimelist.net/profile/nekomata1037\n\n\n$user\n \n=\n \n$jikan\n-\nUserProfile\n(\n\n    \n(\nnew\n \n\\Jikan\\Request\\User\\UserProfileRequest\n(\nnekomata1037))\n\n\n);\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRequest: \n\\Jikan\\Request\\User\\UserProfileRequest\n\n\n\n\n\n\nModel: \n\\Jikan\\Model\\User\\TopAnime", 
             "title": "Profile"
         }, 
         {
+            "location": "/usage/user/profile/#usage", 
+            "text": "?php  $jikan   =   new   Jikan\\Jikan ;  // User profile  // Request: https://myanimelist.net/profile/nekomata1037  $user   =   $jikan - UserProfile ( \n     ( new   \\Jikan\\Request\\User\\UserProfileRequest ( nekomata1037))  );       Request:  \\Jikan\\Request\\User\\UserProfileRequest    Model:  \\Jikan\\Model\\User\\TopAnime", 
+            "title": "Usage"
+        }, 
+        {
             "location": "/usage/user/friends/", 
-            "text": "", 
+            "text": "This method parses search results from \nhttps://myanimelist.net/profile/{username}/friends\n\n\n\n\n\n\n\n\nArgument\n\n\nResponse\n\n\n\n\n\n\n\n\n\n\n\\Jikan\\Request\\User\\UserFriendsRequest\n\n\n\\Jikan\\Model\\User\\Friend[]\n\n\n\n\n\n\n\n\nUsage\n\n\n?php\n\n\n\n$jikan\n \n=\n \nnew\n \nJikan\\Jikan\n;\n\n\n\n// User friends\n\n\n// Request: https://myanimelist.net/profile/nekomata1037/friends\n\n\n$friends\n \n=\n \n$jikan\n-\nUserFriends\n(\n\n    \n(\nnew\n \n\\Jikan\\Request\\User\\UserFriendsRequest\n(\nnekomata1037))\n\n\n);\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRequest: \n\\Jikan\\Request\\User\\UserFriendsRequest\n\n\n\n\n\n\nModel: \n\\Jikan\\Model\\User\\Friend", 
             "title": "Friends"
         }, 
         {
+            "location": "/usage/user/friends/#usage", 
+            "text": "?php  $jikan   =   new   Jikan\\Jikan ;  // User friends  // Request: https://myanimelist.net/profile/nekomata1037/friends  $friends   =   $jikan - UserFriends ( \n     ( new   \\Jikan\\Request\\User\\UserFriendsRequest ( nekomata1037))  );       Request:  \\Jikan\\Request\\User\\UserFriendsRequest    Model:  \\Jikan\\Model\\User\\Friend", 
+            "title": "Usage"
+        }, 
+        {
+            "location": "/usage/user/history/", 
+            "text": "This method parses search results from \nhttps://myanimelist.net/history/{username}\n\n\n\n\n\n\n\n\nArgument\n\n\nResponse\n\n\n\n\n\n\n\n\n\n\n\\Jikan\\Request\\User\\UserHistoryRequest\n\n\n\\Jikan\\Model\\User\\History[]\n\n\n\n\n\n\n\n\nUsage\n\n\n?php\n\n\n\n$jikan\n \n=\n \nnew\n \nJikan\\Jikan\n;\n\n\n\n// User profile\n\n\n// Request: https://myanimelist.net/history/nekomata1037\n\n\n$user\n \n=\n \n$jikan\n-\nUserHistory\n(\n\n    \n(\nnew\n \n\\Jikan\\Request\\User\\UserHistoryRequest\n(\nnekomata1037))\n\n\n);\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRequest: \n\\Jikan\\Request\\User\\UserHistoryRequest\n\n\n\n\n\n\nModel: \n\\Jikan\\Model\\User\\History", 
+            "title": "History"
+        }, 
+        {
+            "location": "/usage/user/history/#usage", 
+            "text": "?php  $jikan   =   new   Jikan\\Jikan ;  // User profile  // Request: https://myanimelist.net/history/nekomata1037  $user   =   $jikan - UserHistory ( \n     ( new   \\Jikan\\Request\\User\\UserHistoryRequest ( nekomata1037))  );       Request:  \\Jikan\\Request\\User\\UserHistoryRequest    Model:  \\Jikan\\Model\\User\\History", 
+            "title": "Usage"
+        }, 
+        {
             "location": "/usage/producers/", 
-            "text": "", 
+            "text": "This method parses search results from \nhttps://myanimelist.net/manga/producer/{id}\n\n\n\n\n\n\n\n\nArgument\n\n\nResponse\n\n\n\n\n\n\n\n\n\n\n\\Jikan\\Request\\Producer\\ProducerRequest\n\n\n\\Jikan\\Model\\Producer\\Producer\n\n\n\n\n\n\n\n\nUsage\n\n\n?php\n\n\n\n$jikan\n \n=\n \nnew\n \nJikan\\Jikan\n;\n\n\n\n// Producer Production I.G\n\n\n// Request: https://myanimelist.net/anime/producer/10\n\n\n$animeByProducer\n \n=\n \n$jikan\n-\nProducer\n(\n\n    \n(\nnew\n \n\\Jikan\\Request\\Producer\\ProducerRequest\n())\n\n\n);\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRequest: \n\\Jikan\\Request\\Producer\\ProducerRequest\n\n\n\n\n\n\nModel: \n\\Jikan\\Model\\Producer\\Producer", 
             "title": "Producers"
         }, 
         {
+            "location": "/usage/producers/#usage", 
+            "text": "?php  $jikan   =   new   Jikan\\Jikan ;  // Producer Production I.G  // Request: https://myanimelist.net/anime/producer/10  $animeByProducer   =   $jikan - Producer ( \n     ( new   \\Jikan\\Request\\Producer\\ProducerRequest ())  );       Request:  \\Jikan\\Request\\Producer\\ProducerRequest    Model:  \\Jikan\\Model\\Producer\\Producer", 
+            "title": "Usage"
+        }, 
+        {
             "location": "/usage/magazines/", 
-            "text": "", 
+            "text": "This method parses search results from \nhttps://myanimelist.net/manga/magazine/{id}\n\n\n\n\n\n\n\n\nArgument\n\n\nResponse\n\n\n\n\n\n\n\n\n\n\n\\Jikan\\Request\\Magazine\\MagazineRequest\n\n\n\\Jikan\\Model\\Magazine\\Magazine\n\n\n\n\n\n\n\n\nUsage\n\n\n?php\n\n\n\n$jikan\n \n=\n \nnew\n \nJikan\\Jikan\n;\n\n\n\n// Magazine Shounen Jump Weekly\n\n\n// Request: https://myanimelist.net/manga/magazine/83\n\n\n$mangaByMagazine\n \n=\n \n$jikan\n-\nMagazine\n(\n\n    \n(\nnew\n \n\\Jikan\\Request\\Magazine\\MagazineRequest\n())\n\n\n);\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRequest: \n\\Jikan\\Request\\Magazine\\MagazineRequest\n\n\n\n\n\n\nModel: \n\\Jikan\\Model\\Magazine\\Magazine", 
             "title": "Magazines"
+        }, 
+        {
+            "location": "/usage/magazines/#usage", 
+            "text": "?php  $jikan   =   new   Jikan\\Jikan ;  // Magazine Shounen Jump Weekly  // Request: https://myanimelist.net/manga/magazine/83  $mangaByMagazine   =   $jikan - Magazine ( \n     ( new   \\Jikan\\Request\\Magazine\\MagazineRequest ())  );       Request:  \\Jikan\\Request\\Magazine\\MagazineRequest    Model:  \\Jikan\\Model\\Magazine\\Magazine", 
+            "title": "Usage"
         }, 
         {
             "location": "/objects/request/anime/anime/", 

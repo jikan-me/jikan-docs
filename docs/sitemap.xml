@@ -186,6 +186,11 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
+     <loc>https://squidfunk.github.io/mkdocs-material/usage/user/history/</loc>
+     <lastmod>2018-07-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
      <loc>https://squidfunk.github.io/mkdocs-material/usage/producers/</loc>
      <lastmod>2018-07-25</lastmod>
      <changefreq>daily</changefreq>
