@@ -298,6 +298,26 @@
     Instantiating
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#legacy" title="Legacy" class="md-nav__link">
+    Legacy
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standard" title="Standard" class="md-nav__link">
+    Standard
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -955,8 +975,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../usage/producers/" title="Producers" class="md-nav__link">
-      Producers
+    <a href="../usage/producers/" title="Producer" class="md-nav__link">
+      Producer
     </a>
   </li>
 
@@ -967,8 +987,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../usage/magazines/" title="Magazines" class="md-nav__link">
-      Magazines
+    <a href="../usage/magazines/" title="Magazine" class="md-nav__link">
+      Magazine
     </a>
   </li>
 
@@ -1985,6 +2005,26 @@
     Instantiating
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#legacy" title="Legacy" class="md-nav__link">
+    Legacy
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standard" title="Standard" class="md-nav__link">
+    Standard
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -2016,7 +2056,9 @@
                   <h1>Getting Started</h1>
                 
                 <h2 id="instantiating">Instantiating<a class="headerlink" href="#instantiating" title="Permanent link">&para;</a></h2>
-<p>We get started by instantiating Jikan</p>
+<p>So there's 2 ways to use Jikan and every usage page will include examples of both methods.</p>
+<h4 id="legacy">Legacy<a class="headerlink" href="#legacy" title="Permanent link">&para;</a></h4>
+<p>This is how you used Jikan in v1 except it has one major difference. "Extended requests" are now separate requests.</p>
 <div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
 <span class="k">require</span> <span class="no">__DIR__</span> <span class="o">.</span> <span class="s1">&#39;/vendor/autoload.php&#39;</span><span class="p">;</span>
 <span class="k">use</span> <span class="nx">Jikan\Jikan</span><span class="p">;</span>
@@ -2025,29 +2067,39 @@
 </pre></div>
 
 
+<h4 id="standard">Standard<a class="headerlink" href="#standard" title="Permanent link">&para;</a></h4>
+<p>This is for advanced PHP developers and how Jikan is to be used. Furthermore it follows PSR2 standards. The Legacy method is a wrapper for <code>MalClient</code>.</p>
+<div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="k">require</span> <span class="no">__DIR__</span> <span class="o">.</span> <span class="s1">&#39;/vendor/autoload.php&#39;</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">Jikan\MyAnimeList\MalClient</span><span class="p">;</span>
+
+<span class="nv">$jikan</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">MalClient</span><span class="p">;</span>
+</pre></div>
+
+
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>v2 has return types added everywhere, this enables you to autocomplete anything in your IDE</p>
+<p>v2 has type hints, code documentation and follows PSR2 standards strictly. This enables autocompletion in many IDEs.</p>
 </div>
 <h2 id="migration-notes">Migration Notes<a class="headerlink" href="#migration-notes" title="Permanent link">&para;</a></h2>
 <p>Jikan v2's usage is completely different from v1.</p>
 <ul>
-<li>All main methods in Jikan have to pass their respective <code>Jikan\Request</code> objects which hold request information. More onto that on the next page.</li>
+<li>All methods in <code>MalClient</code> require their respective <code>Jikan\Request</code> object which hold request information.</li>
 <li>Responses are returned as <strong>PHP objects</strong>, no longer as arrays</li>
 <li>Extended Requests <strong>no longer</strong> exist. They're now as seperate requests.</li>
 <li>All object properties are <strong>private</strong> and must be accessed via getters</li>
-<li>Date/Timestamps are now returned as <code>\DateTimeImmutable</code> objects</li>
-<li>Date ranges are returned as <code>\Jikan\Model\Common\DateRange</code></li>
-<li>Common URLs are parsed as <code>\Jikan\Model\Common\MalUrl</code></li>
+<li>Date/Timestamps are now returned as [^1]<code>\DateTimeImmutable</code> objects and are <strong>always</strong> in <strong>Universal Time Coordinated (UTC)</strong></li>
+<li>Date ranges are returned as <sup id="fnref:2"><a class="footnote-ref" href="#fn:2" rel="footnote">1</a></sup><code>\Jikan\Model\Common\DateRange</code></li>
+<li>Common URLs are parsed as <sup id="fnref:3"><a class="footnote-ref" href="#fn:3" rel="footnote">2</a></sup><code>\Jikan\Model\Common\MalUrl</code></li>
 </ul>
 <div class="footnote">
 <hr />
 <ol>
-<li id="fn:1">
-<p><a href="/object/model/common/date-range.md">DateRange</a>&#160;<a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
-</li>
 <li id="fn:2">
-<p><a href="/object/model/common/mal-url.md">MalUrl</a>&#160;<a class="footnote-backref" href="#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+<p><a href="/object/model/common/date-range.md">DateRange</a>&#160;<a class="footnote-backref" href="#fnref:2" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p><a href="/object/model/common/mal-url.md">MalUrl</a>&#160;<a class="footnote-backref" href="#fnref:3" rev="footnote" title="Jump back to footnote 2 in the text">&#8617;</a></p>
 </li>
 </ol>
 </div>
