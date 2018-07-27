@@ -1,16 +1,14 @@
-## Usage
+# Anime: News
+This method parses item data by ID from `https://myanimelist.net/anime/{id}/_/news`
 
-| Argument | Response |
-| -------- | -------- |
-| `\Jikan\Request\Anime\AnimeNews` | `\Jikan\Model\News\NewsListItem[]` |
+**Response:** `\Jikan\Model\News\NewsListItem[]`
 
+## Usage: Legacy
+**Arguments:** `int $id`
 ```
 <?php
 
-$jikan = new Jikan\Jikan;
-
-// Fetch news related to One Piece
-// Request: https://myanimelist.net/anime/21/_/news
+// Fetch news articles related to One Piece (MAL ID: 21) 
 $news = $jikan->AnimeNews(
     (new \Jikan\Request\Anime\AnimeNewsRequest(21))
 );
@@ -21,11 +19,25 @@ foreach($news as $topic) {
 
     echo "Author: " . $topic->getAuthor()->getName();
 }
-
 ```
 
-## Methods
-None. Refer to [^1]NewsListItem
+## Usage: Standard
+
+**Arguments:** `\Jikan\Request\Anime\AnimeNewsRequest`
+```
+<?php
+
+$news = $jikan->getNewsList(
+    (new \Jikan\Request\Anime\AnimeNewsRequest(21))
+);
+
+foreach($news as $topic) {
+    echo $topic->getTitle() . "\n";
+    echo $topic->getIntro();
+
+    echo "Author: " . $topic->getAuthor()->getName();
+}
+```
 
 
 [^1]: [\Jikan\Model\News\NewsListItem](/objects/model/news/news-list-item)

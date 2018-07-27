@@ -1,18 +1,23 @@
-This method parses search results from `https://myanimelist.net/profile/{anime/genre/{id}`
+# Genre: Anime
+This method parses anime genres from `https://myanimelist.net/profile/anime/genre/{id}`
 
-| Argument | Response |
-| -------- | -------- |
-| `\Jikan\Request\Genre\AnimeGenre` | `\Jikan\Model\Genre\AnimeGenre` |
+**Response:** `\Jikan\Model\Genre\AnimeGenre`
 
-## Usage
+## Usage: Legacy
+**Arguments:** `int $id`, `int $page`
 ```
 <?php
 
-$jikan = new Jikan\Jikan;
+// Action Anime (MAL ID: 1)
+$actionAnime = $jikan->AnimeGenre(1);
+```
 
-// Action Anime
-// Request: https://myanimelist.net/anime/genre/1
-$actionAnime = $jikan->AnimeGenre(
+## Usage: Standard
+**Argument:** `\Jikan\Request\Genre\AnimeGenreRequest`
+```
+<?php
+
+$actionAnime = $jikan->getAnimeGenre(
     (new \Jikan\Request\Genre\AnimeGenreRequest(1))
 );
 ```

@@ -1,21 +1,32 @@
-This method parses search results from `https://myanimelist.net/anime/season`
+# Seasonal
+This method parses seasonal anime from `https://myanimelist.net/anime/season`
 
-| Argument | Response |
-| -------- | -------- |
-| `\Jikan\Request\Seasonal\SeasonalRequest` | `\Jikan\Model\Seasonal\Seasonal` |
 
-## Usage
+**Response:** `\Jikan\Model\Search\PersonSearch`
+
+## Usage: Legacy
+**Arguments:** `int $year`, `string $season`
 ```
 <?php
-
-$jikan = new Jikan\Jikan;
+use \Jikan\Helper\Constants;
 
 // Anime this season
-// Request: https://myanimelist.net/anime/season
-$season = $jikan->Seasonal(
+$season = $jikan->Seasonal();
+
+// Anime from Winter 2017
+$season = $jikan->Seasonal(2017, Constants::SEASON_WINTER);
+```
+
+## Usage: Standard
+**Argument:** `\Jikan\Model\Seasonal\Seasonal`
+```
+<?php
+use \Jikan\Helper\Constants;
+
+$season = $jikan->getSeasonal(
     (new \Jikan\Request\Seasonal\SeasonalRequest(
         2017,
-        \Jikan\Helper\Constants::WINTER
+        Constants::WINTER
     ))
 );
 ```

@@ -1,18 +1,23 @@
+# Character: Main
 This method parses item data by ID from `https://myanimelist.net/character/{id}`
 
-| Argument | Response |
-| -------- | -------- |
-| `\Jikan\Request\Character\CharacterRequest` | `\Jikan\Model\Character\Character` |
+**Response:** `\Jikan\Model\Character\Character`
 
-## Usage
+## Usage: Legacy
+**Argument:** `int`
 ```
 <?php
 
-$jikan = new Jikan\Jikan;
+// Fetch Spike Spiegel's (MAL ID: 1) data from it's main page
+$character = $jikan->Character(1);
+```
 
-// Fetch Spike Spiegel's data
-// Request: https://myanimelist.net/character/1
-$character = $jikan->Character(
+## Usage: Standard
+**Argument:** `\Jikan\Request\Character\CharacterRequest`
+```
+<?php
+
+$character = $jikan->getCharacter(
     (new \Jikan\Request\Character\CharacterRequest(1))
 );
 ```

@@ -1,18 +1,24 @@
+# Anime: Characters And Staff
 This method parses item data by ID from `https://myanimelist.net/anime/{id}/_/characters`
 
-| Argument | Response |
-| -------- | -------- |
-| `\Jikan\Request\Anime\AnimeCharactersAndStaff` | `\Jikan\Model\Anime\AnimeCharactersAndStaff` |
+**Response:** `\Jikan\Model\Anime\AnimeCharactersAndStaff`
 
-## Usage
+## Usage: Legacy
+**Arguments:** `int $id`
 ```
 <?php
 
-$jikan = new Jikan\Jikan;
+// Fetch One Piece's (MAL ID: 21) characters & staff
+$charactersAndStaff = $jikan->AnimeCharactersAndStaff(21);
+```
 
-// Fetch One Piece's characters & staff
-// Request: https://myanimelist.net/anime/21
-$anime = $jikan->AnimeCharactersAndStaff(
+## Usage: Standard
+
+**Arguments:** `\Jikan\Request\Anime\AnimeCharactersAndStaffRequest`
+```
+<?php
+
+$charactersAndStaff = $jikan->getAnimeCharactersAndStaff(
     (new \Jikan\Request\Anime\AnimeCharactersAndStaffRequest(21))
 );
 ```

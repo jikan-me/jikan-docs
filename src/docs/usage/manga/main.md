@@ -1,18 +1,23 @@
+# Manga: Main
 This method parses item data by ID from `https://myanimelist.net/manga/{id}`
 
-| Argument | Response |
-| -------- | -------- |
-| `\Jikan\Request\Manga\MangaRequest` | `\Jikan\Model\Manga\Manga` |
+**Response:** `\Jikan\Model\Manga\Manga`
 
-## Usage
+## Usage: Legacy
+**Argument:** `int`
 ```
 <?php
 
-$jikan = new Jikan\Jikan;
+// Fetch Naruto's (MAL ID: 11) data from it's main page
+$manga = $jikan->Manga(11);
+```
 
-// Fetch Naruto's manga data
-// Request: https://myanimelist.net/manga/11
-$manga = $jikan->Manga(
+## Usage: Standard
+**Argument:** `\Jikan\Request\Manga\MangaRequest`
+```
+<?php
+
+$manga = $jikan->getManga(
     (new \Jikan\Request\Manga\MangaRequest(11))
 );
 ```

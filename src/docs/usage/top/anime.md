@@ -1,21 +1,37 @@
-This method parses search results from `https://myanimelist.net/topanime.php`
+# Top: Anime
+This method parses top anime from `https://myanimelist.net/topanime.php`
 
-| Argument | Response |
-| -------- | -------- |
-| `\Jikan\Request\Top\TopAnime` | `\Jikan\Model\Top\TopAnime[]` |
+**Response:** `\Jikan\Model\Top\TopAnime[]`
 
-## Usage
+## Usage: Legacy
+**Arguments:** `int $page`, `string $type`
 ```
 <?php
+use \Jikan\Helper\Constants;
 
-$jikan = new Jikan\Jikan;
+// Top anime
+$topAnime = $jikan->TopAnime();
 
-// Top Upcoming Anime listing
-// Request: https://myanimelist.net/topanime.php
-$anime = $jikan->TopAnime(
-    (new \Jikan\Request\Top\TopAnime(
+// Top anime page 2
+$topAnime = $jikan->TopAnime(2);
+
+// Top upcoming manga
+$topAnime = $jikan->TopAnime(1, Constants::TOP_UPCOMING);
+
+// Top anime movies
+$topAnime = $jikan->TopAnime(1, Constants::TOP_MOVIES);
+```
+
+## Usage: Standard
+**Argument:** `\Jikan\Request\Top\TopAnimeRequest`
+```
+<?php
+use \Jikan\Helper\Constants;
+
+$topAnime = $jikan->getTopAnime(
+    (new \Jikan\Request\Top\TopAnimeRequest(
         1,
-        \Jikan\Helper\Constants::TOP_UPCOMING
+        Constants::TOP_UPCOMING
     ))
 );
 ```

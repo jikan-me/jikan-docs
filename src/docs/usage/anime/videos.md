@@ -1,18 +1,34 @@
+# Anime: Videos
 This method parses item data by ID from `https://myanimelist.net/anime/{id}/_/video`
 
-| Argument | Response |
-| -------- | -------- |
-| `\Jikan\Request\Anime\AnimeVideos` | `\Jikan\Model\Anime\AnimeVideos` |
+**Response:** `\Jikan\Model\Anime\AnimeVideos`
 
-## Usage
+## Usage: Legacy
+**Arguments:** `int $id`
 ```
 <?php
 
-$jikan = new Jikan\Jikan;
+// Fetch episodes & promo videos related to One Piece (MAL ID: 21)
+$videos = $jikan->AnimeVideos(1);
 
-// Fetch videos of Cowbow Bepop
-// Request: https://myanimelist.net/anime/1/_/video
-$videos = $jikan->AnimeVideos(
+// Episodes
+var_dump(
+    $videos->getEpisodes()
+);
+
+// Promo Videos
+var_dump(
+    $videos->getPromos()
+);
+```
+
+## Usage: Standard
+
+**Arguments:** `\Jikan\Request\Anime\AnimeVideos`
+```
+<?php
+
+$videos = $jikan->getAnimeVideos(
     (new \Jikan\Request\Anime\AnimeVideosRequest(1))
 );
 

@@ -1,19 +1,24 @@
-This method parses search results from `https://myanimelist.net/profile/{username}`
+# User: Profile
+This method parses user profiles from `https://myanimelist.net/profile/{username}`
 
-| Argument | Response |
-| -------- | -------- |
-| `\Jikan\Request\User\UserProfileRequest` | `\Jikan\Model\User\UserProfile[]` |
+**Response:** `\Jikan\Model\User\Profile[]`
 
-## Usage
+## Usage: Legacy
+**Argument:** `string $username`
 ```
 <?php
 
-$jikan = new Jikan\Jikan;
+// Profile: Nekomata1037
+$userProfile = $jikan->UserProfile('nekomata1037');
+```
 
-// User profile
-// Request: https://myanimelist.net/profile/nekomata1037
-$user = $jikan->UserProfile(
-    (new \Jikan\Request\User\UserProfileRequest("nekomata1037))
+## Usage: Standard
+**Argument:** `\Jikan\Request\User\UserProfileRequest`
+```
+<?php
+
+$userProfile = $jikan->getUserProfile(
+  new \Jikan\Request\User\UserProfileRequest('nekomata1037')
 );
 ```
 

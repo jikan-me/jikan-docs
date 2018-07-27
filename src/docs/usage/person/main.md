@@ -1,18 +1,23 @@
+# Person: Main
 This method parses item data by ID from `https://myanimelist.net/people/{id}`
 
-| Argument | Response |
-| -------- | -------- |
-| `\Jikan\Request\Person\PersonRequest` | `\Jikan\Model\Person\Person` |
+**Response:** `\Jikan\Model\Person\Person`
 
-## Usage
+## Usage: Legacy
+**Argument:** `int`
 ```
 <?php
 
-$jikan = new Jikan\Jikan;
+// Fetch Seki, Tomokazu's (MAL ID: 1) data from it's main page
+$person = $jikan->Person(1);
+```
 
-// Fetch Seki, Tomokazu's data
-// Request: https://myanimelist.net/people/1
-$person = $jikan->Person(
+## Usage: Standard
+**Argument:** `\Jikan\Request\Person\PersonRequest`
+```
+<?php
+
+$person = $jikan->getPerson(
     (new \Jikan\Request\Person\PersonRequest(1))
 );
 ```

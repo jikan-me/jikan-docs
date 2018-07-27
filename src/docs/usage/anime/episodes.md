@@ -1,22 +1,29 @@
+# Anime: Episodes
 This method parses item data by ID from `https://myanimelist.net/anime/{id}/_/episode`
 
-| Argument | Response |
-| -------- | -------- |
-| `\Jikan\Request\Anime\AnimeEpisodesRequest` | `\Jikan\Model\Anime\AnimeEpisodes` |
+**Response:** `\Jikan\Model\Anime\AnimeEpisodes`
 
-## Usage
+## Usage: Legacy
+**Arguments:** `int $id`, `int $page`
 ```
 <?php
 
-$jikan = new Jikan\Jikan;
+// Fetch One Piece's (MAL ID: 21) episodse list
+$episodes = $jikan->AnimeEpisodes(21);
 
-// Fetch One Piece's episodes
-// Request: https://myanimelist.net/anime/21/_/episode
-$anime = $jikan->AnimeEpisodes(
-    (new \Jikan\Request\Anime\AnimeEpisodesRequest(21, 1))
-);
-var_dump(
-    $anime->getEpisodes()
+// Episode lists are paginated if there's more than 100 episodes
+// Thus to fetch episodes starting from 101: page 2
+$episodes = $jikan->AnimeEpisodes(21, 2);
+```
+
+## Usage: Standard
+
+**Arguments:** `\Jikan\Request\Anime\AnimeCharactersAndStaffRequest`
+```
+<?php
+
+$episodes = $jikan->getAnimeEpisodes(
+    (new \Jikan\Request\Anime\AnimeEpisodesRequest(21))
 );
 ```
 

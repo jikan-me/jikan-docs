@@ -1,19 +1,27 @@
-This method parses search results from `https://myanimelist.net/profile/{username}/friends`
+# User: History
+This method parses user friends from `https://myanimelist.net/profile/{username}/friends`
 
-| Argument | Response |
-| -------- | -------- |
-| `\Jikan\Request\User\UserFriendsRequest` | `\Jikan\Model\User\Friend[]` |
+**Response:** `\Jikan\Model\User\Friend[]`
 
-## Usage
+## Usage: Legacy
+**Argument:** `string $username`, `int $page`
 ```
 <?php
 
-$jikan = new Jikan\Jikan;
+// Friends: Nekomata1037
+$userFriends = $jikan->UserFriends('nekomata1037');
 
-// User friends
-// Request: https://myanimelist.net/profile/nekomata1037/friends
-$friends = $jikan->UserFriends(
-    (new \Jikan\Request\User\UserFriendsRequest("nekomata1037))
+// I don't have many friends so this will return empty :'(
+$userFriends = $jikan->UserFriends('nekomata1037', 2);
+```
+
+## Usage: Standard
+**Argument:** `\Jikan\Request\User\UserFriendsRequest`
+```
+<?php
+
+$userFriends = $jikan->getUserFriends(
+    (new \Jikan\Request\User\UserFriendsRequest('nekomata1037'))
 );
 ```
 

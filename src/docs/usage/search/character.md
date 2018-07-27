@@ -1,18 +1,27 @@
-This method parses search results from `https://myanimelist.net/character.php?q=`
+# Search: Character
+This method parses search results from `https://myanimelist.net/character.php?q={query}`
 
-| Argument | Response |
-| -------- | -------- |
-| `\Jikan\Request\Search\CharacterSearchRequest` | `\Jikan\Model\Search\CharacterSearch` |
+**Response:** `\Jikan\Model\Search\CharacterSearch`
 
-## Usage
+## Usage: Legacy
+**Arguments:** `string $query`, `int $page`
+```
+<?php
+// Search results for "Lelouch"
+$characterSearchResults = $jikan->CharacterSearch("Lelouch");
+
+// Search results from page 2
+$characterSearchResults = $jikan->CharacterSearch("Lelouch", 2);
+
+// There's no Advanced search (filters) for Character results
+```
+
+## Usage: Standard
+**Argument:** `\Jikan\Request\Search\CharacterSearchRequest(`
 ```
 <?php
 
-$jikan = new Jikan\Jikan;
-
-// Search for "Lelouch"
-// Request: https://myanimelist.net/character.php?q=Lelouch
-$anime = $jikan->CharacterSearch(
+$characterSearchResults = $jikan->getCharacterSearch(
     (new \Jikan\Request\Search\CharacterSearchRequest("lelouch"))
 );
 ```

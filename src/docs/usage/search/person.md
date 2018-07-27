@@ -1,18 +1,27 @@
-This method parses search results from `https://myanimelist.net/people.php?q=`
+# Search: Person
+This method parses search results from `https://myanimelist.net/people.php?q={query}`
 
-| Argument | Response |
-| -------- | -------- |
-| `\Jikan\Request\Search\PersonSearchRequest` | `\Jikan\Model\Search\PersonSearch` |
+**Response:** `\Jikan\Model\Search\PersonSearch`
 
-## Usage
+## Usage: Legacy
+**Arguments:** `string $query`, `int $page`
+```
+<?php
+// Search results for "Sawashiro"
+$personSearchResults = $jikan->PersonSearch("sawashiro");
+
+// Search results from page 2
+$personSearchResults = $jikan->PersonSearch("sawashiro", 2);
+
+// There's no Advanced search (filters) for Person results
+```
+
+## Usage: Standard
+**Argument:** `\Jikan\Request\Search\PersonSearchRequest`
 ```
 <?php
 
-$jikan = new Jikan\Jikan;
-
-// Search for "sawashiro"
-// Request: https://myanimelist.net/people.php?q=sawashiro
-$anime = $jikan->PersonSearch(
+$personSearchResults = $jikan->getPersonSearch(
     (new \Jikan\Request\Search\PersonSearchRequest("sawashiro"))
 );
 ```

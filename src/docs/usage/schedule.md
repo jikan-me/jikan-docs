@@ -1,18 +1,23 @@
-This method parses search results from `https://myanimelist.net/anime/season/schedule`
+# Seasonal
+This method parses anime schedule from `https://myanimelist.net/anime/season/schedule`
 
-| Argument | Response |
-| -------- | -------- |
-| `\Jikan\Request\Schedule\ScheduleRequest` | `\Jikan\Model\Schedule\Schedule` |
 
-## Usage
+**Response:** `\Jikan\Model\Schedule\Schedule`
+
+## Usage: Legacy
+**Arguments:** None
 ```
 <?php
 
-$jikan = new Jikan\Jikan;
-
 // Weekly Anime Schedule
-// Request: https://myanimelist.net/anime/season/schedule
-$schedule = $jikan->Schedule(
+$schedule = $jikan->getSchedule();
+```
+
+## Usage: Standard
+**Argument:** `\Jikan\Request\Schedule\ScheduleRequest`
+```
+<?php
+$schedule = $jikan->getSchedule(
     (new \Jikan\Request\Schedule\ScheduleRequest())
 );
 ```

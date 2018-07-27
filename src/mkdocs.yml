@@ -52,8 +52,9 @@ pages:
     - User:
       - Profile: 'usage/user/profile.md'
       - Friends: 'usage/user/friends.md'
-    - Producers: 'usage/producers.md'
-    - Magazines: 'usage/magazines.md'
+      - History: 'usage/user/history.md'
+    - Producer: 'usage/producers.md'
+    - Magazine: 'usage/magazines.md'
   - Objects:
       - Request:
         - Anime:

@@ -1,19 +1,31 @@
-This method parses search results from `https://myanimelist.net/history/{username}`
+# User: History
+This method parses user history from `https://myanimelist.net/history/{username}`
 
-| Argument | Response |
-| -------- | -------- |
-| `\Jikan\Request\User\UserHistoryRequest` | `\Jikan\Model\User\History[]` |
+**Response:** `\Jikan\Model\User\History[]`
 
-## Usage
+## Usage: Legacy
+**Argument:** `string $username`, `string $type = null`
+```
+<?php
+use \Jikan\Helper\Constants;
+
+// All history (anime and manga)
+$userHistory = $jikan->UserHistory('nekomata1037');
+
+// Anime history
+$userHistory = $jikan->UserHistory('nekomata1037', Constants::ANIME);
+
+// Manga history
+$userHistory = $jikan->UserHistory('nekomata1037', Constants::MANGA);
+```
+
+## Usage: Standard
+**Argument:** `\Jikan\Request\User\UserHistoryRequest`
 ```
 <?php
 
-$jikan = new Jikan\Jikan;
-
-// User profile
-// Request: https://myanimelist.net/history/nekomata1037
-$user = $jikan->UserHistory(
-    (new \Jikan\Request\User\UserHistoryRequest("nekomata1037))
+$userHistory = $jikan->getUserHistory(
+    (new \Jikan\Request\User\UserHistoryRequest('nekomata1037'))
 );
 ```
 

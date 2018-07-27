@@ -1,19 +1,38 @@
-This method parses search results from `https://myanimelist.net/topmanga.php`
+# Top: Manga
+This method parses top manga from `https://myanimelist.net/topmanga.php`
 
-| Argument | Response |
-| -------- | -------- |
-| `\Jikan\Request\Top\TopManga` | `\Jikan\Model\Top\TopManga[]` |
+**Response:** `\Jikan\Model\Top\TopManga[]`
 
-## Usage
+## Usage: Legacy
+**Arguments:** `int $page`, `string $type`
 ```
 <?php
+use \Jikan\Helper\Constants;
 
-$jikan = new Jikan\Jikan;
+// Top manga
+$topManga = $jikan->TopManga();
 
-// Top Manga listing
-// Request: https://myanimelist.net/topmanga.php
-$manga = $jikan->TopManga(
-    (new \Jikan\Request\Top\TopManga())
+// Top manga page 2
+$topManga = $jikan->TopManga(2);
+
+// Top favorited manga
+$topManga = $jikan->TopManga(1, Constants::TOP_FAVORITES);
+
+// ( ͡° ͜ʖ ͡°)
+$topManga = $jikan->TopManga(1, Constants::TOP_DOUJINSHI);
+```
+
+## Usage: Standard
+**Argument:** `\Jikan\Request\Top\TopMangaRequest`
+```
+<?php
+use \Jikan\Helper\Constants;
+
+$topManga = $jikan->getTopManga(
+    (new \Jikan\Request\Top\TopMangaRequest(
+        1,
+        Constants::TOP_MANGA // excludes novels, manhwa, manhua, etc
+    ))
 );
 ```
 

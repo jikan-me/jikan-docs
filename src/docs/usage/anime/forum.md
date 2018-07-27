@@ -1,17 +1,24 @@
-## Usage
+# Anime: Forum
+This method parses item data by ID from `https://myanimelist.net/anime/{id}/_/forum`
 
-| Argument | Response |
-| -------- | -------- |
-| `\Jikan\Request\Anime\AnimeForum` | `\Jikan\Model\Forum\ForumTopic[]` |
+**Response:** `\Jikan\Model\Forum\ForumTopic[]`
 
+## Usage: Legacy
+**Arguments:** `int $id`
 ```
 <?php
 
-$jikan = new Jikan\Jikan;
+// Fetch forum topics related to One Piece (MAL ID: 21) 
+$episodes = $jikan->AnimeForum(21);
+```
 
-// Fetch topics related to One Piece
-// Request: https://myanimelist.net/anime/21/_/forum
-$topics = $jikan->AnimeForum(
+## Usage: Standard
+
+**Arguments:** `\Jikan\Request\Anime\AnimeForumRequest`
+```
+<?php
+
+$topics = $jikan->getAnimeForum(
     (new \Jikan\Request\Anime\AnimeForumRequest(21))
 );
 
@@ -22,9 +29,5 @@ foreach($topics as $topic) {
     echo "Last post by: " . $topic->lastPost()->getAuthorName();
 }
 ```
-
-## Methods
-None. Refer to [^1]ForumTopic
-
 
 [^1]: [\Jikan\Model\Forum\ForumTopic](/objects/model/forum/forum-topic)

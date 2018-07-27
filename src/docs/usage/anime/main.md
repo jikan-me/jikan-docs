@@ -1,18 +1,23 @@
+# Anime: Main
 This method parses item data by ID from `https://myanimelist.net/anime/{id}`
 
-| Argument | Response |
-| -------- | -------- |
-| `\Jikan\Request\Anime\AnimeRequest` | `\Jikan\Model\Anime\Anime` |
+**Response:** `\Jikan\Model\Anime\Anime`
 
-## Usage
+## Usage: Legacy
+**Argument:** `int`
 ```
 <?php
 
-$jikan = new Jikan\Jikan;
+// Fetch One Piece's (MAL ID: 21) data from it's main page
+$anime = $jikan->Anime(21);
+```
 
-// Fetch One Piece's anime data
-// Request: https://myanimelist.net/anime/21
-$anime = $jikan->Anime(
+## Usage: Standard
+**Argument:** `\Jikan\Request\Anime\AnimeRequest`
+```
+<?php
+
+$anime = $jikan->getAnime(
     (new \Jikan\Request\Anime\AnimeRequest(21))
 );
 ```

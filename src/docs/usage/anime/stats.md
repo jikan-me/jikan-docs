@@ -1,25 +1,36 @@
-This method parses item data by ID from `https://myanimelist.net/anime/{id}`
+# Anime: Stats
+This method parses item data by ID from `https://myanimelist.net/anime/{id}/_/stats`
 
-| Argument | Response |
-| -------- | -------- |
-| `\Jikan\Request\Anime\AnimeStats` | `\Jikan\Model\Anime\AnimeStats` |
+**Response:** `\Jikan\Model\Anime\AnimeStats`
 
-## Usage
+## Usage: Legacy
+**Arguments:** `int $id`
 ```
 <?php
 
-$jikan = new Jikan\Jikan;
+// Fetch One Piece's (MAL ID: 21) stats
+$stats = $jikan->AnimeStats(21);
 
-// Fetch One Piece's anime stats
-// Request: https://myanimelist.net/anime/21/_/stats
-$anime = $jikan->AnimeStats(
+echo "Watching: " . $stats->getWatching();
+echo "Rated 10/10: " . $stats->getScores()[10]->getVotes();
+echo "Rated 1/10: " . $stats->getScores()[1]->getVotes();
+```
+
+## Usage: Standard
+
+**Arguments:** `\Jikan\Request\Anime\AnimeStatsRequest`
+```
+<?php
+
+$stats = $jikan->getAnimeStats(
     (new \Jikan\Request\Anime\AnimeStatsRequest(21))
 );
 
-echo "Watching: " . $anime->getWatching();
-echo "Rated 10/10: " . $anime->getScores()[10]->getVotes();
-echo "Rated 1/10: " . $anime->getScores()[1]->getVotes();
+echo "Watching: " . $stats->getWatching();
+echo "Rated 10/10: " . $stats->getScores()[10]->getVotes();
+echo "Rated 1/10: " . $stats->getScores()[1]->getVotes();
 ```
+
 
 [^1]: Request: [\Jikan\Request\Anime\AnimeStatsRequest](/objects/request/anime/stats.md)
 [^2]: Model: [\Jikan\Model\Anime\AnimeStats](/objects/model/anime/stats.md)

@@ -1,28 +1,35 @@
-## Usage
+# Character: Pictures
+This method parses item data by ID from `https://myanimelist.net/character/{id}/_/pictures`
 
-| Argument | Response |
-| -------- | -------- |
-| `\Jikan\Request\Character\CharacterPictures` | `\Jikan\Model\Common\Picture[]` |
+**Response** [^1]`\Jikan\Model\Common\Picture[]`
 
+## Usage: Legacy
+**Arguments:** `int $id`
 ```
 <?php
 
-$jikan = new Jikan\Jikan;
+// Fetch pictures related to Spike Spiegel (MAL ID: 1)
+$pics = $jikan->CharacterPictures(1);
 
-// Fetch pictures related to Spike Spiegel
-// Request: https://myanimelist.net/character/1/_/pics
-$pics = $jikan->CharacterPictures(
+foreach($pictures as $picture) {
+    echo "<img src='" . $picture->getLarge() ."'>";
+}
+```
+
+## Usage: Standard
+
+**Arguments:** `\Jikan\Request\Character\CharacterPicturesRequest`
+```
+<?php
+
+$pics = $jikan->getCharacterPictures(
     (new \Jikan\Request\Character\CharacterPicturesRequest(1))
 );
 
 foreach($pictures as $picture) {
     echo "<img src='" . $picture->getLarge() ."'>";
 }
-
 ```
-
-## Methods
-None. Refer to [^1]\Jikan\Model\Common\Picture
 
 
 [^1]: [\Jikan\Model\Common\Picture](/objects/model/common/picture)

@@ -1,21 +1,26 @@
-## Usage
+# Manga: More Info
+This method parses item data by ID from `https://myanimelist.net/manga/{id}/_/moreinfo`
 
-| Argument | Response |
-| -------- | -------- |
-| `\Jikan\Request\Manga\MangaMoreInfo` | `\Jikan\Model\Manga\MangaMoreInfo` |
+**Response:** `string`
 
+## Usage: Legacy
+**Arguments:** `int $id`
 ```
 <?php
 
-$jikan = new Jikan\Jikan;
+// More/Misc Info on Naruto (MAL ID: 21) 
+echo $jikan->MangaMoreInfo(11);
+```
 
-// More Info related to Naruto manga
-// Request: https://myanimelist.net/manga/11/_/moreinfo
-$moreinfo = $jikan->MangaMoreInfo(
+## Usage: Standard
+
+**Arguments:** `\Jikan\Request\Manga\MangaMoreInfoRequest`
+```
+<?php
+
+echo $jikan->getMangaMoreInfo(
     (new \Jikan\Request\Manga\MangaMoreInfoRequest(11))
 );
-
-echo $moreinfo->getMoreInfo();
 ```
 
 [^1]: Request: [\Jikan\Request\Manga\MangaMoreInfo](/objects/request/manga/more-info.md)

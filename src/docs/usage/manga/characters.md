@@ -1,18 +1,24 @@
+# Manga: Characters
 This method parses item data by ID from `https://myanimelist.net/manga/{id}/_/characters`
 
-| Argument | Response |
-| -------- | -------- |
-| `\Jikan\Request\Manga\AnimeCharactersAndStaff` | `\Jikan\Model\Manga\CharacterListItem[]` |
+**Response:** `\Jikan\Model\Manga\CharacterListItem[]`
 
-## Usage
+## Usage: Legacy
+**Arguments:** `int $id`
 ```
 <?php
 
-$jikan = new Jikan\Jikan;
+// Fetch Naruto's (MAL ID: 11) characters
+$characters = $jikan->MangaCharacters(11);
+```
 
-// Fetch Naruto's characters
-// Request: https://myanimelist.net/manga/11/_/characters
-$manga = $jikan->MangaCharacters(
+## Usage: Standard
+
+**Arguments:** `\Jikan\Request\Manga\AnimeCharactersAndStaff`
+```
+<?php
+
+$characters = $jikan->getMangaCharacters(
     (new \Jikan\Request\Manga\MangaCharactersRequest(11))
 );
 ```

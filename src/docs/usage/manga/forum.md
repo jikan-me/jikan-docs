@@ -1,17 +1,31 @@
-## Usage
+# Manga: Forum
+This method parses item data by ID from `https://myanimelist.net/manga/{id}/_/forum`
 
-| Argument | Response |
-| -------- | -------- |
-| `\Jikan\Request\Manga\MangaForum` | `\Jikan\Model\Forum\ForumTopic[]` |
+**Response:** `\Jikan\Model\Forum\ForumTopic[]`
 
+## Usage: Legacy
+**Arguments:** `int $id`
 ```
 <?php
 
-$jikan = new Jikan\Jikan;
+// Fetch forum topics related to Naruto (MAL ID: 11) 
+$topics = $jikan->MangaForum(1);
 
-// Fetch topics related to Naruto manga
-// Request: https://myanimelist.net/manga/11/_/forum
-$topics = $jikan->MangaForum(
+foreach($topics as $topic) {
+    echo $topic->getTitle() . "\n";
+    echo "Replies: " . $topic->getReplies();
+
+    echo "Last post by: " . $topic->lastPost()->getAuthorName();
+}
+```
+
+## Usage: Standard
+
+**Arguments:** `\Jikan\Request\Manga\MangaForumRequest`
+```
+<?php
+
+$topics = $jikan->getMangaForum(
     (new \Jikan\Request\Manga\MangaForumRequest(11))
 );
 
@@ -22,9 +36,6 @@ foreach($topics as $topic) {
     echo "Last post by: " . $topic->lastPost()->getAuthorName();
 }
 ```
-
-## Methods
-None. Refer to [^1]ForumTopic
 
 
 [^1]: [\Jikan\Model\Forum\ForumTopic](/objects/model/forum/forum-topic)

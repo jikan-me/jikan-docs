@@ -1,19 +1,25 @@
-This method parses search results from `https://myanimelist.net/manga/producer/{id}`
+# Producer
+This method parses anime by producers from `https://myanimelist.net/anime/producer/{id}`
 
-| Argument | Response |
-| -------- | -------- |
-| `\Jikan\Request\Producer\ProducerRequest` | `\Jikan\Model\Producer\Producer` |
 
-## Usage
+**Response:** `\Jikan\Model\Producer\Producer`
+
+## Usage: Legacy
+**Argument:** `int $id`, `int $page`
 ```
 <?php
 
-$jikan = new Jikan\Jikan;
-
 // Producer Production I.G
-// Request: https://myanimelist.net/anime/producer/10
-$animeByProducer = $jikan->Producer(
-    (new \Jikan\Request\Producer\ProducerRequest())
+$animeByProducer = $jikan->Producer(10);
+```
+
+## Usage: Standard
+**Argument:** `\Jikan\Request\Producer\ProducerRequest`
+```
+<?php
+
+$animeByProducer = $jikan->getProducer(
+    (new \Jikan\Request\Producer\ProducerRequest(10))
 );
 ```
 

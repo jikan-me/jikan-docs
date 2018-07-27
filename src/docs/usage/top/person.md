@@ -1,19 +1,26 @@
-This method parses search results from `https://myanimelist.net/person.php`
+# Top: Characters
+This method parses top manga from `https://myanimelist.net/people.php`
 
-| Argument | Response |
-| -------- | -------- |
-| `\Jikan\Request\Top\TopPeople` | `\Jikan\Model\Top\TopPerson[]` |
+**Response:** `\Jikan\Model\Top\TopPerson[]`
 
-## Usage
+## Usage: Legacy
+**Arguments:** `int $page`
+```
+<?php
+// Top people
+$topPeople = $jikan->TopPeople();
+
+// Top people page 2
+$topPeople = $jikan->TopPeople(1);
+```
+
+## Usage: Standard
+**Argument:** `\Jikan\Request\Top\TopPeopleRequest`
 ```
 <?php
 
-$jikan = new Jikan\Jikan;
-
-// Top People listing
-// Request: https://myanimelist.net/people.php
-$topPeople = $jikan->TopPeople(
-    (new \Jikan\Request\Top\TopPeople())
+$topPeople = $jikan->getTopPeople(
+    (new \Jikan\Request\Top\TopPeopleRequest())
 );
 ```
 
