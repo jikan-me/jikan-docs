@@ -13,7 +13,7 @@
         <meta name="description" content="PHP API Documentation for Jikan, the unofficial MyAnimeList.net API">
       
       
-        <link rel="canonical" href="https://squidfunk.github.io/mkdocs-material/usage/anime/news/">
+        <link rel="canonical" href="https://jikan.moe/usage/anime/news/">
       
       
         <meta name="author" content="@irfanDahir">
@@ -113,7 +113,7 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="https://squidfunk.github.io/mkdocs-material/" title="Jikan API Documentation" class="md-header-nav__button md-logo">
+        <a href="https://jikan.moe" title="Jikan API Documentation" class="md-header-nav__button md-logo">
           
             <i class="md-icon"></i>
           
@@ -2039,7 +2039,7 @@
     <span class="k">echo</span> <span class="nv">$topic</span><span class="o">-&gt;</span><span class="na">getTitle</span><span class="p">()</span> <span class="o">.</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">;</span>
     <span class="k">echo</span> <span class="nv">$topic</span><span class="o">-&gt;</span><span class="na">getIntro</span><span class="p">();</span>
 
-    <span class="k">echo</span> <span class="s2">&quot;Author: &quot;</span> <span class="o">.</span> <span class="nv">$topic</span><span class="o">-&gt;</span><span class="na">getAuthor</span><span class="p">()</span><span class="o">-&gt;</span><span class="na">getName</span><span class="p">();</span>
+    <span class="k">echo</span> <span class="s2">&quot;Author: &quot;</span> <span class="o">.</span> <span class="nv">$topic</span><span class="o">-&gt;</span><span class="na">getAuthorName</span><span class="p">();</span>
 <span class="p">}</span>
 </pre></div>
 
@@ -2051,13 +2051,6 @@
 <span class="nv">$news</span> <span class="o">=</span> <span class="nv">$jikan</span><span class="o">-&gt;</span><span class="na">getNewsList</span><span class="p">(</span>
     <span class="p">(</span><span class="k">new</span> <span class="nx">\Jikan\Request\Anime\AnimeNewsRequest</span><span class="p">(</span><span class="mi">21</span><span class="p">))</span>
 <span class="p">);</span>
-
-<span class="k">foreach</span><span class="p">(</span><span class="nv">$news</span> <span class="k">as</span> <span class="nv">$topic</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">echo</span> <span class="nv">$topic</span><span class="o">-&gt;</span><span class="na">getTitle</span><span class="p">()</span> <span class="o">.</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">;</span>
-    <span class="k">echo</span> <span class="nv">$topic</span><span class="o">-&gt;</span><span class="na">getIntro</span><span class="p">();</span>
-
-    <span class="k">echo</span> <span class="s2">&quot;Author: &quot;</span> <span class="o">.</span> <span class="nv">$topic</span><span class="o">-&gt;</span><span class="na">getAuthor</span><span class="p">()</span><span class="o">-&gt;</span><span class="na">getName</span><span class="p">();</span>
-<span class="p">}</span>
 </pre></div>
 
 
@@ -2065,7 +2058,10 @@
 <hr />
 <ol>
 <li id="fn:1">
-<p><a href="../../../objects/model/news/news-list-item">\Jikan\Model\News\NewsListItem</a>&#160;<a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+<p><a href="../../../objects/request/anime/news">\Jikan\Request\Anime\AnimeNewsRequest</a>&#160;<a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p><a href="../../../objects/model/news/news-list-item">\Jikan\Model\News\NewsListItem</a>&#160;<a class="footnote-backref" href="#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text">&#8617;</a></p>
 </li>
 </ol>
 </div>

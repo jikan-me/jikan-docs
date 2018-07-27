@@ -33,5 +33,5 @@ $news = $jikan->getNewsList(
 ```
 
 
-[^2]: [\Jikan\Request\Anime\AnimeNewsRequest](/objects/request/anime/news)
-[^1]: [\Jikan\Model\News\NewsListItem](/objects/model/news/news-list-item)
+[^1]: [\Jikan\Request\Anime\AnimeNewsRequest](/objects/request/anime/news)
+[^2]: [\Jikan\Model\News\NewsListItem](/objects/model/news/news-list-item)

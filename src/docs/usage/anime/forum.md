@@ -30,4 +30,5 @@ foreach($topics as $topic) {
 }
 ```
 
-[^1]: [\Jikan\Model\Forum\ForumTopic](/objects/model/forum/forum-topic)
+[^1]: [\Jikan\Request\Anime\AnimeForumRequest](/objects/request/anime/forum)
+[^2]: [\Jikan\Model\Forum\ForumTopic](/objects/model/forum/forum-topic)

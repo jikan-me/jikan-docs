@@ -38,5 +38,5 @@ foreach($news as $topic) {
 ```
 
 
-
-[^1]: [\Jikan\Model\News\NewsListItem](/objects/model/news/news-list-item)
+[^1]: [\Jikan\Request\Manga\MangaNewsRequest](/objects/request/manga/news)
+[^2]: [\Jikan\Model\News\NewsListItem](/objects/model/news/news-list-item)

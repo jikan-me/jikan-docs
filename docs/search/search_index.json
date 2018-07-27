@@ -127,7 +127,7 @@
         }, 
         {
             "location": "/usage/anime/news/", 
-            "text": "Anime: News\n\n\nThis method parses item data by ID from \nhttps://myanimelist.net/anime/{id}/_/news\n\n\nResponse:\n \n\\Jikan\\Model\\News\\NewsListItem[]\n\n\nUsage: Legacy\n\n\nArguments:\n \nint $id\n\n\n?php\n\n\n\n// Fetch news articles related to One Piece (MAL ID: 21) \n\n\n$news\n \n=\n \n$jikan\n-\nAnimeNews\n(\n\n    \n(\nnew\n \n\\Jikan\\Request\\Anime\\AnimeNewsRequest\n(\n21\n))\n\n\n);\n\n\n\nforeach\n(\n$news\n \nas\n \n$topic\n)\n \n{\n\n    \necho\n \n$topic\n-\ngetTitle\n()\n \n.\n \n\\n\n;\n\n    \necho\n \n$topic\n-\ngetIntro\n();\n\n\n    \necho\n \nAuthor: \n \n.\n \n$topic\n-\ngetAuthor\n()\n-\ngetName\n();\n\n\n}\n\n\n\n\n\n\nUsage: Standard\n\n\nArguments:\n \n\\Jikan\\Request\\Anime\\AnimeNewsRequest\n\n\n?php\n\n\n\n$news\n \n=\n \n$jikan\n-\ngetNewsList\n(\n\n    \n(\nnew\n \n\\Jikan\\Request\\Anime\\AnimeNewsRequest\n(\n21\n))\n\n\n);\n\n\n\nforeach\n(\n$news\n \nas\n \n$topic\n)\n \n{\n\n    \necho\n \n$topic\n-\ngetTitle\n()\n \n.\n \n\\n\n;\n\n    \necho\n \n$topic\n-\ngetIntro\n();\n\n\n    \necho\n \nAuthor: \n \n.\n \n$topic\n-\ngetAuthor\n()\n-\ngetName\n();\n\n\n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\Jikan\\Model\\News\\NewsListItem", 
+            "text": "Anime: News\n\n\nThis method parses item data by ID from \nhttps://myanimelist.net/anime/{id}/_/news\n\n\nResponse:\n \n\\Jikan\\Model\\News\\NewsListItem[]\n\n\nUsage: Legacy\n\n\nArguments:\n \nint $id\n\n\n?php\n\n\n\n// Fetch news articles related to One Piece (MAL ID: 21) \n\n\n$news\n \n=\n \n$jikan\n-\nAnimeNews\n(\n\n    \n(\nnew\n \n\\Jikan\\Request\\Anime\\AnimeNewsRequest\n(\n21\n))\n\n\n);\n\n\n\nforeach\n(\n$news\n \nas\n \n$topic\n)\n \n{\n\n    \necho\n \n$topic\n-\ngetTitle\n()\n \n.\n \n\\n\n;\n\n    \necho\n \n$topic\n-\ngetIntro\n();\n\n\n    \necho\n \nAuthor: \n \n.\n \n$topic\n-\ngetAuthorName\n();\n\n\n}\n\n\n\n\n\n\nUsage: Standard\n\n\nArguments:\n \n\\Jikan\\Request\\Anime\\AnimeNewsRequest\n\n\n?php\n\n\n\n$news\n \n=\n \n$jikan\n-\ngetNewsList\n(\n\n    \n(\nnew\n \n\\Jikan\\Request\\Anime\\AnimeNewsRequest\n(\n21\n))\n\n\n);\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\Jikan\\Request\\Anime\\AnimeNewsRequest\n\n\n\n\n\n\n\\Jikan\\Model\\News\\NewsListItem", 
             "title": "News"
         }, 
         {
@@ -137,17 +137,17 @@
         }, 
         {
             "location": "/usage/anime/news/#usage-legacy", 
-            "text": "Arguments:   int $id  ?php  // Fetch news articles related to One Piece (MAL ID: 21)   $news   =   $jikan - AnimeNews ( \n     ( new   \\Jikan\\Request\\Anime\\AnimeNewsRequest ( 21 ))  );  foreach ( $news   as   $topic )   { \n     echo   $topic - getTitle ()   .   \\n ; \n     echo   $topic - getIntro (); \n\n     echo   Author:    .   $topic - getAuthor () - getName ();  }", 
+            "text": "Arguments:   int $id  ?php  // Fetch news articles related to One Piece (MAL ID: 21)   $news   =   $jikan - AnimeNews ( \n     ( new   \\Jikan\\Request\\Anime\\AnimeNewsRequest ( 21 ))  );  foreach ( $news   as   $topic )   { \n     echo   $topic - getTitle ()   .   \\n ; \n     echo   $topic - getIntro (); \n\n     echo   Author:    .   $topic - getAuthorName ();  }", 
             "title": "Usage: Legacy"
         }, 
         {
             "location": "/usage/anime/news/#usage-standard", 
-            "text": "Arguments:   \\Jikan\\Request\\Anime\\AnimeNewsRequest  ?php  $news   =   $jikan - getNewsList ( \n     ( new   \\Jikan\\Request\\Anime\\AnimeNewsRequest ( 21 ))  );  foreach ( $news   as   $topic )   { \n     echo   $topic - getTitle ()   .   \\n ; \n     echo   $topic - getIntro (); \n\n     echo   Author:    .   $topic - getAuthor () - getName ();  }       \\Jikan\\Model\\News\\NewsListItem", 
+            "text": "Arguments:   \\Jikan\\Request\\Anime\\AnimeNewsRequest  ?php  $news   =   $jikan - getNewsList ( \n     ( new   \\Jikan\\Request\\Anime\\AnimeNewsRequest ( 21 ))  );       \\Jikan\\Request\\Anime\\AnimeNewsRequest    \\Jikan\\Model\\News\\NewsListItem", 
             "title": "Usage: Standard"
         }, 
         {
             "location": "/usage/anime/forum/", 
-            "text": "Anime: Forum\n\n\nThis method parses item data by ID from \nhttps://myanimelist.net/anime/{id}/_/forum\n\n\nResponse:\n \n\\Jikan\\Model\\Forum\\ForumTopic[]\n\n\nUsage: Legacy\n\n\nArguments:\n \nint $id\n\n\n?php\n\n\n\n// Fetch forum topics related to One Piece (MAL ID: 21) \n\n\n$episodes\n \n=\n \n$jikan\n-\nAnimeForum\n(\n21\n);\n\n\n\n\n\n\nUsage: Standard\n\n\nArguments:\n \n\\Jikan\\Request\\Anime\\AnimeForumRequest\n\n\n?php\n\n\n\n$topics\n \n=\n \n$jikan\n-\ngetAnimeForum\n(\n\n    \n(\nnew\n \n\\Jikan\\Request\\Anime\\AnimeForumRequest\n(\n21\n))\n\n\n);\n\n\n\nforeach\n(\n$topics\n \nas\n \n$topic\n)\n \n{\n\n    \necho\n \n$topic\n-\ngetTitle\n()\n \n.\n \n\\n\n;\n\n    \necho\n \nReplies: \n \n.\n \n$topic\n-\ngetReplies\n();\n\n\n    \necho\n \nLast post by: \n \n.\n \n$topic\n-\nlastPost\n()\n-\ngetAuthorName\n();\n\n\n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\Jikan\\Model\\Forum\\ForumTopic", 
+            "text": "Anime: Forum\n\n\nThis method parses item data by ID from \nhttps://myanimelist.net/anime/{id}/_/forum\n\n\nResponse:\n \n\\Jikan\\Model\\Forum\\ForumTopic[]\n\n\nUsage: Legacy\n\n\nArguments:\n \nint $id\n\n\n?php\n\n\n\n// Fetch forum topics related to One Piece (MAL ID: 21) \n\n\n$episodes\n \n=\n \n$jikan\n-\nAnimeForum\n(\n21\n);\n\n\n\n\n\n\nUsage: Standard\n\n\nArguments:\n \n\\Jikan\\Request\\Anime\\AnimeForumRequest\n\n\n?php\n\n\n\n$topics\n \n=\n \n$jikan\n-\ngetAnimeForum\n(\n\n    \n(\nnew\n \n\\Jikan\\Request\\Anime\\AnimeForumRequest\n(\n21\n))\n\n\n);\n\n\n\nforeach\n(\n$topics\n \nas\n \n$topic\n)\n \n{\n\n    \necho\n \n$topic\n-\ngetTitle\n()\n \n.\n \n\\n\n;\n\n    \necho\n \nReplies: \n \n.\n \n$topic\n-\ngetReplies\n();\n\n\n    \necho\n \nLast post by: \n \n.\n \n$topic\n-\nlastPost\n()\n-\ngetAuthorName\n();\n\n\n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\Jikan\\Request\\Anime\\AnimeForumRequest\n\n\n\n\n\n\n\\Jikan\\Model\\Forum\\ForumTopic", 
             "title": "Forum"
         }, 
         {
@@ -162,7 +162,7 @@
         }, 
         {
             "location": "/usage/anime/forum/#usage-standard", 
-            "text": "Arguments:   \\Jikan\\Request\\Anime\\AnimeForumRequest  ?php  $topics   =   $jikan - getAnimeForum ( \n     ( new   \\Jikan\\Request\\Anime\\AnimeForumRequest ( 21 ))  );  foreach ( $topics   as   $topic )   { \n     echo   $topic - getTitle ()   .   \\n ; \n     echo   Replies:    .   $topic - getReplies (); \n\n     echo   Last post by:    .   $topic - lastPost () - getAuthorName ();  }       \\Jikan\\Model\\Forum\\ForumTopic", 
+            "text": "Arguments:   \\Jikan\\Request\\Anime\\AnimeForumRequest  ?php  $topics   =   $jikan - getAnimeForum ( \n     ( new   \\Jikan\\Request\\Anime\\AnimeForumRequest ( 21 ))  );  foreach ( $topics   as   $topic )   { \n     echo   $topic - getTitle ()   .   \\n ; \n     echo   Replies:    .   $topic - getReplies (); \n\n     echo   Last post by:    .   $topic - lastPost () - getAuthorName ();  }       \\Jikan\\Request\\Anime\\AnimeForumRequest    \\Jikan\\Model\\Forum\\ForumTopic", 
             "title": "Usage: Standard"
         }, 
         {
@@ -187,7 +187,7 @@
         }, 
         {
             "location": "/usage/anime/pictures/", 
-            "text": "Anime: Pictures\n\n\nThis method parses item data by ID from \nhttps://myanimelist.net/anime/{id}/_/pics\n\n\nResponse:\n \n\\Jikan\\Model\\Common\\Picture[]\n\n\nUsage: Legacy\n\n\nArguments:\n \nint $id\n\n\n?php\n\n\n\n// Fetch pictures related to One Piece (MAL ID: 21)\n\n\n$pics\n \n=\n \n$jikan\n-\nAnimePictures\n(\n21\n);\n\n\n\n\n\n\nUsage: Standard\n\n\nArguments:\n \n\\Jikan\\Request\\Anime\\AnimePicturesRequest\n\n\n?php\n\n\n\n$pics\n \n=\n \n$jikan\n-\ngetAnimePictures\n(\n\n    \n(\nnew\n \n\\Jikan\\Request\\Anime\\AnimePicturesRequest\n(\n21\n))\n\n\n);\n\n\n\nforeach\n(\n$pictures\n \nas\n \n$picture\n)\n \n{\n\n    \necho\n \nimg src=\n \n.\n \n$picture\n-\ngetLarge\n()\n \n.\n;\n\n\n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\Jikan\\Model\\Common\\Picture", 
+            "text": "Anime: Pictures\n\n\nThis method parses item data by ID from \nhttps://myanimelist.net/anime/{id}/_/pics\n\n\nResponse:\n \n\\Jikan\\Model\\Common\\Picture[]\n\n\nUsage: Legacy\n\n\nArguments:\n \nint $id\n\n\n?php\n\n\n\n// Fetch pictures related to One Piece (MAL ID: 21)\n\n\n$pics\n \n=\n \n$jikan\n-\nAnimePictures\n(\n21\n);\n\n\n\n\n\n\nUsage: Standard\n\n\nArguments:\n \n\\Jikan\\Request\\Anime\\AnimePicturesRequest\n\n\n?php\n\n\n\n$pics\n \n=\n \n$jikan\n-\ngetAnimePictures\n(\n\n    \n(\nnew\n \n\\Jikan\\Request\\Anime\\AnimePicturesRequest\n(\n21\n))\n\n\n);\n\n\n\nforeach\n(\n$pictures\n \nas\n \n$picture\n)\n \n{\n\n    \necho\n \nimg src=\n \n.\n \n$picture\n-\ngetLarge\n()\n \n.\n;\n\n\n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\Jikan\\Request\\Anime\\AnimePicturesRequest\n\n\n\n\n\n\n\\Jikan\\Model\\Common\\Picture", 
             "title": "Pictures"
         }, 
         {
@@ -202,7 +202,7 @@
         }, 
         {
             "location": "/usage/anime/pictures/#usage-standard", 
-            "text": "Arguments:   \\Jikan\\Request\\Anime\\AnimePicturesRequest  ?php  $pics   =   $jikan - getAnimePictures ( \n     ( new   \\Jikan\\Request\\Anime\\AnimePicturesRequest ( 21 ))  );  foreach ( $pictures   as   $picture )   { \n     echo   img src=   .   $picture - getLarge ()   . ;  }       \\Jikan\\Model\\Common\\Picture", 
+            "text": "Arguments:   \\Jikan\\Request\\Anime\\AnimePicturesRequest  ?php  $pics   =   $jikan - getAnimePictures ( \n     ( new   \\Jikan\\Request\\Anime\\AnimePicturesRequest ( 21 ))  );  foreach ( $pictures   as   $picture )   { \n     echo   img src=   .   $picture - getLarge ()   . ;  }       \\Jikan\\Request\\Anime\\AnimePicturesRequest    \\Jikan\\Model\\Common\\Picture", 
             "title": "Usage: Standard"
         }, 
         {
@@ -287,7 +287,7 @@
         }, 
         {
             "location": "/usage/manga/news/", 
-            "text": "Manga: News\n\n\nThis method parses item data by ID from \nhttps://myanimelist.net/manga/{id}/_/news\n\n\nResponse:\n \n\\Jikan\\Model\\News\\NewsListItem[]\n\n\nUsage: Legacy\n\n\nArguments:\n \nint $id\n\n\n?php\n\n\n\n// Fetch news articles related to Naruto (MAL ID: 11) \n\n\n$news\n \n=\n \n$jikan\n-\nMangaNews\n(\n1\n);\n\n\n\nforeach\n(\n$news\n \nas\n \n$topic\n)\n \n{\n\n    \necho\n \n$topic\n-\ngetTitle\n()\n \n.\n \n\\n\n;\n\n    \necho\n \n$topic\n-\ngetIntro\n();\n\n\n    \necho\n \nAuthor: \n \n.\n \n$topic\n-\ngetAuthor\n()\n-\ngetName\n();\n\n\n}\n\n\n\n\n\n\nUsage: Standard\n\n\nArguments:\n \n\\Jikan\\Request\\Manga\\MangaNewsRequest\n\n\n?php\n\n\n\n$news\n \n=\n \n$jikan\n-\ngetNewsList\n(\n\n    \n(\nnew\n \n\\Jikan\\Request\\Manga\\MangaNewsRequest\n(\n11\n))\n\n\n);\n\n\n\nforeach\n(\n$news\n \nas\n \n$topic\n)\n \n{\n\n    \necho\n \n$topic\n-\ngetTitle\n()\n \n.\n \n\\n\n;\n\n    \necho\n \n$topic\n-\ngetIntro\n();\n\n\n    \necho\n \nAuthor: \n \n.\n \n$topic\n-\ngetAuthor\n()\n-\ngetName\n();\n\n\n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\Jikan\\Model\\News\\NewsListItem", 
+            "text": "Manga: News\n\n\nThis method parses item data by ID from \nhttps://myanimelist.net/manga/{id}/_/news\n\n\nResponse:\n \n\\Jikan\\Model\\News\\NewsListItem[]\n\n\nUsage: Legacy\n\n\nArguments:\n \nint $id\n\n\n?php\n\n\n\n// Fetch news articles related to Naruto (MAL ID: 11) \n\n\n$news\n \n=\n \n$jikan\n-\nMangaNews\n(\n1\n);\n\n\n\nforeach\n(\n$news\n \nas\n \n$topic\n)\n \n{\n\n    \necho\n \n$topic\n-\ngetTitle\n()\n \n.\n \n\\n\n;\n\n    \necho\n \n$topic\n-\ngetIntro\n();\n\n\n    \necho\n \nAuthor: \n \n.\n \n$topic\n-\ngetAuthor\n()\n-\ngetName\n();\n\n\n}\n\n\n\n\n\n\nUsage: Standard\n\n\nArguments:\n \n\\Jikan\\Request\\Manga\\MangaNewsRequest\n\n\n?php\n\n\n\n$news\n \n=\n \n$jikan\n-\ngetNewsList\n(\n\n    \n(\nnew\n \n\\Jikan\\Request\\Manga\\MangaNewsRequest\n(\n11\n))\n\n\n);\n\n\n\nforeach\n(\n$news\n \nas\n \n$topic\n)\n \n{\n\n    \necho\n \n$topic\n-\ngetTitle\n()\n \n.\n \n\\n\n;\n\n    \necho\n \n$topic\n-\ngetIntro\n();\n\n\n    \necho\n \nAuthor: \n \n.\n \n$topic\n-\ngetAuthor\n()\n-\ngetName\n();\n\n\n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\Jikan\\Request\\Manga\\MangaNewsRequest\n\n\n\n\n\n\n\\Jikan\\Model\\News\\NewsListItem", 
             "title": "News"
         }, 
         {
@@ -302,12 +302,12 @@
         }, 
         {
             "location": "/usage/manga/news/#usage-standard", 
-            "text": "Arguments:   \\Jikan\\Request\\Manga\\MangaNewsRequest  ?php  $news   =   $jikan - getNewsList ( \n     ( new   \\Jikan\\Request\\Manga\\MangaNewsRequest ( 11 ))  );  foreach ( $news   as   $topic )   { \n     echo   $topic - getTitle ()   .   \\n ; \n     echo   $topic - getIntro (); \n\n     echo   Author:    .   $topic - getAuthor () - getName ();  }       \\Jikan\\Model\\News\\NewsListItem", 
+            "text": "Arguments:   \\Jikan\\Request\\Manga\\MangaNewsRequest  ?php  $news   =   $jikan - getNewsList ( \n     ( new   \\Jikan\\Request\\Manga\\MangaNewsRequest ( 11 ))  );  foreach ( $news   as   $topic )   { \n     echo   $topic - getTitle ()   .   \\n ; \n     echo   $topic - getIntro (); \n\n     echo   Author:    .   $topic - getAuthor () - getName ();  }       \\Jikan\\Request\\Manga\\MangaNewsRequest    \\Jikan\\Model\\News\\NewsListItem", 
             "title": "Usage: Standard"
         }, 
         {
             "location": "/usage/manga/forum/", 
-            "text": "Manga: Forum\n\n\nThis method parses item data by ID from \nhttps://myanimelist.net/manga/{id}/_/forum\n\n\nResponse:\n \n\\Jikan\\Model\\Forum\\ForumTopic[]\n\n\nUsage: Legacy\n\n\nArguments:\n \nint $id\n\n\n?php\n\n\n\n// Fetch forum topics related to Naruto (MAL ID: 11) \n\n\n$topics\n \n=\n \n$jikan\n-\nMangaForum\n(\n1\n);\n\n\n\nforeach\n(\n$topics\n \nas\n \n$topic\n)\n \n{\n\n    \necho\n \n$topic\n-\ngetTitle\n()\n \n.\n \n\\n\n;\n\n    \necho\n \nReplies: \n \n.\n \n$topic\n-\ngetReplies\n();\n\n\n    \necho\n \nLast post by: \n \n.\n \n$topic\n-\nlastPost\n()\n-\ngetAuthorName\n();\n\n\n}\n\n\n\n\n\n\nUsage: Standard\n\n\nArguments:\n \n\\Jikan\\Request\\Manga\\MangaForumRequest\n\n\n?php\n\n\n\n$topics\n \n=\n \n$jikan\n-\ngetMangaForum\n(\n\n    \n(\nnew\n \n\\Jikan\\Request\\Manga\\MangaForumRequest\n(\n11\n))\n\n\n);\n\n\n\nforeach\n(\n$topics\n \nas\n \n$topic\n)\n \n{\n\n    \necho\n \n$topic\n-\ngetTitle\n()\n \n.\n \n\\n\n;\n\n    \necho\n \nReplies: \n \n.\n \n$topic\n-\ngetReplies\n();\n\n\n    \necho\n \nLast post by: \n \n.\n \n$topic\n-\nlastPost\n()\n-\ngetAuthorName\n();\n\n\n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\Jikan\\Model\\Forum\\ForumTopic", 
+            "text": "Manga: Forum\n\n\nThis method parses item data by ID from \nhttps://myanimelist.net/manga/{id}/_/forum\n\n\nResponse:\n \n\\Jikan\\Model\\Forum\\ForumTopic[]\n\n\nUsage: Legacy\n\n\nArguments:\n \nint $id\n\n\n?php\n\n\n\n// Fetch forum topics related to Naruto (MAL ID: 11) \n\n\n$topics\n \n=\n \n$jikan\n-\nMangaForum\n(\n1\n);\n\n\n\nforeach\n(\n$topics\n \nas\n \n$topic\n)\n \n{\n\n    \necho\n \n$topic\n-\ngetTitle\n()\n \n.\n \n\\n\n;\n\n    \necho\n \nReplies: \n \n.\n \n$topic\n-\ngetReplies\n();\n\n\n    \necho\n \nLast post by: \n \n.\n \n$topic\n-\nlastPost\n()\n-\ngetAuthorName\n();\n\n\n}\n\n\n\n\n\n\nUsage: Standard\n\n\nArguments:\n \n\\Jikan\\Request\\Manga\\MangaForumRequest\n\n\n?php\n\n\n\n$topics\n \n=\n \n$jikan\n-\ngetMangaForum\n(\n\n    \n(\nnew\n \n\\Jikan\\Request\\Manga\\MangaForumRequest\n(\n11\n))\n\n\n);\n\n\n\nforeach\n(\n$topics\n \nas\n \n$topic\n)\n \n{\n\n    \necho\n \n$topic\n-\ngetTitle\n()\n \n.\n \n\\n\n;\n\n    \necho\n \nReplies: \n \n.\n \n$topic\n-\ngetReplies\n();\n\n\n    \necho\n \nLast post by: \n \n.\n \n$topic\n-\nlastPost\n()\n-\ngetAuthorName\n();\n\n\n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\Jikan\\Request\\Anime\\AnimeNewsRequest\n\n\n\n\n\n\n\\Jikan\\Model\\Forum\\ForumTopic", 
             "title": "Forum"
         }, 
         {
@@ -322,12 +322,12 @@
         }, 
         {
             "location": "/usage/manga/forum/#usage-standard", 
-            "text": "Arguments:   \\Jikan\\Request\\Manga\\MangaForumRequest  ?php  $topics   =   $jikan - getMangaForum ( \n     ( new   \\Jikan\\Request\\Manga\\MangaForumRequest ( 11 ))  );  foreach ( $topics   as   $topic )   { \n     echo   $topic - getTitle ()   .   \\n ; \n     echo   Replies:    .   $topic - getReplies (); \n\n     echo   Last post by:    .   $topic - lastPost () - getAuthorName ();  }       \\Jikan\\Model\\Forum\\ForumTopic", 
+            "text": "Arguments:   \\Jikan\\Request\\Manga\\MangaForumRequest  ?php  $topics   =   $jikan - getMangaForum ( \n     ( new   \\Jikan\\Request\\Manga\\MangaForumRequest ( 11 ))  );  foreach ( $topics   as   $topic )   { \n     echo   $topic - getTitle ()   .   \\n ; \n     echo   Replies:    .   $topic - getReplies (); \n\n     echo   Last post by:    .   $topic - lastPost () - getAuthorName ();  }       \\Jikan\\Request\\Anime\\AnimeNewsRequest    \\Jikan\\Model\\Forum\\ForumTopic", 
             "title": "Usage: Standard"
         }, 
         {
             "location": "/usage/manga/pictures/", 
-            "text": "Manga: Pictures\n\n\nThis method parses item data by ID from \nhttps://myanimelist.net/manga/{id}/_/pics\n\n\nResponse:\n \n\\Jikan\\Model\\Common\\Picture[]\n\n\nUsage: Legacy\n\n\nArguments:\n \nint $id\n\n\n?php\n\n\n\n// Fetch pictures related to One Piece (MAL ID: 11)\n\n\n$pics\n \n=\n \n$jikan\n-\nMangaPictures\n(\n11\n);\n\n\n\nforeach\n(\n$pictures\n \nas\n \n$picture\n)\n \n{\n\n    \necho\n \nimg src=\n \n.\n \n$picture\n-\ngetLarge\n()\n \n.\n;\n\n\n}\n\n\n\n\n\n\nUsage: Standard\n\n\nArguments:\n \n\\Jikan\\Request\\Manga\\MangaPicturesRequest\n\n\n?php\n\n\n\n$pics\n \n=\n \n$jikan\n-\ngetMangaPictures\n(\n\n    \n(\nnew\n \n\\Jikan\\Request\\Magna\\MangaPicturesRequest\n(\n11\n))\n\n\n);\n\n\n\nforeach\n(\n$pictures\n \nas\n \n$picture\n)\n \n{\n\n    \necho\n \nimg src=\n \n.\n \n$picture\n-\ngetLarge\n()\n \n.\n;\n\n\n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\Jikan\\Model\\Common\\Picture", 
+            "text": "Manga: Pictures\n\n\nThis method parses item data by ID from \nhttps://myanimelist.net/manga/{id}/_/pics\n\n\nResponse:\n \n\\Jikan\\Model\\Common\\Picture[]\n\n\nUsage: Legacy\n\n\nArguments:\n \nint $id\n\n\n?php\n\n\n\n// Fetch pictures related to One Piece (MAL ID: 11)\n\n\n$pics\n \n=\n \n$jikan\n-\nMangaPictures\n(\n11\n);\n\n\n\nforeach\n(\n$pictures\n \nas\n \n$picture\n)\n \n{\n\n    \necho\n \nimg src=\n \n.\n \n$picture\n-\ngetLarge\n()\n \n.\n;\n\n\n}\n\n\n\n\n\n\nUsage: Standard\n\n\nArguments:\n \n\\Jikan\\Request\\Manga\\MangaPicturesRequest\n\n\n?php\n\n\n\n$pics\n \n=\n \n$jikan\n-\ngetMangaPictures\n(\n\n    \n(\nnew\n \n\\Jikan\\Request\\Magna\\MangaPicturesRequest\n(\n11\n))\n\n\n);\n\n\n\nforeach\n(\n$pictures\n \nas\n \n$picture\n)\n \n{\n\n    \necho\n \nimg src=\n \n.\n \n$picture\n-\ngetLarge\n()\n \n.\n;\n\n\n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\Jikan\\Request\\Anime\\AnimePicturesRequest\n\n\n\n\n\n\n\\Jikan\\Model\\Common\\Picture", 
             "title": "Pictures"
         }, 
         {
@@ -342,7 +342,7 @@
         }, 
         {
             "location": "/usage/manga/pictures/#usage-standard", 
-            "text": "Arguments:   \\Jikan\\Request\\Manga\\MangaPicturesRequest  ?php  $pics   =   $jikan - getMangaPictures ( \n     ( new   \\Jikan\\Request\\Magna\\MangaPicturesRequest ( 11 ))  );  foreach ( $pictures   as   $picture )   { \n     echo   img src=   .   $picture - getLarge ()   . ;  }       \\Jikan\\Model\\Common\\Picture", 
+            "text": "Arguments:   \\Jikan\\Request\\Manga\\MangaPicturesRequest  ?php  $pics   =   $jikan - getMangaPictures ( \n     ( new   \\Jikan\\Request\\Magna\\MangaPicturesRequest ( 11 ))  );  foreach ( $pictures   as   $picture )   { \n     echo   img src=   .   $picture - getLarge ()   . ;  }       \\Jikan\\Request\\Anime\\AnimePicturesRequest    \\Jikan\\Model\\Common\\Picture", 
             "title": "Usage: Standard"
         }, 
         {
@@ -807,8 +807,13 @@
         }, 
         {
             "location": "/objects/request/anime/anime/", 
-            "text": "Argument\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nid\n\n\nint\n\n\nThe Anime ID on MyAnimeList\n\n\n\n\n\n\n\n\nMethods\n\n\ngetPath()\n\n\n\n\n\n\n\n\nReturns\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nstring\n\n\nGenerated request path", 
+            "text": "AnimeRequest\n\n\n\n\n\n\n\n\nArgument\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nid\n\n\nint\n\n\nThe Anime ID on MyAnimeList\n\n\n\n\n\n\n\n\nMethods\n\n\ngetPath() : string\n\n\nDescription:\n Generated request path", 
             "title": "Anime Request"
+        }, 
+        {
+            "location": "/objects/request/anime/anime/#animerequest", 
+            "text": "Argument  Type  Description      id  int  The Anime ID on MyAnimeList", 
+            "title": "AnimeRequest"
         }, 
         {
             "location": "/objects/request/anime/anime/#methods", 
@@ -816,14 +821,19 @@
             "title": "Methods"
         }, 
         {
-            "location": "/objects/request/anime/anime/#getpath", 
-            "text": "Returns  Description      string  Generated request path", 
-            "title": "getPath()"
+            "location": "/objects/request/anime/anime/#getpath-string", 
+            "text": "Description:  Generated request path", 
+            "title": "getPath() : string"
         }, 
         {
             "location": "/objects/request/anime/characters-and-staff/", 
-            "text": "Argument\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nid\n\n\nint\n\n\nThe Anime ID on MyAnimeList\n\n\n\n\n\n\n\n\nMethods\n\n\ngetPath()\n\n\n\n\n\n\n\n\nReturns\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nstring\n\n\nGenerated request path", 
+            "text": "AnimeCharactersAndStaffRequest\n\n\n\n\n\n\n\n\nArgument\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nid\n\n\nint\n\n\nThe Anime ID on MyAnimeList\n\n\n\n\n\n\n\n\nMethods\n\n\ngetPath() : string\n\n\nDescription:\n Generated request path", 
             "title": "Characters And Staff Request"
+        }, 
+        {
+            "location": "/objects/request/anime/characters-and-staff/#animecharactersandstaffrequest", 
+            "text": "Argument  Type  Description      id  int  The Anime ID on MyAnimeList", 
+            "title": "AnimeCharactersAndStaffRequest"
         }, 
         {
             "location": "/objects/request/anime/characters-and-staff/#methods", 
@@ -831,14 +841,19 @@
             "title": "Methods"
         }, 
         {
-            "location": "/objects/request/anime/characters-and-staff/#getpath", 
-            "text": "Returns  Description      string  Generated request path", 
-            "title": "getPath()"
+            "location": "/objects/request/anime/characters-and-staff/#getpath-string", 
+            "text": "Description:  Generated request path", 
+            "title": "getPath() : string"
         }, 
         {
             "location": "/objects/request/anime/episodes/", 
-            "text": "Argument\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nid\n\n\nint\n\n\nThe Anime ID on MyAnimeList\n\n\n\n\n\n\npage\n\n\nint\n\n\nEpisode page to parse\n\n\n\n\n\n\n\n\nMethods\n\n\ngetPath()\n\n\n\n\n\n\n\n\nReturns\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nstring\n\n\nGenerated request path", 
+            "text": "AnimeEpisodesRequest\n\n\n\n\n\n\n\n\nArgument\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nid\n\n\nint\n\n\nThe Anime ID on MyAnimeList\n\n\n\n\n\n\npage\n\n\nint\n\n\nEpisode page to parse\n\n\n\n\n\n\n\n\nMethods\n\n\ngetPath() : string\n\n\nDescription:\n Generated request path", 
             "title": "Episodes Request"
+        }, 
+        {
+            "location": "/objects/request/anime/episodes/#animeepisodesrequest", 
+            "text": "Argument  Type  Description      id  int  The Anime ID on MyAnimeList    page  int  Episode page to parse", 
+            "title": "AnimeEpisodesRequest"
         }, 
         {
             "location": "/objects/request/anime/episodes/#methods", 
@@ -846,13 +861,13 @@
             "title": "Methods"
         }, 
         {
-            "location": "/objects/request/anime/episodes/#getpath", 
-            "text": "Returns  Description      string  Generated request path", 
-            "title": "getPath()"
+            "location": "/objects/request/anime/episodes/#getpath-string", 
+            "text": "Description:  Generated request path", 
+            "title": "getPath() : string"
         }, 
         {
             "location": "/objects/request/anime/videos/", 
-            "text": "Argument\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nid\n\n\nint\n\n\nThe Anime ID on MyAnimeList\n\n\n\n\n\n\n\n\nMethods\n\n\ngetPath()\n\n\n\n\n\n\n\n\nReturns\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nstring\n\n\nGenerated request path", 
+            "text": "Argument\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nid\n\n\nint\n\n\nThe Anime ID on MyAnimeList\n\n\n\n\n\n\n\n\nMethods\n\n\ngetPath() : string\n\n\nDescription:\n Generated request path", 
             "title": "Videos Request"
         }, 
         {
@@ -861,13 +876,13 @@
             "title": "Methods"
         }, 
         {
-            "location": "/objects/request/anime/videos/#getpath", 
-            "text": "Returns  Description      string  Generated request path", 
-            "title": "getPath()"
+            "location": "/objects/request/anime/videos/#getpath-string", 
+            "text": "Description:  Generated request path", 
+            "title": "getPath() : string"
         }, 
         {
             "location": "/objects/request/anime/pictures/", 
-            "text": "Argument\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nid\n\n\nint\n\n\nThe Anime ID on MyAnimeList\n\n\n\n\n\n\n\n\nMethods\n\n\ngetPath()\n\n\n\n\n\n\n\n\nReturns\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nstring\n\n\nGenerated request path", 
+            "text": "Argument\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nid\n\n\nint\n\n\nThe Anime ID on MyAnimeList\n\n\n\n\n\n\n\n\nMethods\n\n\ngetPath() : string\n\n\nDescription:\n Generated request path", 
             "title": "Pictures Request"
         }, 
         {
@@ -876,13 +891,13 @@
             "title": "Methods"
         }, 
         {
-            "location": "/objects/request/anime/pictures/#getpath", 
-            "text": "Returns  Description      string  Generated request path", 
-            "title": "getPath()"
+            "location": "/objects/request/anime/pictures/#getpath-string", 
+            "text": "Description:  Generated request path", 
+            "title": "getPath() : string"
         }, 
         {
             "location": "/objects/request/anime/forum/", 
-            "text": "Argument\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nid\n\n\nint\n\n\nThe Anime ID on MyAnimeList\n\n\n\n\n\n\n\n\nMethods\n\n\ngetPath()\n\n\n\n\n\n\n\n\nReturns\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nstring\n\n\nGenerated request path", 
+            "text": "Argument\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nid\n\n\nint\n\n\nThe Anime ID on MyAnimeList\n\n\n\n\n\n\n\n\nMethods\n\n\ngetPath() : string\n\n\nDescription:\n Generated request path", 
             "title": "Forum Request"
         }, 
         {
@@ -891,14 +906,19 @@
             "title": "Methods"
         }, 
         {
-            "location": "/objects/request/anime/forum/#getpath", 
-            "text": "Returns  Description      string  Generated request path", 
-            "title": "getPath()"
+            "location": "/objects/request/anime/forum/#getpath-string", 
+            "text": "Description:  Generated request path", 
+            "title": "getPath() : string"
         }, 
         {
             "location": "/objects/request/anime/news/", 
-            "text": "Argument\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nid\n\n\nint\n\n\nThe Anime ID on MyAnimeList\n\n\n\n\n\n\n\n\nMethods\n\n\ngetPath()\n\n\n\n\n\n\n\n\nReturns\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nstring\n\n\nGenerated request path", 
+            "text": "AnimeNewsRequest\n\n\n\n\n\n\n\n\nArgument\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nid\n\n\nint\n\n\nThe Anime ID on MyAnimeList\n\n\n\n\n\n\n\n\nMethods\n\n\ngetPath() : string\n\n\nDescription:\n Generated request path", 
             "title": "News Request"
+        }, 
+        {
+            "location": "/objects/request/anime/news/#animenewsrequest", 
+            "text": "Argument  Type  Description      id  int  The Anime ID on MyAnimeList", 
+            "title": "AnimeNewsRequest"
         }, 
         {
             "location": "/objects/request/anime/news/#methods", 
@@ -906,13 +926,13 @@
             "title": "Methods"
         }, 
         {
-            "location": "/objects/request/anime/news/#getpath", 
-            "text": "Returns  Description      string  Generated request path", 
-            "title": "getPath()"
+            "location": "/objects/request/anime/news/#getpath-string", 
+            "text": "Description:  Generated request path", 
+            "title": "getPath() : string"
         }, 
         {
             "location": "/objects/request/anime/stats/", 
-            "text": "Argument\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nid\n\n\nint\n\n\nThe Anime ID on MyAnimeList\n\n\n\n\n\n\n\n\nMethods\n\n\ngetPath()\n\n\n\n\n\n\n\n\nReturns\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nstring\n\n\nGenerated request path", 
+            "text": "Argument\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nid\n\n\nint\n\n\nThe Anime ID on MyAnimeList\n\n\n\n\n\n\n\n\nMethods\n\n\ngetPath() : string\n\n\nDescription:\n Generated request path", 
             "title": "Stats Request"
         }, 
         {
@@ -921,13 +941,13 @@
             "title": "Methods"
         }, 
         {
-            "location": "/objects/request/anime/stats/#getpath", 
-            "text": "Returns  Description      string  Generated request path", 
-            "title": "getPath()"
+            "location": "/objects/request/anime/stats/#getpath-string", 
+            "text": "Description:  Generated request path", 
+            "title": "getPath() : string"
         }, 
         {
             "location": "/objects/request/anime/more-info/", 
-            "text": "Argument\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nid\n\n\nint\n\n\nThe Anime ID on MyAnimeList\n\n\n\n\n\n\n\n\nMethods\n\n\ngetPath()\n\n\n\n\n\n\n\n\nReturns\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nstring\n\n\nGenerated request path", 
+            "text": "Argument\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nid\n\n\nint\n\n\nThe Anime ID on MyAnimeList\n\n\n\n\n\n\n\n\nMethods\n\n\ngetPath() : string\n\n\nDescription:\n Generated request path", 
             "title": "More Info Request"
         }, 
         {
@@ -936,13 +956,13 @@
             "title": "Methods"
         }, 
         {
-            "location": "/objects/request/anime/more-info/#getpath", 
-            "text": "Returns  Description      string  Generated request path", 
-            "title": "getPath()"
+            "location": "/objects/request/anime/more-info/#getpath-string", 
+            "text": "Description:  Generated request path", 
+            "title": "getPath() : string"
         }, 
         {
             "location": "/objects/request/manga/manga/", 
-            "text": "Argument\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nid\n\n\nint\n\n\nThe Anime ID on MyAnimeList\n\n\n\n\n\n\n\n\nMethods\n\n\ngetPath()\n\n\n\n\n\n\n\n\nReturns\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nstring\n\n\nGenerated request path", 
+            "text": "Argument\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nid\n\n\nint\n\n\nThe Anime ID on MyAnimeList\n\n\n\n\n\n\n\n\nMethods\n\n\ngetPath() : string\n\n\nDescription:\n Generated request path", 
             "title": "Manga Request"
         }, 
         {
@@ -951,13 +971,13 @@
             "title": "Methods"
         }, 
         {
-            "location": "/objects/request/manga/manga/#getpath", 
-            "text": "Returns  Description      string  Generated request path", 
-            "title": "getPath()"
+            "location": "/objects/request/manga/manga/#getpath-string", 
+            "text": "Description:  Generated request path", 
+            "title": "getPath() : string"
         }, 
         {
             "location": "/objects/request/manga/characters/", 
-            "text": "Argument\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nid\n\n\nint\n\n\nThe Anime ID on MyAnimeList\n\n\n\n\n\n\n\n\nMethods\n\n\ngetPath()\n\n\n\n\n\n\n\n\nReturns\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nstring\n\n\nGenerated request path", 
+            "text": "Argument\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nid\n\n\nint\n\n\nThe Anime ID on MyAnimeList\n\n\n\n\n\n\n\n\nMethods\n\n\ngetPath() : string\n\n\nDescription:\n Generated request path", 
             "title": "Characters Request"
         }, 
         {
@@ -966,13 +986,13 @@
             "title": "Methods"
         }, 
         {
-            "location": "/objects/request/manga/characters/#getpath", 
-            "text": "Returns  Description      string  Generated request path", 
-            "title": "getPath()"
+            "location": "/objects/request/manga/characters/#getpath-string", 
+            "text": "Description:  Generated request path", 
+            "title": "getPath() : string"
         }, 
         {
             "location": "/objects/request/manga/pictures/", 
-            "text": "Argument\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nid\n\n\nint\n\n\nThe Anime ID on MyAnimeList\n\n\n\n\n\n\n\n\nMethods\n\n\ngetPath()\n\n\n\n\n\n\n\n\nReturns\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nstring\n\n\nGenerated request path", 
+            "text": "Argument\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nid\n\n\nint\n\n\nThe Anime ID on MyAnimeList\n\n\n\n\n\n\n\n\nMethods\n\n\ngetPath() : string\n\n\nDescription:\n Generated request path", 
             "title": "Pictures Request"
         }, 
         {
@@ -981,13 +1001,13 @@
             "title": "Methods"
         }, 
         {
-            "location": "/objects/request/manga/pictures/#getpath", 
-            "text": "Returns  Description      string  Generated request path", 
-            "title": "getPath()"
+            "location": "/objects/request/manga/pictures/#getpath-string", 
+            "text": "Description:  Generated request path", 
+            "title": "getPath() : string"
         }, 
         {
             "location": "/objects/request/manga/forum/", 
-            "text": "Argument\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nid\n\n\nint\n\n\nThe Anime ID on MyAnimeList\n\n\n\n\n\n\n\n\nMethods\n\n\ngetPath()\n\n\n\n\n\n\n\n\nReturns\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nstring\n\n\nGenerated request path", 
+            "text": "Argument\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nid\n\n\nint\n\n\nThe Anime ID on MyAnimeList\n\n\n\n\n\n\n\n\nMethods\n\n\ngetPath() : string\n\n\nDescription:\n Generated request path", 
             "title": "Forum Request"
         }, 
         {
@@ -996,13 +1016,13 @@
             "title": "Methods"
         }, 
         {
-            "location": "/objects/request/manga/forum/#getpath", 
-            "text": "Returns  Description      string  Generated request path", 
-            "title": "getPath()"
+            "location": "/objects/request/manga/forum/#getpath-string", 
+            "text": "Description:  Generated request path", 
+            "title": "getPath() : string"
         }, 
         {
             "location": "/objects/request/manga/news/", 
-            "text": "Argument\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nid\n\n\nint\n\n\nThe Anime ID on MyAnimeList\n\n\n\n\n\n\n\n\nMethods\n\n\ngetPath()\n\n\n\n\n\n\n\n\nReturns\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nstring\n\n\nGenerated request path", 
+            "text": "Argument\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nid\n\n\nint\n\n\nThe Anime ID on MyAnimeList\n\n\n\n\n\n\n\n\nMethods\n\n\ngetPath() : string\n\n\nDescription:\n Generated request path", 
             "title": "News Request"
         }, 
         {
@@ -1011,13 +1031,13 @@
             "title": "Methods"
         }, 
         {
-            "location": "/objects/request/manga/news/#getpath", 
-            "text": "Returns  Description      string  Generated request path", 
-            "title": "getPath()"
+            "location": "/objects/request/manga/news/#getpath-string", 
+            "text": "Description:  Generated request path", 
+            "title": "getPath() : string"
         }, 
         {
             "location": "/objects/request/manga/stats/", 
-            "text": "Argument\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nid\n\n\nint\n\n\nThe Anime ID on MyAnimeList\n\n\n\n\n\n\n\n\nMethods\n\n\ngetPath()\n\n\n\n\n\n\n\n\nReturns\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nstring\n\n\nGenerated request path", 
+            "text": "Argument\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nid\n\n\nint\n\n\nThe Anime ID on MyAnimeList\n\n\n\n\n\n\n\n\nMethods\n\n\ngetPath() : string\n\n\nDescription:\n Generated request path", 
             "title": "Stats Request"
         }, 
         {
@@ -1026,13 +1046,13 @@
             "title": "Methods"
         }, 
         {
-            "location": "/objects/request/manga/stats/#getpath", 
-            "text": "Returns  Description      string  Generated request path", 
-            "title": "getPath()"
+            "location": "/objects/request/manga/stats/#getpath-string", 
+            "text": "Description:  Generated request path", 
+            "title": "getPath() : string"
         }, 
         {
             "location": "/objects/request/manga/more-info/", 
-            "text": "Argument\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nid\n\n\nint\n\n\nThe Anime ID on MyAnimeList\n\n\n\n\n\n\n\n\nMethods\n\n\ngetPath()\n\n\n\n\n\n\n\n\nReturns\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nstring\n\n\nGenerated request path", 
+            "text": "Argument\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nid\n\n\nint\n\n\nThe Anime ID on MyAnimeList\n\n\n\n\n\n\n\n\nMethods\n\n\ngetPath() : string\n\n\nDescription:\n Generated request path", 
             "title": "More Info Request"
         }, 
         {
@@ -1041,9 +1061,9 @@
             "title": "Methods"
         }, 
         {
-            "location": "/objects/request/manga/more-info/#getpath", 
-            "text": "Returns  Description      string  Generated request path", 
-            "title": "getPath()"
+            "location": "/objects/request/manga/more-info/#getpath-string", 
+            "text": "Description:  Generated request path", 
+            "title": "getPath() : string"
         }, 
         {
             "location": "/objects/request/character/character/", 
@@ -1067,13 +1087,8 @@
         }, 
         {
             "location": "/objects/model/anime/anime/", 
-            "text": "Usage\n\n\n?php\n\n\n\n$jikan\n \n=\n \nnew\n \nJikan\\Jikan\n;\n\n\n\n// Fetch One Piece\ns anime data\n\n\n// Request: https://myanimelist.net/anime/21\n\n\n$anime\n \n=\n \n$jikan\n-\nAnime\n(\n\n    \n(\nnew\n \n\\Jikan\\Request\\Anime\\AnimeRequest\n(\n21\n))\n\n\n);\n\n\n\necho\n \n$anime\n-\ngetTitle\n();\n\n\n\n\n\n\nMethods\n\n\ngetMalId() : int\n\n\nDescription:\n MyAnimeList ID\n\n\ngetUrl() : string\n\n\nDescription:\n MyAnimeList URL\n\n\ngetImageUrl() : string\n\n\nDescription:\n Image URL\n\n\ngetPreviewVideoUrl() : string\n\n\nDescription:\n Preview/Promo video embed URL\n\n\ngetTitle() : string\n\n\nDescription:\n Official title\n\n\ngetTitleEnglish() : ?string\n\n\nDescription:\n English title\n\n\ngetTitleJapanese() : ?string\n\n\nDescription:\n Kanji title\n\n\ngetTitleSynonyms() : string[]\n\n\nDescription:\n Other titles\n\n\ngetType() : string\n\n\nDescription:\n Item type, e.g \nTV\n, \nMovie\n, \nOVA\n, etc\n\n\ngetSource() : string\n\n\nDescription:\n Adaption source, e.g \nManga\n, \nNovel\n, etc\n\n\ngetEpisodes() : ?int\n\n\nDescription:\n Episode count, \nnull\n if unknown\n\n\ngetImageUrl() : string\n\n\nDescription:\n Other titles\n\n\ngetStatus() : string\n\n\nDescription:\n Item status, e.g \nCurrently Airing\n, \nFinished Airing\n, etc\n\n\nisAiring() : bool\n\n\ngetAired() : DateRange\n\n\nDescription:\n Returns \n2\n\\Jikan\\Model\\DateRange\n\n\ngetDuration() : string\n\n\nDescription:\n Episode duration\n\n\ngetRating() : string\n\n\nDescription:\n Item rating, e.g \nPG\n, \nR17\n, etc\n\n\ngetScore() : float\n\n\nDescription:\n Item score\n\n\ngetScoredBy() : int\n\n\nDescription:\n Number of users item scored by\n\n\ngetRank() : int\n\n\nDescription:\n Item rank on MyAnimeList\n\n\ngetPopularity() : int\n\n\nDescription:\n Item popularity on MyAnimeList\n\n\ngetMembers() : int\n\n\nDescription:\n Item members on MyAnimeList\n\n\ngetFavorites() : int\n\n\nDescription:\n Item favorites on MyAnimeList\n\n\ngetSynopsis() : string\n\n\ngetBackground() : string\n\n\nDescription:\n Background information\n\n\ngetPremiered() : string\n\n\nDescription:\n Season \n year\n\n\ngetBroadcast() : string\n\n\nDescription:\n Day \n Time item broadcasted on\n\n\ngetRelated() : array\n\n\nDescription:\n Related items as \n1\n\\Jikan\\Model\\MalUrl\n in associative arrays with the keys as their respective relation\n\n\ngetProducers() : MalUrl[]\n\n\nDescription:\n Producers as \n1\n\\Jikan\\Model\\MalUrl\n\n\ngetLicensors() : MalUrl[]\n\n\nDescription:\n Licensors as \n1\n\\Jikan\\Model\\MalUrl\n\n\ngetStudios() : MalUrl[]\n\n\nDescription:\n Studios as \n1\n\\Jikan\\Model\\MalUrl\n\n\ngetGenres() : MalUrl[]\n\n\nDescription:\n Genres as \n1\n\\Jikan\\Model\\MalUrl\n\n\ngetProducers() : array\n\n\nDescription:\n Producers as \n1\n\\Jikan\\Model\\MalUrl\n\n\ngetOpeningTheme() : string[]\n\n\ngetEndingTheme() : string[]\n\n\n\n\n\n\n\n\n\n\n\\Jikan\\Model\\MalUrl\n\n\n\n\n\n\n\\Jikan\\Model\\DateRange", 
+            "text": "Methods\n\n\ngetMalId() : int\n\n\nDescription:\n MyAnimeList ID\n\n\ngetUrl() : string\n\n\nDescription:\n MyAnimeList URL\n\n\ngetImageUrl() : string\n\n\nDescription:\n Image URL\n\n\ngetPreviewVideoUrl() : string\n\n\nDescription:\n Preview/Promo video embed URL\n\n\ngetTitle() : string\n\n\nDescription:\n Official title\n\n\ngetTitleEnglish() : ?string\n\n\nDescription:\n English title\n\n\ngetTitleJapanese() : ?string\n\n\nDescription:\n Kanji title\n\n\ngetTitleSynonyms() : string[]\n\n\nDescription:\n Other titles\n\n\ngetType() : string\n\n\nDescription:\n Item type, e.g \nTV\n, \nMovie\n, \nOVA\n, etc\n\n\ngetSource() : string\n\n\nDescription:\n Adaption source, e.g \nManga\n, \nNovel\n, etc\n\n\ngetEpisodes() : ?int\n\n\nDescription:\n Episode count, \nnull\n if unknown\n\n\ngetImageUrl() : string\n\n\nDescription:\n Other titles\n\n\ngetStatus() : string\n\n\nDescription:\n Item status, e.g \nCurrently Airing\n, \nFinished Airing\n, etc\n\n\nisAiring() : bool\n\n\ngetAired() : DateRange\n\n\nDescription:\n Returns \n2\n\\Jikan\\Model\\DateRange\n\n\ngetDuration() : string\n\n\nDescription:\n Episode duration\n\n\ngetRating() : string\n\n\nDescription:\n Item rating, e.g \nPG\n, \nR17\n, etc\n\n\ngetScore() : float\n\n\nDescription:\n Item score\n\n\ngetScoredBy() : int\n\n\nDescription:\n Number of users item scored by\n\n\ngetRank() : int\n\n\nDescription:\n Item rank on MyAnimeList\n\n\ngetPopularity() : int\n\n\nDescription:\n Item popularity on MyAnimeList\n\n\ngetMembers() : int\n\n\nDescription:\n Item members on MyAnimeList\n\n\ngetFavorites() : int\n\n\nDescription:\n Item favorites on MyAnimeList\n\n\ngetSynopsis() : string\n\n\ngetBackground() : string\n\n\nDescription:\n Background information\n\n\ngetPremiered() : string\n\n\nDescription:\n Season \n year\n\n\ngetBroadcast() : string\n\n\nDescription:\n Day \n Time item broadcasted on\n\n\ngetRelated() : array\n\n\nDescription:\n Related items as \n1\n\\Jikan\\Model\\MalUrl\n in associative arrays with the keys as their respective relation\n\n\ngetProducers() : MalUrl[]\n\n\nDescription:\n Producers as \n1\n\\Jikan\\Model\\MalUrl\n\n\ngetLicensors() : MalUrl[]\n\n\nDescription:\n Licensors as \n1\n\\Jikan\\Model\\MalUrl\n\n\ngetStudios() : MalUrl[]\n\n\nDescription:\n Studios as \n1\n\\Jikan\\Model\\MalUrl\n\n\ngetGenres() : MalUrl[]\n\n\nDescription:\n Genres as \n1\n\\Jikan\\Model\\MalUrl\n\n\ngetProducers() : array\n\n\nDescription:\n Producers as \n1\n\\Jikan\\Model\\MalUrl\n\n\ngetOpeningTheme() : string[]\n\n\ngetEndingTheme() : string[]\n\n\n\n\n\n\n\n\n\n\n\\Jikan\\Model\\MalUrl\n\n\n\n\n\n\n\\Jikan\\Model\\DateRange", 
             "title": "Anime Model"
-        }, 
-        {
-            "location": "/objects/model/anime/anime/#usage", 
-            "text": "?php  $jikan   =   new   Jikan\\Jikan ;  // Fetch One Piece s anime data  // Request: https://myanimelist.net/anime/21  $anime   =   $jikan - Anime ( \n     ( new   \\Jikan\\Request\\Anime\\AnimeRequest ( 21 ))  );  echo   $anime - getTitle ();", 
-            "title": "Usage"
         }, 
         {
             "location": "/objects/model/anime/anime/#methods", 
@@ -1257,13 +1272,8 @@
         }, 
         {
             "location": "/objects/model/anime/characters-and-staff/", 
-            "text": "Usage\n\n\n?php\n\n\n\n$jikan\n \n=\n \nnew\n \nJikan\\Jikan\n;\n\n\n\n// Fetch One Piece\ns characters and staff\n\n\n// Request: https://myanimelist.net/anime/21\n\n\n$anime\n \n=\n \n$jikan\n-\nAnimeCharactersAndStaff\n(\n\n    \n(\nnew\n \n\\Jikan\\Request\\Anime\\AnimeCharactersAndStaffRequest\n(\n21\n))\n\n\n);\n\n\nvar_dump\n(\n\n    \n$anime\n-\ngetCharacters\n()\n\n\n);\n\n\n\n\n\n\nMethods\n\n\ngetCharacters() : CharacterListItem[]\n\n\nDescription:\n Returns an array of \n1\n\\Jikan\\Model\\Character\\CharacterListItem\n\n\ngetStaff() : StaffListItem[]\n\n\nDescription:\n Returns an array of \n1\n\\Jikan\\Model\\Anime\\StaffListItem\n\n\n\n\n\n\n\n\n\n\n\\Jikan\\Model\\Character\\CharacterListItem\n\n\n\n\n\n\n\\Jikan\\Model\\Anime\\StaffListItem", 
+            "text": "Methods\n\n\ngetCharacters() : CharacterListItem[]\n\n\nDescription:\n Returns an array of \n1\n\\Jikan\\Model\\Character\\CharacterListItem\n\n\ngetStaff() : StaffListItem[]\n\n\nDescription:\n Returns an array of \n1\n\\Jikan\\Model\\Anime\\StaffListItem\n\n\n\n\n\n\n\n\n\n\n\\Jikan\\Model\\Character\\CharacterListItem\n\n\n\n\n\n\n\\Jikan\\Model\\Anime\\StaffListItem", 
             "title": "Characters And Staff Model"
-        }, 
-        {
-            "location": "/objects/model/anime/characters-and-staff/#usage", 
-            "text": "?php  $jikan   =   new   Jikan\\Jikan ;  // Fetch One Piece s characters and staff  // Request: https://myanimelist.net/anime/21  $anime   =   $jikan - AnimeCharactersAndStaff ( \n     ( new   \\Jikan\\Request\\Anime\\AnimeCharactersAndStaffRequest ( 21 ))  );  var_dump ( \n     $anime - getCharacters ()  );", 
-            "title": "Usage"
         }, 
         {
             "location": "/objects/model/anime/characters-and-staff/#methods", 
@@ -1282,13 +1292,8 @@
         }, 
         {
             "location": "/objects/model/anime/episodes/", 
-            "text": "Usage\n\n\n?php\n\n\n\n$jikan\n \n=\n \nnew\n \nJikan\\Jikan\n;\n\n\n\n// Fetch One Piece\ns episodes\n\n\n// Request: https://myanimelist.net/anime/21/_/episode\n\n\n$anime\n \n=\n \n$jikan\n-\nAnimeEpisodes\n(\n\n    \n(\nnew\n \n\\Jikan\\Request\\Anime\\AnimeEpisodesRequest\n(\n21\n,\n \n1\n))\n\n\n);\n\n\nvar_dump\n(\n\n    \n$anime\n-\ngetEpisodes\n()\n\n\n);\n\n\n\n\n\n\nMethods\n\n\ngetEpisodes() : EpisodeListItem[]\n\n\nDescription:\n Returns an array of \n1\n\\Jikan\\Model\\Anime\\EpisodeListItem\n\n\ngetEpisodesLastPage() : int\n\n\nDescription:\n Number of pages for the episode list. There's 100 episodes per page. Anime with more than 100 episodes will be paginated.\n\n\n\n\n\n\n\n\n\n\n\\Jikan\\Model\\Anime\\EpisodesListItem", 
+            "text": "Methods\n\n\ngetEpisodes() : EpisodeListItem[]\n\n\nDescription:\n Returns an array of \n1\n\\Jikan\\Model\\Anime\\EpisodeListItem\n\n\ngetEpisodesLastPage() : int\n\n\nDescription:\n Number of pages for the episode list. There's 100 episodes per page. Anime with more than 100 episodes will be paginated.\n\n\n\n\n\n\n\n\n\n\n\\Jikan\\Model\\Anime\\EpisodesListItem", 
             "title": "Episodes Model"
-        }, 
-        {
-            "location": "/objects/model/anime/episodes/#usage", 
-            "text": "?php  $jikan   =   new   Jikan\\Jikan ;  // Fetch One Piece s episodes  // Request: https://myanimelist.net/anime/21/_/episode  $anime   =   $jikan - AnimeEpisodes ( \n     ( new   \\Jikan\\Request\\Anime\\AnimeEpisodesRequest ( 21 ,   1 ))  );  var_dump ( \n     $anime - getEpisodes ()  );", 
-            "title": "Usage"
         }, 
         {
             "location": "/objects/model/anime/episodes/#methods", 
@@ -1402,13 +1407,8 @@
         }, 
         {
             "location": "/objects/model/anime/staff-list-item/", 
-            "text": "Usage\n\n\n?php\n\n\n\n$jikan\n \n=\n \nnew\n \nJikan\\Jikan\n;\n\n\n\n// Fetch One Piece\ns characters and staff\n\n\n// Request: https://myanimelist.net/anime/21\n\n\n$anime\n \n=\n \n$jikan\n-\nAnimeCharactersAndStaff\n(\n\n    \n(\nnew\n \n\\Jikan\\Request\\Anime\\AnimeCharactersAndStaffRequest\n(\n21\n))\n\n\n);\n\n\n\n// echo all staff names\n\n\n$people\n \n=\n \n$anime\n-\ngetStaff\n();\n\n\nforeach\n \n(\n$people\n \nas\n \n$person\n)\n \n{\n\n    \necho\n \n$person\n-\ngetName\n()\n \n.\n \n\\n\n;\n\n\n}\n\n\n\n\n\n\nMethods\n\n\ngetMalId() : int\n\n\nDescription:\n MyAnimeList ID\n\n\ngetUrl() : string\n\n\nDescription:\n MyAnimeList URL\n\n\ngetImageUrl() : string\n\n\nDescription:\n Image URL\n\n\ngetName() : string\n\n\nDescription:\n Person's name\n\n\ngetPositions() : string[]\n\n\nDescription:\n Person's positions", 
+            "text": "Methods\n\n\ngetMalId() : int\n\n\nDescription:\n MyAnimeList ID\n\n\ngetUrl() : string\n\n\nDescription:\n MyAnimeList URL\n\n\ngetImageUrl() : string\n\n\nDescription:\n Image URL\n\n\ngetName() : string\n\n\nDescription:\n Person's name\n\n\ngetPositions() : string[]\n\n\nDescription:\n Person's positions", 
             "title": "StaffListItem"
-        }, 
-        {
-            "location": "/objects/model/anime/staff-list-item/#usage", 
-            "text": "?php  $jikan   =   new   Jikan\\Jikan ;  // Fetch One Piece s characters and staff  // Request: https://myanimelist.net/anime/21  $anime   =   $jikan - AnimeCharactersAndStaff ( \n     ( new   \\Jikan\\Request\\Anime\\AnimeCharactersAndStaffRequest ( 21 ))  );  // echo all staff names  $people   =   $anime - getStaff ();  foreach   ( $people   as   $person )   { \n     echo   $person - getName ()   .   \\n ;  }", 
-            "title": "Usage"
         }, 
         {
             "location": "/objects/model/anime/staff-list-item/#methods", 
@@ -1442,13 +1442,8 @@
         }, 
         {
             "location": "/objects/model/anime/episode-list-item/", 
-            "text": "Usage\n\n\n?php\n\n\n\n$jikan\n \n=\n \nnew\n \nJikan\\Jikan\n;\n\n\n\n// Fetch One Piece\ns episodes\n\n\n// Request: https://myanimelist.net/anime/21/_/episode\n\n\n$anime\n \n=\n \n$jikan\n-\nAnimeEpisodes\n(\n\n    \n(\nnew\n \n\\Jikan\\Request\\Anime\\AnimeEpisodesRequest\n(\n21\n,\n \n1\n))\n\n\n);\n\n\n\n$episodes\n \n=\n \n$anime\n-\ngetEpisodes\n();\n\n\n// echo all episode titles\n\n\nforeach\n \n(\n$episodes\n \nas\n \n$episode\n)\n \n{\n\n    \necho\n \n$episode\n-\ngetTitle\n();\n\n\n}\n\n\n\n\n\n\nMethods\n\n\ngetEpisodeId() : int\n\n\nDescription:\n MyAnimeList Episode ID\n\n\ngetVideoUrl() : string\n\n\nDescription:\n MyAnimeList episode URL\n\n\ngetForumUrl() : string\n\n\nDescription:\n MyAnimeList forum topic URL\n\n\ngetTitle() : string\n\n\nDescription:\n Episode title\n\n\ngetTitleJapanese() : string\n\n\nDescription:\n Episode title in Japanese\n\n\ngetTitleRomanji() : string\n\n\nDescription:\n Episode title in Romanji\n\n\ngetAired() : ?DateRange\n\n\nDescription:\n Returns \n1\n\\Jikan\\Model\\Common\\DateRange\n\n\nisFiller() : bool\n\n\nisRecap() : bool\n\n\n\n\n\n\n\n\n\n\n\\Jikan\\Model\\Common\\DateRange", 
+            "text": "Methods\n\n\ngetEpisodeId() : int\n\n\nDescription:\n MyAnimeList Episode ID\n\n\ngetVideoUrl() : string\n\n\nDescription:\n MyAnimeList episode URL\n\n\ngetForumUrl() : string\n\n\nDescription:\n MyAnimeList forum topic URL\n\n\ngetTitle() : string\n\n\nDescription:\n Episode title\n\n\ngetTitleJapanese() : string\n\n\nDescription:\n Episode title in Japanese\n\n\ngetTitleRomanji() : string\n\n\nDescription:\n Episode title in Romanji\n\n\ngetAired() : ?DateRange\n\n\nDescription:\n Returns \n1\n\\Jikan\\Model\\Common\\DateRange\n\n\nisFiller() : bool\n\n\nisRecap() : bool\n\n\n\n\n\n\n\n\n\n\n\\Jikan\\Model\\Common\\DateRange", 
             "title": "EpisodeListItem"
-        }, 
-        {
-            "location": "/objects/model/anime/episode-list-item/#usage", 
-            "text": "?php  $jikan   =   new   Jikan\\Jikan ;  // Fetch One Piece s episodes  // Request: https://myanimelist.net/anime/21/_/episode  $anime   =   $jikan - AnimeEpisodes ( \n     ( new   \\Jikan\\Request\\Anime\\AnimeEpisodesRequest ( 21 ,   1 ))  );  $episodes   =   $anime - getEpisodes ();  // echo all episode titles  foreach   ( $episodes   as   $episode )   { \n     echo   $episode - getTitle ();  }", 
-            "title": "Usage"
         }, 
         {
             "location": "/objects/model/anime/episode-list-item/#methods", 
@@ -1807,13 +1802,8 @@
         }, 
         {
             "location": "/objects/model/manga/character-list-item/", 
-            "text": "Usage\n\n\n?php\n\n\n\n$jikan\n \n=\n \nnew\n \nJikan\\Jikan\n;\n\n\n\n// Fetch Naruto\ns characters\n\n\n// Request: https://myanimelist.net/manga/11/_/characters\n\n\n$characters\n \n=\n \n$jikan\n-\nMangaCharacters\n(\n\n    \n(\nnew\n \n\\Jikan\\Request\\Manga\\MangaCharactersRequest\n(\n11\n))\n\n\n);\n\n\n\n// echo all character names\n\n\nforeach\n \n(\n$characters\n \nas\n \n$character\n)\n \n{\n\n    \necho\n \n$character\n-\ngetName\n()\n \n.\n \n\\n\n;\n\n\n}\n\n\n\n\n\n\nMethods\n\n\ngetMalId() : int\n\n\nDescription:\n MyAnimeList ID\n\n\ngetUrl() : string\n\n\nDescription:\n MyAnimeList URL\n\n\ngetImageUrl() : string\n\n\nDescription:\n Image URL\n\n\ngetName() : string\n\n\nDescription:\n Characters's name\n\n\ngetRole() : string\n\n\nDescription:\n Character's role", 
+            "text": "Methods\n\n\ngetMalId() : int\n\n\nDescription:\n MyAnimeList ID\n\n\ngetUrl() : string\n\n\nDescription:\n MyAnimeList URL\n\n\ngetImageUrl() : string\n\n\nDescription:\n Image URL\n\n\ngetName() : string\n\n\nDescription:\n Characters's name\n\n\ngetRole() : string\n\n\nDescription:\n Character's role", 
             "title": "CharacterListItem"
-        }, 
-        {
-            "location": "/objects/model/manga/character-list-item/#usage", 
-            "text": "?php  $jikan   =   new   Jikan\\Jikan ;  // Fetch Naruto s characters  // Request: https://myanimelist.net/manga/11/_/characters  $characters   =   $jikan - MangaCharacters ( \n     ( new   \\Jikan\\Request\\Manga\\MangaCharactersRequest ( 11 ))  );  // echo all character names  foreach   ( $characters   as   $character )   { \n     echo   $character - getName ()   .   \\n ;  }", 
-            "title": "Usage"
         }, 
         {
             "location": "/objects/model/manga/character-list-item/#methods", 
@@ -1847,13 +1837,8 @@
         }, 
         {
             "location": "/objects/model/character/character-list-item/", 
-            "text": "Usage\n\n\n?php\n\n\n\n$jikan\n \n=\n \nnew\n \nJikan\\Jikan\n;\n\n\n\n// Fetch One Piece\ns characters and staff\n\n\n// Request: https://myanimelist.net/anime/21\n\n\n$anime\n \n=\n \n$jikan\n-\nAnimeCharactersAndStaff\n(\n\n    \n(\nnew\n \n\\Jikan\\Request\\Anime\\AnimeCharactersAndStaffRequest\n(\n21\n))\n\n\n);\n\n\n\n// echo all character names\n\n\n$characters\n \n=\n \n$anime\n-\ngetCharacters\n();\n\n\nforeach\n \n(\n$characters\n \nas\n \n$character\n)\n \n{\n\n    \necho\n \n$character\n-\ngetName\n()\n \n.\n \n\\n\n;\n\n\n}\n\n\n\n\n\n\nMethods\n\n\ngetMalId() : int\n\n\nDescription:\n MyAnimeList ID\n\n\ngetUrl() : string\n\n\nDescription:\n MyAnimeList URL\n\n\ngetImageUrl() : string\n\n\nDescription:\n Image URL\n\n\ngetName() : string\n\n\nDescription:\n Characters's name\n\n\ngetRole() : string\n\n\nDescription:\n Character's role\n\n\ngetVoiceActors() : string\n\n\nDescription:\n Voice actors in an array as \n1\n\\Jikan\\Model\\Character\\VoiceActor\n\n\n\n\n\n\n\n\n\n\n\\Jikan\\Model\\Character\\VoiceActor", 
+            "text": "Methods\n\n\ngetMalId() : int\n\n\nDescription:\n MyAnimeList ID\n\n\ngetUrl() : string\n\n\nDescription:\n MyAnimeList URL\n\n\ngetImageUrl() : string\n\n\nDescription:\n Image URL\n\n\ngetName() : string\n\n\nDescription:\n Characters's name\n\n\ngetRole() : string\n\n\nDescription:\n Character's role\n\n\ngetVoiceActors() : string\n\n\nDescription:\n Voice actors in an array as \n1\n\\Jikan\\Model\\Character\\VoiceActor\n\n\n\n\n\n\n\n\n\n\n\\Jikan\\Model\\Character\\VoiceActor", 
             "title": "CharacterListItem"
-        }, 
-        {
-            "location": "/objects/model/character/character-list-item/#usage", 
-            "text": "?php  $jikan   =   new   Jikan\\Jikan ;  // Fetch One Piece s characters and staff  // Request: https://myanimelist.net/anime/21  $anime   =   $jikan - AnimeCharactersAndStaff ( \n     ( new   \\Jikan\\Request\\Anime\\AnimeCharactersAndStaffRequest ( 21 ))  );  // echo all character names  $characters   =   $anime - getCharacters ();  foreach   ( $characters   as   $character )   { \n     echo   $character - getName ()   .   \\n ;  }", 
-            "title": "Usage"
         }, 
         {
             "location": "/objects/model/character/character-list-item/#methods", 
@@ -1892,13 +1877,8 @@
         }, 
         {
             "location": "/objects/model/character/voice-actor/", 
-            "text": "Usage\n\n\n?php\n\n\n\n$jikan\n \n=\n \nnew\n \nJikan\\Jikan\n;\n\n\n\n// Fetch One Piece\ns characters and staff\n\n\n// Request: https://myanimelist.net/anime/21\n\n\n$anime\n \n=\n \n$jikan\n-\nAnimeCharactersAndStaff\n(\n\n    \n(\nnew\n \n\\Jikan\\Request\\Anime\\AnimeCharactersAndStaffRequest\n(\n21\n))\n\n\n);\n\n\n\n// echo all character\ns dubbed languages\n\n\n$characters\n \n=\n \n$anime\n-\ngetCharacters\n();\n\n\nforeach\n \n(\n$characters\n \nas\n \n$character\n)\n \n{\n\n    \necho\n \n$character\n-\ngetName\n()\n \n.\n \n\\n\n;\n\n\n    \n$voiceActors\n \n=\n \n$character\n-\ngetVoiceActors\n();\n\n    \nforeach\n \n(\n$voiceActors\n \nas\n \n$voiceActor\n)\n \n{\n\n        \necho\n \n$voiceActor\n-\ngetLanguage\n()\n \n.\n \n\\n\n;\n\n    \n}\n\n\n}\n\n\n\n\n\n\nMethods\n\n\ngetMalId() : int\n\n\nDescription:\n MyAnimeList ID\n\n\ngetUrl() : string\n\n\nDescription:\n MyAnimeList URL\n\n\ngetImageUrl() : string\n\n\nDescription:\n Image URL\n\n\ngetName() : string\n\n\nDescription:\n Voice Actor's name\n\n\ngetLanguage() : string\n\n\nDescription:\n Dubbed language", 
+            "text": "Methods\n\n\ngetMalId() : int\n\n\nDescription:\n MyAnimeList ID\n\n\ngetUrl() : string\n\n\nDescription:\n MyAnimeList URL\n\n\ngetImageUrl() : string\n\n\nDescription:\n Image URL\n\n\ngetName() : string\n\n\nDescription:\n Voice Actor's name\n\n\ngetLanguage() : string\n\n\nDescription:\n Dubbed language", 
             "title": "VoiceActor"
-        }, 
-        {
-            "location": "/objects/model/character/voice-actor/#usage", 
-            "text": "?php  $jikan   =   new   Jikan\\Jikan ;  // Fetch One Piece s characters and staff  // Request: https://myanimelist.net/anime/21  $anime   =   $jikan - AnimeCharactersAndStaff ( \n     ( new   \\Jikan\\Request\\Anime\\AnimeCharactersAndStaffRequest ( 21 ))  );  // echo all character s dubbed languages  $characters   =   $anime - getCharacters ();  foreach   ( $characters   as   $character )   { \n     echo   $character - getName ()   .   \\n ; \n\n     $voiceActors   =   $character - getVoiceActors (); \n     foreach   ( $voiceActors   as   $voiceActor )   { \n         echo   $voiceActor - getLanguage ()   .   \\n ; \n     }  }", 
-            "title": "Usage"
         }, 
         {
             "location": "/objects/model/character/voice-actor/#methods", 
@@ -2087,13 +2067,8 @@
         }, 
         {
             "location": "/objects/model/news/news-list-item/", 
-            "text": "Usage\n\n\n?php\n\n\n\n$jikan\n \n=\n \nnew\n \nJikan\\Jikan\n;\n\n\n\n// Fetch news related to One Piece\n\n\n// Request: https://myanimelist.net/anime/21/_/news\n\n\n$news\n \n=\n \n$jikan\n-\nAnimeNews\n(\n\n    \n(\nnew\n \n\\Jikan\\Request\\Anime\\AnimeNewsRequest\n(\n21\n))\n\n\n);\n\n\n\nforeach\n(\n$news\n \nas\n \n$topic\n)\n \n{\n\n    \necho\n \n$topic\n-\ngetTitle\n()\n \n.\n \n\\n\n;\n\n    \necho\n \n$topic\n-\ngetIntro\n();\n\n\n    \necho\n \nAuthor: \n \n.\n \n$topic\n-\ngetAuthor\n()\n-\ngetName\n();\n\n\n}\n\n\n\n\n\n\nMethods\n\n\ngetUrl() : string\n\n\nDescription:\n News MyAnimeList URL\n\n\ngetTitle() : string\n\n\nDescription:\n News title\n\n\ngetDate() : DateTimeImmutable\n\n\ngetAuthor() : \\Jikan\\Model\\Common\\MalUrl\n\n\nDescription:\n Returns \n1\n\\Jikan\\Model\\Common\\MalUrl\n\n\ngetForumUrl() : string\n\n\nDescription:\n Related forum topic MyAnimeList URL\n\n\ngetImageUrl() : string\n\n\nDescription:\n News image URL\n\n\ngetIntro() : string\n\n\nDescription:\n News intro text\n\n\n\n\n\n\n\n\n\n\n\\Jikan\\Model\\Common\\MalUrl", 
+            "text": "Methods\n\n\ngetUrl() : string\n\n\nDescription:\n News MyAnimeList URL\n\n\ngetTitle() : string\n\n\ngetDate() : DateTimeImmutable\n\n\ngetAuthorName() : string\n\n\ngetAuthorUrl() : string\n\n\ngetForumUrl() : string\n\n\ngetImageUrl() : string\n\n\ngetIntro() : string\n\n\nDescription:\n News intro text\n\n\n\n\n\n\n\n\n\n\n\\Jikan\\Model\\Common\\MalUrl", 
             "title": "NewsListItem"
-        }, 
-        {
-            "location": "/objects/model/news/news-list-item/#usage", 
-            "text": "?php  $jikan   =   new   Jikan\\Jikan ;  // Fetch news related to One Piece  // Request: https://myanimelist.net/anime/21/_/news  $news   =   $jikan - AnimeNews ( \n     ( new   \\Jikan\\Request\\Anime\\AnimeNewsRequest ( 21 ))  );  foreach ( $news   as   $topic )   { \n     echo   $topic - getTitle ()   .   \\n ; \n     echo   $topic - getIntro (); \n\n     echo   Author:    .   $topic - getAuthor () - getName ();  }", 
-            "title": "Usage"
         }, 
         {
             "location": "/objects/model/news/news-list-item/#methods", 
@@ -2107,7 +2082,7 @@
         }, 
         {
             "location": "/objects/model/news/news-list-item/#gettitle-string", 
-            "text": "Description:  News title", 
+            "text": "", 
             "title": "getTitle() : string"
         }, 
         {
@@ -2116,18 +2091,23 @@
             "title": "getDate() : DateTimeImmutable"
         }, 
         {
-            "location": "/objects/model/news/news-list-item/#getauthor-jikanmodelcommonmalurl", 
-            "text": "Description:  Returns  1 \\Jikan\\Model\\Common\\MalUrl", 
-            "title": "getAuthor() : \\Jikan\\Model\\Common\\MalUrl"
+            "location": "/objects/model/news/news-list-item/#getauthorname-string", 
+            "text": "", 
+            "title": "getAuthorName() : string"
+        }, 
+        {
+            "location": "/objects/model/news/news-list-item/#getauthorurl-string", 
+            "text": "", 
+            "title": "getAuthorUrl() : string"
         }, 
         {
             "location": "/objects/model/news/news-list-item/#getforumurl-string", 
-            "text": "Description:  Related forum topic MyAnimeList URL", 
+            "text": "", 
             "title": "getForumUrl() : string"
         }, 
         {
             "location": "/objects/model/news/news-list-item/#getimageurl-string", 
-            "text": "Description:  News image URL", 
+            "text": "", 
             "title": "getImageUrl() : string"
         }, 
         {
@@ -2257,13 +2237,8 @@
         }, 
         {
             "location": "/objects/model/common/date-range/", 
-            "text": "Usage\n\n\n?php\n\n\n\n$jikan\n \n=\n \nnew\n \nJikan\\Jikan\n;\n\n\n\n// Fetch One Piece\ns data\n\n\n// Request: https://myanimelist.net/anime/21\n\n\n$anime\n \n=\n \n$jikan\n-\nAnime\n(\n\n    \n(\nnew\n \n\\Jikan\\Request\\Anime\\AnimeRequest\n(\n21\n))\n\n\n);\n\n\n\n$aired\n \n=\n \n$anime\n-\ngetAired\n();\n\n\necho\n \n$aired\n-\ngetAiredString\n();\n\n\n\n// check if anime has aired\n\n\nif\n \n(\nis_null\n(\n$aired\n-\ngetFrom\n()))\n \n{\n\n    \necho\n \n$anime\n-\ngetTitle\n()\n \n.\n \n has NOT aired yet\n;\n\n\n}\n\n\n\n\n\n\nMethods\n\n\ngetFrom() : ?DateTimeImmutable\n\n\ngetUntil() : ?DateTimeImmutable\n\n\ngetAiredString() : string\n\n\nDescription:\n Raw parsed string from MyAnimeList", 
+            "text": "Methods\n\n\ngetFrom() : ?\\DateTimeImmutable\n\n\ngetUntil() : ?\\DateTimeImmutable\n\n\n__toString() : string\n\n\nDescription:\n String casting wil return raw parsed string from MyAnimeList", 
             "title": "DateRange"
-        }, 
-        {
-            "location": "/objects/model/common/date-range/#usage", 
-            "text": "?php  $jikan   =   new   Jikan\\Jikan ;  // Fetch One Piece s data  // Request: https://myanimelist.net/anime/21  $anime   =   $jikan - Anime ( \n     ( new   \\Jikan\\Request\\Anime\\AnimeRequest ( 21 ))  );  $aired   =   $anime - getAired ();  echo   $aired - getAiredString ();  // check if anime has aired  if   ( is_null ( $aired - getFrom ()))   { \n     echo   $anime - getTitle ()   .    has NOT aired yet ;  }", 
-            "title": "Usage"
         }, 
         {
             "location": "/objects/model/common/date-range/#methods", 
@@ -2273,27 +2248,22 @@
         {
             "location": "/objects/model/common/date-range/#getfrom-datetimeimmutable", 
             "text": "", 
-            "title": "getFrom() : ?DateTimeImmutable"
+            "title": "getFrom() : ?\\DateTimeImmutable"
         }, 
         {
             "location": "/objects/model/common/date-range/#getuntil-datetimeimmutable", 
             "text": "", 
-            "title": "getUntil() : ?DateTimeImmutable"
+            "title": "getUntil() : ?\\DateTimeImmutable"
         }, 
         {
-            "location": "/objects/model/common/date-range/#getairedstring-string", 
-            "text": "Description:  Raw parsed string from MyAnimeList", 
-            "title": "getAiredString() : string"
+            "location": "/objects/model/common/date-range/#__tostring-string", 
+            "text": "Description:  String casting wil return raw parsed string from MyAnimeList", 
+            "title": "__toString() : string"
         }, 
         {
             "location": "/objects/model/common/mal-url/", 
-            "text": "Usage\n\n\n?php\n\n\n\n$jikan\n \n=\n \nnew\n \nJikan\\Jikan\n;\n\n\n\n// Fetch One Piece\ns data\n\n\n// Request: https://myanimelist.net/anime/21\n\n\n$anime\n \n=\n \n$jikan\n-\nAnime\n(\n\n    \n(\nnew\n \n\\Jikan\\Request\\Anime\\AnimeRequest\n(\n21\n))\n\n\n);\n\n\n\n$aired\n \n=\n \n$anime\n-\ngetAired\n();\n\n\necho\n \n$aired\n-\ngetAiredString\n();\n\n\n\n// check if anime has aired\n\n\nif\n \n(\nis_null\n(\n$aired\n-\ngetFrom\n()))\n \n{\n\n    \necho\n \n$anime\n-\ngetTitle\n()\n \n.\n \n has NOT aired yet\n;\n\n\n}\n\n\n\n\n\n\nThis class is basically a parse of links, e.g below \n\n\na\n \nhref=\nhttps://myanimelist.com/type/id\nText Here\n/a\n\n\n\n\n\n\nMethods\n\n\ngetMalId() : int\n\n\nDescription:\n Extracts MyAnimeList ID from URL property\n\n\ngetType() : string\n\n\nDescription:\n Gets URL type, e.g \nanime\n, \nmanga\n, \nuser\n, etc\n\n\ngetUrl() : string\n\n\nDescription:\n Returns URL string\n\n\ngetName() : string\n\n\nDescription:\n Returns associated string with URL", 
+            "text": "This class is basically a parse of links, e.g below \n\n\na\n \nhref=\nhttps://myanimelist.com/type/id\nText Here\n/a\n\n\n\n\n\n\nMethods\n\n\ngetMalId() : int\n\n\nDescription:\n Extracts MyAnimeList ID from URL property\n\n\ngetType() : string\n\n\nDescription:\n Gets URL type, e.g \nanime\n, \nmanga\n, \nuser\n, etc\n\n\ngetUrl() : string\n\n\nDescription:\n Returns URL string\n\n\ngetName() : string\n\n\nDescription:\n Returns associated string with URL\n\n\ngetTitle() : string\n\n\nDescription:\n Alias of \ngetName()", 
             "title": "MalUrl"
-        }, 
-        {
-            "location": "/objects/model/common/mal-url/#usage", 
-            "text": "?php  $jikan   =   new   Jikan\\Jikan ;  // Fetch One Piece s data  // Request: https://myanimelist.net/anime/21  $anime   =   $jikan - Anime ( \n     ( new   \\Jikan\\Request\\Anime\\AnimeRequest ( 21 ))  );  $aired   =   $anime - getAired ();  echo   $aired - getAiredString ();  // check if anime has aired  if   ( is_null ( $aired - getFrom ()))   { \n     echo   $anime - getTitle ()   .    has NOT aired yet ;  }   This class is basically a parse of links, e.g below   a   href= https://myanimelist.com/type/id Text Here /a", 
-            "title": "Usage"
         }, 
         {
             "location": "/objects/model/common/mal-url/#methods", 
@@ -2319,6 +2289,11 @@
             "location": "/objects/model/common/mal-url/#getname-string", 
             "text": "Description:  Returns associated string with URL", 
             "title": "getName() : string"
+        }, 
+        {
+            "location": "/objects/model/common/mal-url/#gettitle-string", 
+            "text": "Description:  Alias of  getName()", 
+            "title": "getTitle() : string"
         }, 
         {
             "location": "/getting-help/", 

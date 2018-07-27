@@ -27,5 +27,5 @@ foreach($pictures as $picture) {
 }
 ```
 
-
-[^1]: [\Jikan\Model\Common\Picture](/objects/model/common/picture)
+[^1]: [\Jikan\Request\Anime\AnimePicturesRequest](/objects/request/anime/pictures)
+[^2]: [\Jikan\Model\Common\Picture](/objects/model/common/picture)

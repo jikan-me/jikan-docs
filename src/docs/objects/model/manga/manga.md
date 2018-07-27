@@ -91,5 +91,5 @@ $manga = $jikan->Manga(
 ### `getGenres() : MalUrl[]`
 **Description:** Genres as [^1]`\Jikan\Model\MalUrl`
 
-[^1]: [\Jikan\Model\MalUrl](/objects/misc/mal-url.md)
-[^2]: [\Jikan\Model\DateRange](/objects/misc/date-range.md)
+[^1]: [\Jikan\Model\MalUrl](/objects/model/common/mal-url)
+[^2]: [\Jikan\Model\DateRange](/objects/model/common/date-range)
