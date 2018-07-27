@@ -17,7 +17,7 @@ foreach($news as $topic) {
     echo $topic->getTitle() . "\n";
     echo $topic->getIntro();
 
-    echo "Author: " . $topic->getAuthor()->getName();
+    echo "Author: " . $topic->getAuthorName();
 }
 ```
 
@@ -30,14 +30,8 @@ foreach($news as $topic) {
 $news = $jikan->getNewsList(
     (new \Jikan\Request\Anime\AnimeNewsRequest(21))
 );
-
-foreach($news as $topic) {
-    echo $topic->getTitle() . "\n";
-    echo $topic->getIntro();
-
-    echo "Author: " . $topic->getAuthor()->getName();
-}
 ```
 
 
+[^2]: [\Jikan\Request\Anime\AnimeNewsRequest](/objects/request/anime/news)
 [^1]: [\Jikan\Model\News\NewsListItem](/objects/model/news/news-list-item)

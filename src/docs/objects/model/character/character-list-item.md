@@ -1,22 +1,3 @@
-## Usage
-```
-<?php
-
-$jikan = new Jikan\Jikan;
-
-// Fetch One Piece's characters and staff
-// Request: https://myanimelist.net/anime/21
-$anime = $jikan->AnimeCharactersAndStaff(
-    (new \Jikan\Request\Anime\AnimeCharactersAndStaffRequest(21))
-);
-
-// echo all character names
-$characters = $anime->getCharacters();
-foreach ($characters as $character) {
-    echo $character->getName() . "\n";
-}
-```
-
 ## Methods
 ### `getMalId() : int`
 **Description:** MyAnimeList ID

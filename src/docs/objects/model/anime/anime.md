@@ -1,18 +1,3 @@
-## Usage
-```
-<?php
-
-$jikan = new Jikan\Jikan;
-
-// Fetch One Piece's anime data
-// Request: https://myanimelist.net/anime/21
-$anime = $jikan->Anime(
-    (new \Jikan\Request\Anime\AnimeRequest(21))
-);
-
-echo $anime->getTitle();
-```
-
 ## Methods
 ### `getMalId() : int`
 **Description:** MyAnimeList ID

@@ -2,7 +2,7 @@
 site_name: 'Jikan API Documentation'
 site_description: 'PHP API Documentation for Jikan, the unofficial MyAnimeList.net API'
 site_author: '@irfanDahir'
-site_url: 'https://squidfunk.github.io/mkdocs-material/'
+site_url: 'https://jikan.moe'
 
 ## Pages
 pages:
