@@ -1,6 +1,9 @@
 # Welcome to JikanDocs
 
 !!! info
+    This documentation is a **work in progress**. Please report any issues [here](https://github.com/jikan-me/jikan-docs/issues/new)
+
+!!! info
     This documentation is for Jikan **2.0.0 RC1**. For v1.x, refer [here](https://jikan.moe/old-docs).
 
 Jikan is an __unofficial__ [MyAnimeList](https://myanimelist.net) PHP API. It does **not** require any authentication and parses the data via scraping. It provides what the official API lacks.
