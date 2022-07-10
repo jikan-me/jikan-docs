@@ -1,11 +1,114 @@
-# Project information
 site_name: 'Jikan API Documentation'
 site_description: 'PHP API Documentation for Jikan, the unofficial MyAnimeList.net API'
 site_author: '@irfanDahir'
-site_url: 'https://jikan.moe'
+site_url: 'https://jikan.moe'    
+
+# Configuration
+theme:
+  name: 'material'
+  language: 'en'
+
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default 
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
+
+  font:
+    text: 'Inter'
+    code: 'Roboto Mono'
+
+  # 404 page
+  static_templates:
+    - 404.html
+
+  # Necessary for search to work properly
+  include_search_page: false
+  search_index_only: true
+
+
+  # Default values, taken from mkdocs_theme.yml
+  language: en
+  font:
+    text: Roboto
+    code: Roboto Mono
+  # favicon: assets/favicon.png
+  icon:
+    # logo: assets/logo.png
+
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - toc.follow
+    - toc.integrate 
+    - navigation.top
+    - search.share
+    - search.highlight
+    - search.suggest
+    - header.autohide
+
+
+plugins:
+  - search:
+      lang: en
+  - tags
+
+
+# extra:
+#   analytics:
+#     provider: google
+#     property: 'UA-99574439-3'
+#   version:
+#     provider: mike
+#     default: 3.x
+#   social:
+#     - type: 'github'
+#       link: 'https://github.com/jikan-me'
+#     - type: 'twitter'
+#       link: 'https://twitter.com/irfanDahir'
+
+# copyright: '2022 Jikan'
+
+# # Repository
+repo_name: 'jikan-me/jikan'
+repo_url: 'https://github.com/jikan-me/jikan'
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - abbr
+  - attr_list
+  - meta
+  - codehilite:
+      guess_lang: true
+      linenums: false
+  - footnotes
+  - toc:
+      permalink: true
+
+
 
 ## Pages
-pages:
+nav:
   - Home: index.md 
   - Installation: installation.md
   - Getting Started: 'getting-started.md'
@@ -14,11 +117,16 @@ pages:
       - Anime: 'usage/anime/main.md'
       - Characters & Staff: 'usage/anime/characters-and-staff.md'
       - Episodes: 'usage/anime/episodes.md'
+      - Episode: 'usage/anime/episode.md'
       - News: 'usage/anime/news.md'
       - Forum: 'usage/anime/forum.md'
       - Videos: 'usage/anime/videos.md'
+      - Video Episodes: 'usage/anime/videos-episodes.md'
       - Pictures: 'usage/anime/pictures.md'
       - Stats: 'usage/anime/stats.md'
+      - Reviews: 'usage/anime/reviews.md'
+      - Recommendations: 'usage/anime/recommendations.md'
+      - Recently Updated By Users: 'usage/anime/recently-updated-by-users.md'
       - More Info: 'usage/anime/more-info.md'
     - Manga:
       - Manga: 'usage/manga/main.md'
@@ -55,109 +163,3 @@ pages:
       - History: 'usage/user/history.md'
     - Producer: 'usage/producers.md'
     - Magazine: 'usage/magazines.md'
-  - Objects:
-      - Request:
-        - Anime:
-          - Anime Request: 'objects/request/anime/anime.md'
-          - Characters And Staff Request: 'objects/request/anime/characters-and-staff.md'
-          - Episodes Request: 'objects/request/anime/episodes.md'
-          - Videos Request: 'objects/request/anime/videos.md'
-          - Pictures Request: 'objects/request/anime/pictures.md'
-          - Forum Request: 'objects/request/anime/forum.md'
-          - News Request: 'objects/request/anime/news.md'
-          - Stats Request: 'objects/request/anime/stats.md'
-          - More Info Request: 'objects/request/anime/more-info.md'
-        - Manga:
-          - Manga Request: 'objects/request/manga/manga.md'
-          - Characters Request: 'objects/request/manga/characters.md'
-          - Pictures Request: 'objects/request/manga/pictures.md'
-          - Forum Request: 'objects/request/manga/forum.md'
-          - News Request: 'objects/request/manga/news.md'
-          - Stats Request: 'objects/request/manga/stats.md'
-          - More Info Request: 'objects/request/manga/more-info.md'
-        - Character:
-          - Character Request: 'objects/request/character/character.md'
-          - Pictures Request: 'objects/request/character/pictures.md'
-        - Person:
-          - Person Request: 'objects/request/person/person.md'
-          - Pictures Request: 'objects/request/person/pictures.md'          
-      - Model:
-          - Anime:
-              - Anime Model: 'objects/model/anime/anime.md'
-              - Characters And Staff Model: 'objects/model/anime/characters-and-staff.md'
-              - Episodes Model: 'objects/model/anime/episodes.md'
-              - Videos Model: 'objects/model/anime/videos.md'
-              - Stats Model: 'objects/model/anime/stats.md'
-              - MoreInfo Model: 'objects/model/anime/more-info.md'
-              - Sub Models:
-                - StaffListItem: 'objects/model/anime/staff-list-item.md'
-                - EpisodeListItem: 'objects/model/anime/episode-list-item.md'
-                - StreamEpisodeListItem: 'objects/model/anime/stream-episode-list-item.md'
-                - PromoListItem: 'objects/model/anime/promo-list-item.md'
-          - Manga:
-              - Manga Model: 'objects/model/manga/manga.md'
-              - Characters Model: 'objects/model/manga/characters.md'
-              - Stats Model: 'objects/model/manga/stats.md'
-              - MoreInfo Model: 'objects/model/manga/more-info.md'
-              - Sub Models:
-                  - CharacterListItem: 'objects/model/manga/character-list-item.md'
-              - Character:
-                - Sub Models:
-                  - CharacterListItem: 'objects/model/character/character-list-item.md'
-                  - VoiceActor: 'objects/model/character/voice-actor.md'
-          - Character:
-              - Character Model: 'objects/model/character/character.md'
-          - Person:
-              - Person Model: 'objects/model/person/person.md'
-          - News:
-              - NewsListItem: 'objects/model/news/news-list-item.md'
-          - Forum:
-              - ForumTopic: 'objects/model/forum/forum-topic.md'
-              - ForumPost: 'objects/model/forum/forum-post.md'
-          - Common:
-              - Picture: 'objects/model/common/picture.md'
-              - DateRange: 'objects/model/common/date-range.md'
-              - MalUrl: 'objects/model/common/mal-url.md'
-  - Getting Help: 'getting-help.md'
-    
-
-# Repository
-repo_name: 'jikan-me/jikan'
-repo_url: 'https://github.com/jikan-me/jikan'
-
-# Copyright
-copyright: 'Copyright &copy; 2017 - 2018 @irfanDahir'
-
-# Configuration
-theme:
-  name: 'material'
-  language: 'en'
-  palette:
-    primary: 'indigo'
-    accent: 'indigo'
-  font:
-    text: 'Roboto'
-    code: 'Roboto Mono'
-
-# Customization
-extra:
-  social:
-    - type: 'github'
-      link: 'https://github.com/jikan-me'
-    - type: 'twitter'
-      link: 'https://twitter.com/irfanDahir'
-
-# Google Analytics
-google_analytics:
-  - 'UA-99574439-3'
-  - 'auto'
-
-# Extensions
-markdown_extensions:
-  - admonition
-  - codehilite:
-      guess_lang: true
-      linenums: false
-  - footnotes
-  - toc:
-      permalink: true
