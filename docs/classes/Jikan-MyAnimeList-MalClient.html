@@ -447,9 +447,33 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Jikan-MyAnimeList-MalClient.html#method_getNewsList">getNewsList()</a>
+    <a href="classes/Jikan-MyAnimeList-MalClient.html#method_getNews">getNews()</a>
+    <span>
+                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Jikan-MyAnimeList-MalClient.html#method_getNewsByTag">getNewsByTag()</a>
     <span>
                                 &nbsp;: <a href="classes/Jikan-Model-News-NewsList.html"><abbr title="\Jikan\Model\News\NewsList">NewsList</abbr></a>    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Jikan-MyAnimeList-MalClient.html#method_getNewsList">getNewsList()</a>
+    <span>
+                                &nbsp;: <a href="classes/Jikan-Model-News-ResourceNewsList.html"><abbr title="\Jikan\Model\News\ResourceNewsList">ResourceNewsList</abbr></a>    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Jikan-MyAnimeList-MalClient.html#method_getNewsSearch">getNewsSearch()</a>
+    <span>
+                                &nbsp;: <a href="classes/Jikan-Model-News-NewsList.html"><abbr title="\Jikan\Model\News\NewsList">NewsList</abbr></a>    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Jikan-MyAnimeList-MalClient.html#method_getNewsTags">getNewsTags()</a>
+    <span>
+                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
@@ -498,6 +522,12 @@
     <a href="classes/Jikan-MyAnimeList-MalClient.html#method_getRecentEpisodes">getRecentEpisodes()</a>
     <span>
                                 &nbsp;: <a href="classes/Jikan-Model-Watch-Episodes.html"><abbr title="\Jikan\Model\Watch\Episodes">Episodes</abbr></a>    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Jikan-MyAnimeList-MalClient.html#method_getRecentNews">getRecentNews()</a>
+    <span>
+                                &nbsp;: <a href="classes/Jikan-Model-News-NewsList.html"><abbr title="\Jikan\Model\News\NewsList">NewsList</abbr></a>    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
@@ -3225,6 +3255,142 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getNews">
+        getNews()
+        <a href="classes/Jikan-MyAnimeList-MalClient.html#method_getNews" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/MyAnimeList/MalClient.php"><a href="files/src-myanimelist-malclient.html"><abbr title="src/MyAnimeList/MalClient.php">MalClient.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">1450</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getNews</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Jikan-Request-News-NewsRequest.html"><abbr title="\Jikan\Request\News\NewsRequest">NewsRequest</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$request</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$request</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Jikan-Request-News-NewsRequest.html"><abbr title="\Jikan\Request\News\NewsRequest">NewsRequest</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/Jikan-MyAnimeList-MalClient.html#method_getNews#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Jikan-Exception-BadResponseException.html"><abbr title="\Jikan\Exception\BadResponseException">BadResponseException</abbr></a></span>
+                                                            
+                                             
+                                    </dd>
+                            <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Jikan-Exception-ParserException.html"><abbr title="\Jikan\Exception\ParserException">ParserException</abbr></a></span>
+                                                            
+                                             
+                                    </dd>
+                                            </dl>
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getNewsByTag">
+        getNewsByTag()
+        <a href="classes/Jikan-MyAnimeList-MalClient.html#method_getNewsByTag" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/MyAnimeList/MalClient.php"><a href="files/src-myanimelist-malclient.html"><abbr title="src/MyAnimeList/MalClient.php">MalClient.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">1395</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getNewsByTag</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Jikan-Request-News-NewsByTagRequest.html"><abbr title="\Jikan\Request\News\NewsByTagRequest">NewsByTagRequest</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$request</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Jikan-Model-News-NewsList.html"><abbr title="\Jikan\Model\News\NewsList">NewsList</abbr></a></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$request</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Jikan-Request-News-NewsByTagRequest.html"><abbr title="\Jikan\Request\News\NewsByTagRequest">NewsByTagRequest</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/Jikan-MyAnimeList-MalClient.html#method_getNewsByTag#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Jikan-Exception-BadResponseException.html"><abbr title="\Jikan\Exception\BadResponseException">BadResponseException</abbr></a></span>
+                                                            
+                                             
+                                    </dd>
+                            <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Jikan-Exception-ParserException.html"><abbr title="\Jikan\Exception\ParserException">ParserException</abbr></a></span>
+                                                            
+                                             
+                                    </dd>
+                                            </dl>
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Jikan-Model-News-NewsList.html"><abbr title="\Jikan\Model\News\NewsList">NewsList</abbr></a></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getNewsList">
         getNewsList()
         <a href="classes/Jikan-MyAnimeList-MalClient.html#method_getNewsList" class="headerlink"><i class="fas fa-link"></i></a>
@@ -3240,7 +3406,7 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getNewsList</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Jikan-Request-RequestInterface.html"><abbr title="\Jikan\Request\RequestInterface">RequestInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$request</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Jikan-Model-News-NewsList.html"><abbr title="\Jikan\Model\News\NewsList">NewsList</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">getNewsList</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Jikan-Request-RequestInterface.html"><abbr title="\Jikan\Request\RequestInterface">RequestInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$request</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Jikan-Model-News-ResourceNewsList.html"><abbr title="\Jikan\Model\News\ResourceNewsList">ResourceNewsList</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -3283,7 +3449,143 @@
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Jikan-Model-News-ResourceNewsList.html"><abbr title="\Jikan\Model\News\ResourceNewsList">ResourceNewsList</abbr></a></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getNewsSearch">
+        getNewsSearch()
+        <a href="classes/Jikan-MyAnimeList-MalClient.html#method_getNewsSearch" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/MyAnimeList/MalClient.php"><a href="files/src-myanimelist-malclient.html"><abbr title="src/MyAnimeList/MalClient.php">MalClient.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">1413</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getNewsSearch</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Jikan\Request\Search\NewsByTagRequest">NewsByTagRequest</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$request</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Jikan-Model-News-NewsList.html"><abbr title="\Jikan\Model\News\NewsList">NewsList</abbr></a></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$request</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Jikan\Request\Search\NewsByTagRequest">NewsByTagRequest</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/Jikan-MyAnimeList-MalClient.html#method_getNewsSearch#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Jikan-Exception-BadResponseException.html"><abbr title="\Jikan\Exception\BadResponseException">BadResponseException</abbr></a></span>
+                                                            
+                                             
+                                    </dd>
+                            <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Jikan-Exception-ParserException.html"><abbr title="\Jikan\Exception\ParserException">ParserException</abbr></a></span>
+                                                            
+                                             
+                                    </dd>
+                                            </dl>
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><a href="classes/Jikan-Model-News-NewsList.html"><abbr title="\Jikan\Model\News\NewsList">NewsList</abbr></a></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getNewsTags">
+        getNewsTags()
+        <a href="classes/Jikan-MyAnimeList-MalClient.html#method_getNewsTags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/MyAnimeList/MalClient.php"><a href="files/src-myanimelist-malclient.html"><abbr title="src/MyAnimeList/MalClient.php">MalClient.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">1431</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getNewsTags</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Jikan-Request-News-NewsTagsRequest.html"><abbr title="\Jikan\Request\News\NewsTagsRequest">NewsTagsRequest</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$request</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$request</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Jikan-Request-News-NewsTagsRequest.html"><abbr title="\Jikan\Request\News\NewsTagsRequest">NewsTagsRequest</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/Jikan-MyAnimeList-MalClient.html#method_getNewsTags#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Jikan-Exception-BadResponseException.html"><abbr title="\Jikan\Exception\BadResponseException">BadResponseException</abbr></a></span>
+                                                            
+                                             
+                                    </dd>
+                            <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Jikan-Exception-ParserException.html"><abbr title="\Jikan\Exception\ParserException">ParserException</abbr></a></span>
+                                                            
+                                             
+                                    </dd>
+                                            </dl>
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
             </section>
 
 </article>
@@ -3820,6 +4122,74 @@
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><a href="classes/Jikan-Model-Watch-Episodes.html"><abbr title="\Jikan\Model\Watch\Episodes">Episodes</abbr></a></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getRecentNews">
+        getRecentNews()
+        <a href="classes/Jikan-MyAnimeList-MalClient.html#method_getRecentNews" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/MyAnimeList/MalClient.php"><a href="files/src-myanimelist-malclient.html"><abbr title="src/MyAnimeList/MalClient.php">MalClient.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">1377</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getRecentNews</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Jikan-Request-News-RecentNewsRequest.html"><abbr title="\Jikan\Request\News\RecentNewsRequest">RecentNewsRequest</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$request</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Jikan-Model-News-NewsList.html"><abbr title="\Jikan\Model\News\NewsList">NewsList</abbr></a></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$request</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Jikan-Request-News-RecentNewsRequest.html"><abbr title="\Jikan\Request\News\RecentNewsRequest">RecentNewsRequest</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/Jikan-MyAnimeList-MalClient.html#method_getRecentNews#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Jikan-Exception-BadResponseException.html"><abbr title="\Jikan\Exception\BadResponseException">BadResponseException</abbr></a></span>
+                                                            
+                                             
+                                    </dd>
+                            <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Jikan-Exception-ParserException.html"><abbr title="\Jikan\Exception\ParserException">ParserException</abbr></a></span>
+                                                            
+                                             
+                                    </dd>
+                                            </dl>
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Jikan-Model-News-NewsList.html"><abbr title="\Jikan\Model\News\NewsList">NewsList</abbr></a></span>
             </section>
 
 </article>
@@ -5393,7 +5763,11 @@
                                             <li><a href="classes/Jikan-MyAnimeList-MalClient.html#method_getMangaReviews">getMangaReviews()</a></li>
                                             <li><a href="classes/Jikan-MyAnimeList-MalClient.html#method_getMangaSearch">getMangaSearch()</a></li>
                                             <li><a href="classes/Jikan-MyAnimeList-MalClient.html#method_getMangaStats">getMangaStats()</a></li>
+                                            <li><a href="classes/Jikan-MyAnimeList-MalClient.html#method_getNews">getNews()</a></li>
+                                            <li><a href="classes/Jikan-MyAnimeList-MalClient.html#method_getNewsByTag">getNewsByTag()</a></li>
                                             <li><a href="classes/Jikan-MyAnimeList-MalClient.html#method_getNewsList">getNewsList()</a></li>
+                                            <li><a href="classes/Jikan-MyAnimeList-MalClient.html#method_getNewsSearch">getNewsSearch()</a></li>
+                                            <li><a href="classes/Jikan-MyAnimeList-MalClient.html#method_getNewsTags">getNewsTags()</a></li>
                                             <li><a href="classes/Jikan-MyAnimeList-MalClient.html#method_getPerson">getPerson()</a></li>
                                             <li><a href="classes/Jikan-MyAnimeList-MalClient.html#method_getPersonPictures">getPersonPictures()</a></li>
                                             <li><a href="classes/Jikan-MyAnimeList-MalClient.html#method_getPersonSearch">getPersonSearch()</a></li>
@@ -5402,6 +5776,7 @@
                                             <li><a href="classes/Jikan-MyAnimeList-MalClient.html#method_getProducer">getProducer()</a></li>
                                             <li><a href="classes/Jikan-MyAnimeList-MalClient.html#method_getProducers">getProducers()</a></li>
                                             <li><a href="classes/Jikan-MyAnimeList-MalClient.html#method_getRecentEpisodes">getRecentEpisodes()</a></li>
+                                            <li><a href="classes/Jikan-MyAnimeList-MalClient.html#method_getRecentNews">getRecentNews()</a></li>
                                             <li><a href="classes/Jikan-MyAnimeList-MalClient.html#method_getRecentOnlineUsers">getRecentOnlineUsers()</a></li>
                                             <li><a href="classes/Jikan-MyAnimeList-MalClient.html#method_getRecentPromotionalVideos">getRecentPromotionalVideos()</a></li>
                                             <li><a href="classes/Jikan-MyAnimeList-MalClient.html#method_getRecentRecommendations">getRecentRecommendations()</a></li>

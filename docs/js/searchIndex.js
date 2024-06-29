@@ -1686,6 +1686,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Jikan-Helper-JString.html#method_isStringFloat"
         },                {
+            "fqsen": "\\Jikan\\Helper\\JString\u003A\u003AifEmptyStringReturnNull\u0028\u0029",
+            "name": "ifEmptyStringReturnNull",
+            "summary": "",
+            "url": "classes/Jikan-Helper-JString.html#method_ifEmptyStringReturnNull"
+        },                {
             "fqsen": "\\Jikan\\Helper\\MalUrlExtractor",
             "name": "MalUrlExtractor",
             "summary": "Class\u0020MalUrlExtractor",
@@ -1760,6 +1765,11 @@ Search.appendIndex(
             "name": "idFromUrl",
             "summary": "Extract\u0020the\u0020id\u0020from\u0020a\u0020mal\u0020url",
             "url": "classes/Jikan-Helper-Parser.html#method_idFromUrl"
+        },                {
+            "fqsen": "\\Jikan\\Helper\\Parser\u003A\u003AstringIdFromUrl\u0028\u0029",
+            "name": "stringIdFromUrl",
+            "summary": "Extract\u0020a\u0020string\u0020id\u0020from\u0020a\u0020mal\u0020url",
+            "url": "classes/Jikan-Helper-Parser.html#method_stringIdFromUrl"
         },                {
             "fqsen": "\\Jikan\\Helper\\Parser\u003A\u003AclubIdFromUrl\u0028\u0029",
             "name": "clubIdFromUrl",
@@ -4571,6 +4581,111 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Jikan-Model-Common-MusicMeta.html#property_author"
         },                {
+            "fqsen": "\\Jikan\\Model\\Common\\NewsMeta",
+            "name": "NewsMeta",
+            "summary": "Class\u0020NewsMeta",
+            "url": "classes/Jikan-Model-Common-NewsMeta.html"
+        },                {
+            "fqsen": "\\Jikan\\Model\\Common\\NewsMeta\u003A\u003AfromParser\u0028\u0029",
+            "name": "fromParser",
+            "summary": "",
+            "url": "classes/Jikan-Model-Common-NewsMeta.html#method_fromParser"
+        },                {
+            "fqsen": "\\Jikan\\Model\\Common\\NewsMeta\u003A\u003A__toString\u0028\u0029",
+            "name": "__toString",
+            "summary": "",
+            "url": "classes/Jikan-Model-Common-NewsMeta.html#method___toString"
+        },                {
+            "fqsen": "\\Jikan\\Model\\Common\\NewsMeta\u003A\u003AgetMalId\u0028\u0029",
+            "name": "getMalId",
+            "summary": "",
+            "url": "classes/Jikan-Model-Common-NewsMeta.html#method_getMalId"
+        },                {
+            "fqsen": "\\Jikan\\Model\\Common\\NewsMeta\u003A\u003AgetUrl\u0028\u0029",
+            "name": "getUrl",
+            "summary": "",
+            "url": "classes/Jikan-Model-Common-NewsMeta.html#method_getUrl"
+        },                {
+            "fqsen": "\\Jikan\\Model\\Common\\NewsMeta\u003A\u003AgetTitle\u0028\u0029",
+            "name": "getTitle",
+            "summary": "",
+            "url": "classes/Jikan-Model-Common-NewsMeta.html#method_getTitle"
+        },                {
+            "fqsen": "\\Jikan\\Model\\Common\\NewsMeta\u003A\u003AgetDate\u0028\u0029",
+            "name": "getDate",
+            "summary": "",
+            "url": "classes/Jikan-Model-Common-NewsMeta.html#method_getDate"
+        },                {
+            "fqsen": "\\Jikan\\Model\\Common\\NewsMeta\u003A\u003AgetAuthorUsername\u0028\u0029",
+            "name": "getAuthorUsername",
+            "summary": "",
+            "url": "classes/Jikan-Model-Common-NewsMeta.html#method_getAuthorUsername"
+        },                {
+            "fqsen": "\\Jikan\\Model\\Common\\NewsMeta\u003A\u003AgetAuthorUrl\u0028\u0029",
+            "name": "getAuthorUrl",
+            "summary": "",
+            "url": "classes/Jikan-Model-Common-NewsMeta.html#method_getAuthorUrl"
+        },                {
+            "fqsen": "\\Jikan\\Model\\Common\\NewsMeta\u003A\u003AgetForumUrl\u0028\u0029",
+            "name": "getForumUrl",
+            "summary": "",
+            "url": "classes/Jikan-Model-Common-NewsMeta.html#method_getForumUrl"
+        },                {
+            "fqsen": "\\Jikan\\Model\\Common\\NewsMeta\u003A\u003AgetImages\u0028\u0029",
+            "name": "getImages",
+            "summary": "",
+            "url": "classes/Jikan-Model-Common-NewsMeta.html#method_getImages"
+        },                {
+            "fqsen": "\\Jikan\\Model\\Common\\NewsMeta\u003A\u003AgetComments\u0028\u0029",
+            "name": "getComments",
+            "summary": "",
+            "url": "classes/Jikan-Model-Common-NewsMeta.html#method_getComments"
+        },                {
+            "fqsen": "\\Jikan\\Model\\Common\\NewsMeta\u003A\u003A\u0024malId",
+            "name": "malId",
+            "summary": "",
+            "url": "classes/Jikan-Model-Common-NewsMeta.html#property_malId"
+        },                {
+            "fqsen": "\\Jikan\\Model\\Common\\NewsMeta\u003A\u003A\u0024url",
+            "name": "url",
+            "summary": "",
+            "url": "classes/Jikan-Model-Common-NewsMeta.html#property_url"
+        },                {
+            "fqsen": "\\Jikan\\Model\\Common\\NewsMeta\u003A\u003A\u0024title",
+            "name": "title",
+            "summary": "",
+            "url": "classes/Jikan-Model-Common-NewsMeta.html#property_title"
+        },                {
+            "fqsen": "\\Jikan\\Model\\Common\\NewsMeta\u003A\u003A\u0024date",
+            "name": "date",
+            "summary": "",
+            "url": "classes/Jikan-Model-Common-NewsMeta.html#property_date"
+        },                {
+            "fqsen": "\\Jikan\\Model\\Common\\NewsMeta\u003A\u003A\u0024authorUsername",
+            "name": "authorUsername",
+            "summary": "",
+            "url": "classes/Jikan-Model-Common-NewsMeta.html#property_authorUsername"
+        },                {
+            "fqsen": "\\Jikan\\Model\\Common\\NewsMeta\u003A\u003A\u0024authorUrl",
+            "name": "authorUrl",
+            "summary": "",
+            "url": "classes/Jikan-Model-Common-NewsMeta.html#property_authorUrl"
+        },                {
+            "fqsen": "\\Jikan\\Model\\Common\\NewsMeta\u003A\u003A\u0024forumUrl",
+            "name": "forumUrl",
+            "summary": "",
+            "url": "classes/Jikan-Model-Common-NewsMeta.html#property_forumUrl"
+        },                {
+            "fqsen": "\\Jikan\\Model\\Common\\NewsMeta\u003A\u003A\u0024images",
+            "name": "images",
+            "summary": "",
+            "url": "classes/Jikan-Model-Common-NewsMeta.html#property_images"
+        },                {
+            "fqsen": "\\Jikan\\Model\\Common\\NewsMeta\u003A\u003A\u0024comments",
+            "name": "comments",
+            "summary": "",
+            "url": "classes/Jikan-Model-Common-NewsMeta.html#property_comments"
+        },                {
             "fqsen": "\\Jikan\\Model\\Common\\Ography",
             "name": "Ography",
             "summary": "Class\u0020Ography",
@@ -4705,6 +4820,111 @@ Search.appendIndex(
             "name": "votes",
             "summary": "",
             "url": "classes/Jikan-Model-Common-Recommendation.html#property_votes"
+        },                {
+            "fqsen": "\\Jikan\\Model\\Common\\TagMeta",
+            "name": "TagMeta",
+            "summary": "Class\u0020ItemMeta",
+            "url": "classes/Jikan-Model-Common-TagMeta.html"
+        },                {
+            "fqsen": "\\Jikan\\Model\\Common\\TagMeta\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Jikan-Model-Common-TagMeta.html#method___construct"
+        },                {
+            "fqsen": "\\Jikan\\Model\\Common\\TagMeta\u003A\u003AgetName\u0028\u0029",
+            "name": "getName",
+            "summary": "",
+            "url": "classes/Jikan-Model-Common-TagMeta.html#method_getName"
+        },                {
+            "fqsen": "\\Jikan\\Model\\Common\\TagMeta\u003A\u003AgetMalId\u0028\u0029",
+            "name": "getMalId",
+            "summary": "",
+            "url": "classes/Jikan-Model-Common-TagMeta.html#method_getMalId"
+        },                {
+            "fqsen": "\\Jikan\\Model\\Common\\TagMeta\u003A\u003AgetUrl\u0028\u0029",
+            "name": "getUrl",
+            "summary": "",
+            "url": "classes/Jikan-Model-Common-TagMeta.html#method_getUrl"
+        },                {
+            "fqsen": "\\Jikan\\Model\\Common\\TagMeta\u003A\u003AgetType\u0028\u0029",
+            "name": "getType",
+            "summary": "",
+            "url": "classes/Jikan-Model-Common-TagMeta.html#method_getType"
+        },                {
+            "fqsen": "\\Jikan\\Model\\Common\\TagMeta\u003A\u003AgetDescription\u0028\u0029",
+            "name": "getDescription",
+            "summary": "",
+            "url": "classes/Jikan-Model-Common-TagMeta.html#method_getDescription"
+        },                {
+            "fqsen": "\\Jikan\\Model\\Common\\TagMeta\u003A\u003A\u0024name",
+            "name": "name",
+            "summary": "",
+            "url": "classes/Jikan-Model-Common-TagMeta.html#property_name"
+        },                {
+            "fqsen": "\\Jikan\\Model\\Common\\TagMeta\u003A\u003A\u0024malId",
+            "name": "malId",
+            "summary": "",
+            "url": "classes/Jikan-Model-Common-TagMeta.html#property_malId"
+        },                {
+            "fqsen": "\\Jikan\\Model\\Common\\TagMeta\u003A\u003A\u0024url",
+            "name": "url",
+            "summary": "",
+            "url": "classes/Jikan-Model-Common-TagMeta.html#property_url"
+        },                {
+            "fqsen": "\\Jikan\\Model\\Common\\TagMeta\u003A\u003A\u0024type",
+            "name": "type",
+            "summary": "",
+            "url": "classes/Jikan-Model-Common-TagMeta.html#property_type"
+        },                {
+            "fqsen": "\\Jikan\\Model\\Common\\TagMeta\u003A\u003A\u0024description",
+            "name": "description",
+            "summary": "",
+            "url": "classes/Jikan-Model-Common-TagMeta.html#property_description"
+        },                {
+            "fqsen": "\\Jikan\\Model\\Common\\TagUrl",
+            "name": "TagUrl",
+            "summary": "Class\u0020Url",
+            "url": "classes/Jikan-Model-Common-TagUrl.html"
+        },                {
+            "fqsen": "\\Jikan\\Model\\Common\\TagUrl\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Genre\u0020constructor.",
+            "url": "classes/Jikan-Model-Common-TagUrl.html#method___construct"
+        },                {
+            "fqsen": "\\Jikan\\Model\\Common\\TagUrl\u003A\u003A__toString\u0028\u0029",
+            "name": "__toString",
+            "summary": "",
+            "url": "classes/Jikan-Model-Common-TagUrl.html#method___toString"
+        },                {
+            "fqsen": "\\Jikan\\Model\\Common\\TagUrl\u003A\u003AgetMalId\u0028\u0029",
+            "name": "getMalId",
+            "summary": "",
+            "url": "classes/Jikan-Model-Common-TagUrl.html#method_getMalId"
+        },                {
+            "fqsen": "\\Jikan\\Model\\Common\\TagUrl\u003A\u003AgetName\u0028\u0029",
+            "name": "getName",
+            "summary": "",
+            "url": "classes/Jikan-Model-Common-TagUrl.html#method_getName"
+        },                {
+            "fqsen": "\\Jikan\\Model\\Common\\TagUrl\u003A\u003AgetUrl\u0028\u0029",
+            "name": "getUrl",
+            "summary": "",
+            "url": "classes/Jikan-Model-Common-TagUrl.html#method_getUrl"
+        },                {
+            "fqsen": "\\Jikan\\Model\\Common\\TagUrl\u003A\u003A\u0024malId",
+            "name": "malId",
+            "summary": "",
+            "url": "classes/Jikan-Model-Common-TagUrl.html#property_malId"
+        },                {
+            "fqsen": "\\Jikan\\Model\\Common\\TagUrl\u003A\u003A\u0024name",
+            "name": "name",
+            "summary": "",
+            "url": "classes/Jikan-Model-Common-TagUrl.html#property_name"
+        },                {
+            "fqsen": "\\Jikan\\Model\\Common\\TagUrl\u003A\u003A\u0024url",
+            "name": "url",
+            "summary": "",
+            "url": "classes/Jikan-Model-Common-TagUrl.html#property_url"
         },                {
             "fqsen": "\\Jikan\\Model\\Common\\Title",
             "name": "Title",
@@ -6341,6 +6561,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Jikan-Model-News-NewsList.html#method_mock"
         },                {
+            "fqsen": "\\Jikan\\Model\\News\\NewsList\u003A\u003AgetResults\u0028\u0029",
+            "name": "getResults",
+            "summary": "",
+            "url": "classes/Jikan-Model-News-NewsList.html#method_getResults"
+        },                {
             "fqsen": "\\Jikan\\Model\\News\\NewsList\u003A\u003A\u0024hasNextPage",
             "name": "hasNextPage",
             "summary": "",
@@ -6350,11 +6575,6 @@ Search.appendIndex(
             "name": "getLastVisiblePage",
             "summary": "",
             "url": "classes/Jikan-Model-News-NewsList.html#method_getLastVisiblePage"
-        },                {
-            "fqsen": "\\Jikan\\Model\\News\\NewsList\u003A\u003AgetResults\u0028\u0029",
-            "name": "getResults",
-            "summary": "",
-            "url": "classes/Jikan-Model-News-NewsList.html#method_getResults"
         },                {
             "fqsen": "\\Jikan\\Model\\News\\NewsList\u003A\u003A\u0024lastVisiblePage",
             "name": "lastVisiblePage",
@@ -6421,6 +6641,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Jikan-Model-News-NewsListItem.html#method_getExcerpt"
         },                {
+            "fqsen": "\\Jikan\\Model\\News\\NewsListItem\u003A\u003AgetTags\u0028\u0029",
+            "name": "getTags",
+            "summary": "",
+            "url": "classes/Jikan-Model-News-NewsListItem.html#method_getTags"
+        },                {
             "fqsen": "\\Jikan\\Model\\News\\NewsListItem\u003A\u003A\u0024malId",
             "name": "malId",
             "summary": "",
@@ -6470,6 +6695,296 @@ Search.appendIndex(
             "name": "excerpt",
             "summary": "",
             "url": "classes/Jikan-Model-News-NewsListItem.html#property_excerpt"
+        },                {
+            "fqsen": "\\Jikan\\Model\\News\\NewsListItem\u003A\u003A\u0024tags",
+            "name": "tags",
+            "summary": "",
+            "url": "classes/Jikan-Model-News-NewsListItem.html#property_tags"
+        },                {
+            "fqsen": "\\Jikan\\Model\\News\\ResourceNews",
+            "name": "ResourceNews",
+            "summary": "Class\u0020AnimeParser",
+            "url": "classes/Jikan-Model-News-ResourceNews.html"
+        },                {
+            "fqsen": "\\Jikan\\Model\\News\\ResourceNews\u003A\u003AfromParser\u0028\u0029",
+            "name": "fromParser",
+            "summary": "",
+            "url": "classes/Jikan-Model-News-ResourceNews.html#method_fromParser"
+        },                {
+            "fqsen": "\\Jikan\\Model\\News\\ResourceNews\u003A\u003AgetMalId\u0028\u0029",
+            "name": "getMalId",
+            "summary": "",
+            "url": "classes/Jikan-Model-News-ResourceNews.html#method_getMalId"
+        },                {
+            "fqsen": "\\Jikan\\Model\\News\\ResourceNews\u003A\u003AgetUrl\u0028\u0029",
+            "name": "getUrl",
+            "summary": "",
+            "url": "classes/Jikan-Model-News-ResourceNews.html#method_getUrl"
+        },                {
+            "fqsen": "\\Jikan\\Model\\News\\ResourceNews\u003A\u003AgetTitle\u0028\u0029",
+            "name": "getTitle",
+            "summary": "",
+            "url": "classes/Jikan-Model-News-ResourceNews.html#method_getTitle"
+        },                {
+            "fqsen": "\\Jikan\\Model\\News\\ResourceNews\u003A\u003AgetDate\u0028\u0029",
+            "name": "getDate",
+            "summary": "",
+            "url": "classes/Jikan-Model-News-ResourceNews.html#method_getDate"
+        },                {
+            "fqsen": "\\Jikan\\Model\\News\\ResourceNews\u003A\u003AgetAuthorUsername\u0028\u0029",
+            "name": "getAuthorUsername",
+            "summary": "",
+            "url": "classes/Jikan-Model-News-ResourceNews.html#method_getAuthorUsername"
+        },                {
+            "fqsen": "\\Jikan\\Model\\News\\ResourceNews\u003A\u003AgetAuthorUrl\u0028\u0029",
+            "name": "getAuthorUrl",
+            "summary": "",
+            "url": "classes/Jikan-Model-News-ResourceNews.html#method_getAuthorUrl"
+        },                {
+            "fqsen": "\\Jikan\\Model\\News\\ResourceNews\u003A\u003AgetForumUrl\u0028\u0029",
+            "name": "getForumUrl",
+            "summary": "",
+            "url": "classes/Jikan-Model-News-ResourceNews.html#method_getForumUrl"
+        },                {
+            "fqsen": "\\Jikan\\Model\\News\\ResourceNews\u003A\u003AgetImages\u0028\u0029",
+            "name": "getImages",
+            "summary": "",
+            "url": "classes/Jikan-Model-News-ResourceNews.html#method_getImages"
+        },                {
+            "fqsen": "\\Jikan\\Model\\News\\ResourceNews\u003A\u003AgetComments\u0028\u0029",
+            "name": "getComments",
+            "summary": "",
+            "url": "classes/Jikan-Model-News-ResourceNews.html#method_getComments"
+        },                {
+            "fqsen": "\\Jikan\\Model\\News\\ResourceNews\u003A\u003AgetTags\u0028\u0029",
+            "name": "getTags",
+            "summary": "",
+            "url": "classes/Jikan-Model-News-ResourceNews.html#method_getTags"
+        },                {
+            "fqsen": "\\Jikan\\Model\\News\\ResourceNews\u003A\u003AgetContent\u0028\u0029",
+            "name": "getContent",
+            "summary": "",
+            "url": "classes/Jikan-Model-News-ResourceNews.html#method_getContent"
+        },                {
+            "fqsen": "\\Jikan\\Model\\News\\ResourceNews\u003A\u003AgetRelatedEntries\u0028\u0029",
+            "name": "getRelatedEntries",
+            "summary": "",
+            "url": "classes/Jikan-Model-News-ResourceNews.html#method_getRelatedEntries"
+        },                {
+            "fqsen": "\\Jikan\\Model\\News\\ResourceNews\u003A\u003AgetRelatedNews\u0028\u0029",
+            "name": "getRelatedNews",
+            "summary": "",
+            "url": "classes/Jikan-Model-News-ResourceNews.html#method_getRelatedNews"
+        },                {
+            "fqsen": "\\Jikan\\Model\\News\\ResourceNews\u003A\u003A\u0024malId",
+            "name": "malId",
+            "summary": "",
+            "url": "classes/Jikan-Model-News-ResourceNews.html#property_malId"
+        },                {
+            "fqsen": "\\Jikan\\Model\\News\\ResourceNews\u003A\u003A\u0024url",
+            "name": "url",
+            "summary": "",
+            "url": "classes/Jikan-Model-News-ResourceNews.html#property_url"
+        },                {
+            "fqsen": "\\Jikan\\Model\\News\\ResourceNews\u003A\u003A\u0024title",
+            "name": "title",
+            "summary": "",
+            "url": "classes/Jikan-Model-News-ResourceNews.html#property_title"
+        },                {
+            "fqsen": "\\Jikan\\Model\\News\\ResourceNews\u003A\u003A\u0024date",
+            "name": "date",
+            "summary": "",
+            "url": "classes/Jikan-Model-News-ResourceNews.html#property_date"
+        },                {
+            "fqsen": "\\Jikan\\Model\\News\\ResourceNews\u003A\u003A\u0024authorUsername",
+            "name": "authorUsername",
+            "summary": "",
+            "url": "classes/Jikan-Model-News-ResourceNews.html#property_authorUsername"
+        },                {
+            "fqsen": "\\Jikan\\Model\\News\\ResourceNews\u003A\u003A\u0024authorUrl",
+            "name": "authorUrl",
+            "summary": "",
+            "url": "classes/Jikan-Model-News-ResourceNews.html#property_authorUrl"
+        },                {
+            "fqsen": "\\Jikan\\Model\\News\\ResourceNews\u003A\u003A\u0024forumUrl",
+            "name": "forumUrl",
+            "summary": "",
+            "url": "classes/Jikan-Model-News-ResourceNews.html#property_forumUrl"
+        },                {
+            "fqsen": "\\Jikan\\Model\\News\\ResourceNews\u003A\u003A\u0024images",
+            "name": "images",
+            "summary": "",
+            "url": "classes/Jikan-Model-News-ResourceNews.html#property_images"
+        },                {
+            "fqsen": "\\Jikan\\Model\\News\\ResourceNews\u003A\u003A\u0024comments",
+            "name": "comments",
+            "summary": "",
+            "url": "classes/Jikan-Model-News-ResourceNews.html#property_comments"
+        },                {
+            "fqsen": "\\Jikan\\Model\\News\\ResourceNews\u003A\u003A\u0024tags",
+            "name": "tags",
+            "summary": "",
+            "url": "classes/Jikan-Model-News-ResourceNews.html#property_tags"
+        },                {
+            "fqsen": "\\Jikan\\Model\\News\\ResourceNews\u003A\u003A\u0024content",
+            "name": "content",
+            "summary": "",
+            "url": "classes/Jikan-Model-News-ResourceNews.html#property_content"
+        },                {
+            "fqsen": "\\Jikan\\Model\\News\\ResourceNews\u003A\u003A\u0024relatedEntries",
+            "name": "relatedEntries",
+            "summary": "",
+            "url": "classes/Jikan-Model-News-ResourceNews.html#property_relatedEntries"
+        },                {
+            "fqsen": "\\Jikan\\Model\\News\\ResourceNews\u003A\u003A\u0024relatedNews",
+            "name": "relatedNews",
+            "summary": "",
+            "url": "classes/Jikan-Model-News-ResourceNews.html#property_relatedNews"
+        },                {
+            "fqsen": "\\Jikan\\Model\\News\\ResourceNewsList",
+            "name": "ResourceNewsList",
+            "summary": "Class\u0020ResourceNewsList",
+            "url": "classes/Jikan-Model-News-ResourceNewsList.html"
+        },                {
+            "fqsen": "\\Jikan\\Model\\News\\ResourceNewsList\u003A\u003AfromParser\u0028\u0029",
+            "name": "fromParser",
+            "summary": "",
+            "url": "classes/Jikan-Model-News-ResourceNewsList.html#method_fromParser"
+        },                {
+            "fqsen": "\\Jikan\\Model\\News\\ResourceNewsList\u003A\u003Amock\u0028\u0029",
+            "name": "mock",
+            "summary": "",
+            "url": "classes/Jikan-Model-News-ResourceNewsList.html#method_mock"
+        },                {
+            "fqsen": "\\Jikan\\Model\\News\\ResourceNewsList\u003A\u003A\u0024hasNextPage",
+            "name": "hasNextPage",
+            "summary": "",
+            "url": "classes/Jikan-Model-News-ResourceNewsList.html#property_hasNextPage"
+        },                {
+            "fqsen": "\\Jikan\\Model\\News\\ResourceNewsList\u003A\u003AgetLastVisiblePage\u0028\u0029",
+            "name": "getLastVisiblePage",
+            "summary": "",
+            "url": "classes/Jikan-Model-News-ResourceNewsList.html#method_getLastVisiblePage"
+        },                {
+            "fqsen": "\\Jikan\\Model\\News\\ResourceNewsList\u003A\u003AgetResults\u0028\u0029",
+            "name": "getResults",
+            "summary": "",
+            "url": "classes/Jikan-Model-News-ResourceNewsList.html#method_getResults"
+        },                {
+            "fqsen": "\\Jikan\\Model\\News\\ResourceNewsList\u003A\u003A\u0024lastVisiblePage",
+            "name": "lastVisiblePage",
+            "summary": "",
+            "url": "classes/Jikan-Model-News-ResourceNewsList.html#property_lastVisiblePage"
+        },                {
+            "fqsen": "\\Jikan\\Model\\News\\ResourceNewsListItem",
+            "name": "ResourceNewsListItem",
+            "summary": "Class\u0020AnimeParser",
+            "url": "classes/Jikan-Model-News-ResourceNewsListItem.html"
+        },                {
+            "fqsen": "\\Jikan\\Model\\News\\ResourceNewsListItem\u003A\u003AfromParser\u0028\u0029",
+            "name": "fromParser",
+            "summary": "",
+            "url": "classes/Jikan-Model-News-ResourceNewsListItem.html#method_fromParser"
+        },                {
+            "fqsen": "\\Jikan\\Model\\News\\ResourceNewsListItem\u003A\u003AgetMalId\u0028\u0029",
+            "name": "getMalId",
+            "summary": "",
+            "url": "classes/Jikan-Model-News-ResourceNewsListItem.html#method_getMalId"
+        },                {
+            "fqsen": "\\Jikan\\Model\\News\\ResourceNewsListItem\u003A\u003AgetUrl\u0028\u0029",
+            "name": "getUrl",
+            "summary": "",
+            "url": "classes/Jikan-Model-News-ResourceNewsListItem.html#method_getUrl"
+        },                {
+            "fqsen": "\\Jikan\\Model\\News\\ResourceNewsListItem\u003A\u003AgetTitle\u0028\u0029",
+            "name": "getTitle",
+            "summary": "",
+            "url": "classes/Jikan-Model-News-ResourceNewsListItem.html#method_getTitle"
+        },                {
+            "fqsen": "\\Jikan\\Model\\News\\ResourceNewsListItem\u003A\u003AgetDate\u0028\u0029",
+            "name": "getDate",
+            "summary": "",
+            "url": "classes/Jikan-Model-News-ResourceNewsListItem.html#method_getDate"
+        },                {
+            "fqsen": "\\Jikan\\Model\\News\\ResourceNewsListItem\u003A\u003AgetAuthorUsername\u0028\u0029",
+            "name": "getAuthorUsername",
+            "summary": "",
+            "url": "classes/Jikan-Model-News-ResourceNewsListItem.html#method_getAuthorUsername"
+        },                {
+            "fqsen": "\\Jikan\\Model\\News\\ResourceNewsListItem\u003A\u003AgetAuthorUrl\u0028\u0029",
+            "name": "getAuthorUrl",
+            "summary": "",
+            "url": "classes/Jikan-Model-News-ResourceNewsListItem.html#method_getAuthorUrl"
+        },                {
+            "fqsen": "\\Jikan\\Model\\News\\ResourceNewsListItem\u003A\u003AgetForumUrl\u0028\u0029",
+            "name": "getForumUrl",
+            "summary": "",
+            "url": "classes/Jikan-Model-News-ResourceNewsListItem.html#method_getForumUrl"
+        },                {
+            "fqsen": "\\Jikan\\Model\\News\\ResourceNewsListItem\u003A\u003AgetImages\u0028\u0029",
+            "name": "getImages",
+            "summary": "",
+            "url": "classes/Jikan-Model-News-ResourceNewsListItem.html#method_getImages"
+        },                {
+            "fqsen": "\\Jikan\\Model\\News\\ResourceNewsListItem\u003A\u003AgetComments\u0028\u0029",
+            "name": "getComments",
+            "summary": "",
+            "url": "classes/Jikan-Model-News-ResourceNewsListItem.html#method_getComments"
+        },                {
+            "fqsen": "\\Jikan\\Model\\News\\ResourceNewsListItem\u003A\u003AgetExcerpt\u0028\u0029",
+            "name": "getExcerpt",
+            "summary": "",
+            "url": "classes/Jikan-Model-News-ResourceNewsListItem.html#method_getExcerpt"
+        },                {
+            "fqsen": "\\Jikan\\Model\\News\\ResourceNewsListItem\u003A\u003A\u0024malId",
+            "name": "malId",
+            "summary": "",
+            "url": "classes/Jikan-Model-News-ResourceNewsListItem.html#property_malId"
+        },                {
+            "fqsen": "\\Jikan\\Model\\News\\ResourceNewsListItem\u003A\u003A\u0024url",
+            "name": "url",
+            "summary": "",
+            "url": "classes/Jikan-Model-News-ResourceNewsListItem.html#property_url"
+        },                {
+            "fqsen": "\\Jikan\\Model\\News\\ResourceNewsListItem\u003A\u003A\u0024title",
+            "name": "title",
+            "summary": "",
+            "url": "classes/Jikan-Model-News-ResourceNewsListItem.html#property_title"
+        },                {
+            "fqsen": "\\Jikan\\Model\\News\\ResourceNewsListItem\u003A\u003A\u0024date",
+            "name": "date",
+            "summary": "",
+            "url": "classes/Jikan-Model-News-ResourceNewsListItem.html#property_date"
+        },                {
+            "fqsen": "\\Jikan\\Model\\News\\ResourceNewsListItem\u003A\u003A\u0024authorUsername",
+            "name": "authorUsername",
+            "summary": "",
+            "url": "classes/Jikan-Model-News-ResourceNewsListItem.html#property_authorUsername"
+        },                {
+            "fqsen": "\\Jikan\\Model\\News\\ResourceNewsListItem\u003A\u003A\u0024authorUrl",
+            "name": "authorUrl",
+            "summary": "",
+            "url": "classes/Jikan-Model-News-ResourceNewsListItem.html#property_authorUrl"
+        },                {
+            "fqsen": "\\Jikan\\Model\\News\\ResourceNewsListItem\u003A\u003A\u0024forumUrl",
+            "name": "forumUrl",
+            "summary": "",
+            "url": "classes/Jikan-Model-News-ResourceNewsListItem.html#property_forumUrl"
+        },                {
+            "fqsen": "\\Jikan\\Model\\News\\ResourceNewsListItem\u003A\u003A\u0024images",
+            "name": "images",
+            "summary": "",
+            "url": "classes/Jikan-Model-News-ResourceNewsListItem.html#property_images"
+        },                {
+            "fqsen": "\\Jikan\\Model\\News\\ResourceNewsListItem\u003A\u003A\u0024comments",
+            "name": "comments",
+            "summary": "",
+            "url": "classes/Jikan-Model-News-ResourceNewsListItem.html#property_comments"
+        },                {
+            "fqsen": "\\Jikan\\Model\\News\\ResourceNewsListItem\u003A\u003A\u0024excerpt",
+            "name": "excerpt",
+            "summary": "",
+            "url": "classes/Jikan-Model-News-ResourceNewsListItem.html#property_excerpt"
         },                {
             "fqsen": "\\Jikan\\Model\\Person\\AnimeStaffPosition",
             "name": "AnimeStaffPosition",
@@ -7425,6 +7940,71 @@ Search.appendIndex(
             "name": "largeImageUrl",
             "summary": "",
             "url": "classes/Jikan-Model-Resource-CommonImageResource-Webp.html#property_largeImageUrl"
+        },                {
+            "fqsen": "\\Jikan\\Model\\Resource\\NewsImageResource\\Jpg",
+            "name": "Jpg",
+            "summary": "Class\u0020Jpg",
+            "url": "classes/Jikan-Model-Resource-NewsImageResource-Jpg.html"
+        },                {
+            "fqsen": "\\Jikan\\Model\\Resource\\NewsImageResource\\Jpg\u003A\u003Afactory\u0028\u0029",
+            "name": "factory",
+            "summary": "",
+            "url": "classes/Jikan-Model-Resource-NewsImageResource-Jpg.html#method_factory"
+        },                {
+            "fqsen": "\\Jikan\\Model\\Resource\\NewsImageResource\\Jpg\u003A\u003AgetImageUrl\u0028\u0029",
+            "name": "getImageUrl",
+            "summary": "",
+            "url": "classes/Jikan-Model-Resource-NewsImageResource-Jpg.html#method_getImageUrl"
+        },                {
+            "fqsen": "\\Jikan\\Model\\Resource\\NewsImageResource\\Jpg\u003A\u003AgetSmallImageUrl\u0028\u0029",
+            "name": "getSmallImageUrl",
+            "summary": "",
+            "url": "classes/Jikan-Model-Resource-NewsImageResource-Jpg.html#method_getSmallImageUrl"
+        },                {
+            "fqsen": "\\Jikan\\Model\\Resource\\NewsImageResource\\Jpg\u003A\u003AgetLargeImageUrl\u0028\u0029",
+            "name": "getLargeImageUrl",
+            "summary": "",
+            "url": "classes/Jikan-Model-Resource-NewsImageResource-Jpg.html#method_getLargeImageUrl"
+        },                {
+            "fqsen": "\\Jikan\\Model\\Resource\\NewsImageResource\\Jpg\u003A\u003A\u0024imageUrl",
+            "name": "imageUrl",
+            "summary": "",
+            "url": "classes/Jikan-Model-Resource-NewsImageResource-Jpg.html#property_imageUrl"
+        },                {
+            "fqsen": "\\Jikan\\Model\\Resource\\NewsImageResource\\Jpg\u003A\u003A\u0024smallImageUrl",
+            "name": "smallImageUrl",
+            "summary": "",
+            "url": "classes/Jikan-Model-Resource-NewsImageResource-Jpg.html#property_smallImageUrl"
+        },                {
+            "fqsen": "\\Jikan\\Model\\Resource\\NewsImageResource\\Jpg\u003A\u003A\u0024largeImageUrl",
+            "name": "largeImageUrl",
+            "summary": "",
+            "url": "classes/Jikan-Model-Resource-NewsImageResource-Jpg.html#property_largeImageUrl"
+        },                {
+            "fqsen": "\\Jikan\\Model\\Resource\\NewsImageResource\\NewsImageResource",
+            "name": "NewsImageResource",
+            "summary": "Class\u0020NewsImageResource",
+            "url": "classes/Jikan-Model-Resource-NewsImageResource-NewsImageResource.html"
+        },                {
+            "fqsen": "\\Jikan\\Model\\Resource\\NewsImageResource\\NewsImageResource\u003A\u003Afactory\u0028\u0029",
+            "name": "factory",
+            "summary": "",
+            "url": "classes/Jikan-Model-Resource-NewsImageResource-NewsImageResource.html#method_factory"
+        },                {
+            "fqsen": "\\Jikan\\Model\\Resource\\NewsImageResource\\NewsImageResource\u003A\u003A__toString\u0028\u0029",
+            "name": "__toString",
+            "summary": "",
+            "url": "classes/Jikan-Model-Resource-NewsImageResource-NewsImageResource.html#method___toString"
+        },                {
+            "fqsen": "\\Jikan\\Model\\Resource\\NewsImageResource\\NewsImageResource\u003A\u003AgetJpg\u0028\u0029",
+            "name": "getJpg",
+            "summary": "",
+            "url": "classes/Jikan-Model-Resource-NewsImageResource-NewsImageResource.html#method_getJpg"
+        },                {
+            "fqsen": "\\Jikan\\Model\\Resource\\NewsImageResource\\NewsImageResource\u003A\u003A\u0024jpg",
+            "name": "jpg",
+            "summary": "",
+            "url": "classes/Jikan-Model-Resource-NewsImageResource-NewsImageResource.html#property_jpg"
         },                {
             "fqsen": "\\Jikan\\Model\\Resource\\PersonImageResource\\Jpg",
             "name": "Jpg",
@@ -11556,6 +12136,31 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Jikan-MyAnimeList-MalClient.html#method_getUserClubs"
         },                {
+            "fqsen": "\\Jikan\\MyAnimeList\\MalClient\u003A\u003AgetRecentNews\u0028\u0029",
+            "name": "getRecentNews",
+            "summary": "",
+            "url": "classes/Jikan-MyAnimeList-MalClient.html#method_getRecentNews"
+        },                {
+            "fqsen": "\\Jikan\\MyAnimeList\\MalClient\u003A\u003AgetNewsByTag\u0028\u0029",
+            "name": "getNewsByTag",
+            "summary": "",
+            "url": "classes/Jikan-MyAnimeList-MalClient.html#method_getNewsByTag"
+        },                {
+            "fqsen": "\\Jikan\\MyAnimeList\\MalClient\u003A\u003AgetNewsSearch\u0028\u0029",
+            "name": "getNewsSearch",
+            "summary": "",
+            "url": "classes/Jikan-MyAnimeList-MalClient.html#method_getNewsSearch"
+        },                {
+            "fqsen": "\\Jikan\\MyAnimeList\\MalClient\u003A\u003AgetNewsTags\u0028\u0029",
+            "name": "getNewsTags",
+            "summary": "",
+            "url": "classes/Jikan-MyAnimeList-MalClient.html#method_getNewsTags"
+        },                {
+            "fqsen": "\\Jikan\\MyAnimeList\\MalClient\u003A\u003AgetNews\u0028\u0029",
+            "name": "getNews",
+            "summary": "",
+            "url": "classes/Jikan-MyAnimeList-MalClient.html#method_getNews"
+        },                {
             "fqsen": "\\Jikan\\MyAnimeList\\MalClient\u003A\u003A\u0024httpClientWrapper",
             "name": "httpClientWrapper",
             "summary": "",
@@ -13211,6 +13816,66 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Jikan-Parser-Common-MangaCardParser.html#property_crawler"
         },                {
+            "fqsen": "\\Jikan\\Parser\\Common\\NewsMetaParser",
+            "name": "NewsMetaParser",
+            "summary": "Class\u0020NewsMetaParser",
+            "url": "classes/Jikan-Parser-Common-NewsMetaParser.html"
+        },                {
+            "fqsen": "\\Jikan\\Parser\\Common\\NewsMetaParser\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "NewsListItemParser\u0020constructor.",
+            "url": "classes/Jikan-Parser-Common-NewsMetaParser.html#method___construct"
+        },                {
+            "fqsen": "\\Jikan\\Parser\\Common\\NewsMetaParser\u003A\u003AgetModel\u0028\u0029",
+            "name": "getModel",
+            "summary": "Return\u0020the\u0020model",
+            "url": "classes/Jikan-Parser-Common-NewsMetaParser.html#method_getModel"
+        },                {
+            "fqsen": "\\Jikan\\Parser\\Common\\NewsMetaParser\u003A\u003AgetTitle\u0028\u0029",
+            "name": "getTitle",
+            "summary": "",
+            "url": "classes/Jikan-Parser-Common-NewsMetaParser.html#method_getTitle"
+        },                {
+            "fqsen": "\\Jikan\\Parser\\Common\\NewsMetaParser\u003A\u003AgetMalId\u0028\u0029",
+            "name": "getMalId",
+            "summary": "",
+            "url": "classes/Jikan-Parser-Common-NewsMetaParser.html#method_getMalId"
+        },                {
+            "fqsen": "\\Jikan\\Parser\\Common\\NewsMetaParser\u003A\u003AgetUrl\u0028\u0029",
+            "name": "getUrl",
+            "summary": "",
+            "url": "classes/Jikan-Parser-Common-NewsMetaParser.html#method_getUrl"
+        },                {
+            "fqsen": "\\Jikan\\Parser\\Common\\NewsMetaParser\u003A\u003AgetImageUrl\u0028\u0029",
+            "name": "getImageUrl",
+            "summary": "",
+            "url": "classes/Jikan-Parser-Common-NewsMetaParser.html#method_getImageUrl"
+        },                {
+            "fqsen": "\\Jikan\\Parser\\Common\\NewsMetaParser\u003A\u003AgetDate\u0028\u0029",
+            "name": "getDate",
+            "summary": "",
+            "url": "classes/Jikan-Parser-Common-NewsMetaParser.html#method_getDate"
+        },                {
+            "fqsen": "\\Jikan\\Parser\\Common\\NewsMetaParser\u003A\u003AgetAuthor\u0028\u0029",
+            "name": "getAuthor",
+            "summary": "",
+            "url": "classes/Jikan-Parser-Common-NewsMetaParser.html#method_getAuthor"
+        },                {
+            "fqsen": "\\Jikan\\Parser\\Common\\NewsMetaParser\u003A\u003AgetDiscussionLink\u0028\u0029",
+            "name": "getDiscussionLink",
+            "summary": "",
+            "url": "classes/Jikan-Parser-Common-NewsMetaParser.html#method_getDiscussionLink"
+        },                {
+            "fqsen": "\\Jikan\\Parser\\Common\\NewsMetaParser\u003A\u003AgetComments\u0028\u0029",
+            "name": "getComments",
+            "summary": "",
+            "url": "classes/Jikan-Parser-Common-NewsMetaParser.html#method_getComments"
+        },                {
+            "fqsen": "\\Jikan\\Parser\\Common\\NewsMetaParser\u003A\u003A\u0024crawler",
+            "name": "crawler",
+            "summary": "",
+            "url": "classes/Jikan-Parser-Common-NewsMetaParser.html#property_crawler"
+        },                {
             "fqsen": "\\Jikan\\Parser\\Common\\PictureParser",
             "name": "PictureParser",
             "summary": "Class\u0020PictureParser",
@@ -13330,6 +13995,31 @@ Search.appendIndex(
             "name": "crawler",
             "summary": "",
             "url": "classes/Jikan-Parser-Common-Recommendations.html#property_crawler"
+        },                {
+            "fqsen": "\\Jikan\\Parser\\Common\\TagUrlParser",
+            "name": "TagUrlParser",
+            "summary": "Class\u0020TagUrlParser",
+            "url": "classes/Jikan-Parser-Common-TagUrlParser.html"
+        },                {
+            "fqsen": "\\Jikan\\Parser\\Common\\TagUrlParser\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "MalUrlParser\u0020constructor.",
+            "url": "classes/Jikan-Parser-Common-TagUrlParser.html#method___construct"
+        },                {
+            "fqsen": "\\Jikan\\Parser\\Common\\TagUrlParser\u003A\u003AparseId\u0028\u0029",
+            "name": "parseId",
+            "summary": "",
+            "url": "classes/Jikan-Parser-Common-TagUrlParser.html#method_parseId"
+        },                {
+            "fqsen": "\\Jikan\\Parser\\Common\\TagUrlParser\u003A\u003AgetModel\u0028\u0029",
+            "name": "getModel",
+            "summary": "",
+            "url": "classes/Jikan-Parser-Common-TagUrlParser.html#method_getModel"
+        },                {
+            "fqsen": "\\Jikan\\Parser\\Common\\TagUrlParser\u003A\u003A\u0024crawler",
+            "name": "crawler",
+            "summary": "",
+            "url": "classes/Jikan-Parser-Common-TagUrlParser.html#property_crawler"
         },                {
             "fqsen": "\\Jikan\\Parser\\Common\\UrlParser",
             "name": "UrlParser",
@@ -13946,15 +14636,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Jikan-Parser-Manga-MangaParser.html#method_getThemes"
         },                {
-            "fqsen": "\\Jikan\\Parser\\Manga\\MangaParser\u003A\u003AgetMangaScore\u0028\u0029",
-            "name": "getMangaScore",
+            "fqsen": "\\Jikan\\Parser\\Manga\\MangaParser\u003A\u003AgetScore\u0028\u0029",
+            "name": "getScore",
             "summary": "",
-            "url": "classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaScore"
+            "url": "classes/Jikan-Parser-Manga-MangaParser.html#method_getScore"
         },                {
-            "fqsen": "\\Jikan\\Parser\\Manga\\MangaParser\u003A\u003AgetMangaScoredBy\u0028\u0029",
-            "name": "getMangaScoredBy",
+            "fqsen": "\\Jikan\\Parser\\Manga\\MangaParser\u003A\u003AgetScoredBy\u0028\u0029",
+            "name": "getScoredBy",
             "summary": "",
-            "url": "classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaScoredBy"
+            "url": "classes/Jikan-Parser-Manga-MangaParser.html#method_getScoredBy"
         },                {
             "fqsen": "\\Jikan\\Parser\\Manga\\MangaParser\u003A\u003AgetMangaRank\u0028\u0029",
             "name": "getMangaRank",
@@ -14288,12 +14978,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Jikan\\Parser\\News\\NewsListItemParser",
             "name": "NewsListItemParser",
-            "summary": "Class\u0020NewsListParser",
+            "summary": "Class\u0020NewsListItemParser",
             "url": "classes/Jikan-Parser-News-NewsListItemParser.html"
         },                {
             "fqsen": "\\Jikan\\Parser\\News\\NewsListItemParser\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "MangaParser\u0020constructor.",
+            "summary": "NewsListItemParser\u0020constructor.",
             "url": "classes/Jikan-Parser-News-NewsListItemParser.html#method___construct"
         },                {
             "fqsen": "\\Jikan\\Parser\\News\\NewsListItemParser\u003A\u003AgetModel\u0028\u0029",
@@ -14316,10 +15006,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Jikan-Parser-News-NewsListItemParser.html#method_getUrl"
         },                {
-            "fqsen": "\\Jikan\\Parser\\News\\NewsListItemParser\u003A\u003AgetImage\u0028\u0029",
-            "name": "getImage",
+            "fqsen": "\\Jikan\\Parser\\News\\NewsListItemParser\u003A\u003AgetImageUrl\u0028\u0029",
+            "name": "getImageUrl",
             "summary": "",
-            "url": "classes/Jikan-Parser-News-NewsListItemParser.html#method_getImage"
+            "url": "classes/Jikan-Parser-News-NewsListItemParser.html#method_getImageUrl"
         },                {
             "fqsen": "\\Jikan\\Parser\\News\\NewsListItemParser\u003A\u003AgetDate\u0028\u0029",
             "name": "getDate",
@@ -14341,10 +15031,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Jikan-Parser-News-NewsListItemParser.html#method_getComments"
         },                {
-            "fqsen": "\\Jikan\\Parser\\News\\NewsListItemParser\u003A\u003AgetIntro\u0028\u0029",
-            "name": "getIntro",
+            "fqsen": "\\Jikan\\Parser\\News\\NewsListItemParser\u003A\u003AgetExcerpt\u0028\u0029",
+            "name": "getExcerpt",
             "summary": "",
-            "url": "classes/Jikan-Parser-News-NewsListItemParser.html#method_getIntro"
+            "url": "classes/Jikan-Parser-News-NewsListItemParser.html#method_getExcerpt"
+        },                {
+            "fqsen": "\\Jikan\\Parser\\News\\NewsListItemParser\u003A\u003AgetTags\u0028\u0029",
+            "name": "getTags",
+            "summary": "",
+            "url": "classes/Jikan-Parser-News-NewsListItemParser.html#method_getTags"
         },                {
             "fqsen": "\\Jikan\\Parser\\News\\NewsListItemParser\u003A\u003A\u0024crawler",
             "name": "crawler",
@@ -14358,7 +15053,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Jikan\\Parser\\News\\NewsListParser\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "MangaParser\u0020constructor.",
+            "summary": "NewsListParser\u0020constructor.",
             "url": "classes/Jikan-Parser-News-NewsListParser.html#method___construct"
         },                {
             "fqsen": "\\Jikan\\Parser\\News\\NewsListParser\u003A\u003AgetModel\u0028\u0029",
@@ -14376,10 +15071,210 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Jikan-Parser-News-NewsListParser.html#method_getHasNextPage"
         },                {
+            "fqsen": "\\Jikan\\Parser\\News\\NewsListParser\u003A\u003AgetLastVisiblePage\u0028\u0029",
+            "name": "getLastVisiblePage",
+            "summary": "",
+            "url": "classes/Jikan-Parser-News-NewsListParser.html#method_getLastVisiblePage"
+        },                {
             "fqsen": "\\Jikan\\Parser\\News\\NewsListParser\u003A\u003A\u0024crawler",
             "name": "crawler",
             "summary": "",
             "url": "classes/Jikan-Parser-News-NewsListParser.html#property_crawler"
+        },                {
+            "fqsen": "\\Jikan\\Parser\\News\\NewsParser",
+            "name": "NewsParser",
+            "summary": "Class\u0020NewsListParser",
+            "url": "classes/Jikan-Parser-News-NewsParser.html"
+        },                {
+            "fqsen": "\\Jikan\\Parser\\News\\NewsParser\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "NewsListParser\u0020constructor.",
+            "url": "classes/Jikan-Parser-News-NewsParser.html#method___construct"
+        },                {
+            "fqsen": "\\Jikan\\Parser\\News\\NewsParser\u003A\u003AgetModel\u0028\u0029",
+            "name": "getModel",
+            "summary": "Return\u0020the\u0020model",
+            "url": "classes/Jikan-Parser-News-NewsParser.html#method_getModel"
+        },                {
+            "fqsen": "\\Jikan\\Parser\\News\\NewsParser\u003A\u003AgetMalId\u0028\u0029",
+            "name": "getMalId",
+            "summary": "",
+            "url": "classes/Jikan-Parser-News-NewsParser.html#method_getMalId"
+        },                {
+            "fqsen": "\\Jikan\\Parser\\News\\NewsParser\u003A\u003AgetURL\u0028\u0029",
+            "name": "getURL",
+            "summary": "",
+            "url": "classes/Jikan-Parser-News-NewsParser.html#method_getURL"
+        },                {
+            "fqsen": "\\Jikan\\Parser\\News\\NewsParser\u003A\u003AgetTitle\u0028\u0029",
+            "name": "getTitle",
+            "summary": "",
+            "url": "classes/Jikan-Parser-News-NewsParser.html#method_getTitle"
+        },                {
+            "fqsen": "\\Jikan\\Parser\\News\\NewsParser\u003A\u003AgetDate\u0028\u0029",
+            "name": "getDate",
+            "summary": "",
+            "url": "classes/Jikan-Parser-News-NewsParser.html#method_getDate"
+        },                {
+            "fqsen": "\\Jikan\\Parser\\News\\NewsParser\u003A\u003AgetAuthor\u0028\u0029",
+            "name": "getAuthor",
+            "summary": "",
+            "url": "classes/Jikan-Parser-News-NewsParser.html#method_getAuthor"
+        },                {
+            "fqsen": "\\Jikan\\Parser\\News\\NewsParser\u003A\u003AgetDiscussionLink\u0028\u0029",
+            "name": "getDiscussionLink",
+            "summary": "",
+            "url": "classes/Jikan-Parser-News-NewsParser.html#method_getDiscussionLink"
+        },                {
+            "fqsen": "\\Jikan\\Parser\\News\\NewsParser\u003A\u003AgetImageUrl\u0028\u0029",
+            "name": "getImageUrl",
+            "summary": "",
+            "url": "classes/Jikan-Parser-News-NewsParser.html#method_getImageUrl"
+        },                {
+            "fqsen": "\\Jikan\\Parser\\News\\NewsParser\u003A\u003AgetComments\u0028\u0029",
+            "name": "getComments",
+            "summary": "",
+            "url": "classes/Jikan-Parser-News-NewsParser.html#method_getComments"
+        },                {
+            "fqsen": "\\Jikan\\Parser\\News\\NewsParser\u003A\u003AgetTags\u0028\u0029",
+            "name": "getTags",
+            "summary": "",
+            "url": "classes/Jikan-Parser-News-NewsParser.html#method_getTags"
+        },                {
+            "fqsen": "\\Jikan\\Parser\\News\\NewsParser\u003A\u003AgetContent\u0028\u0029",
+            "name": "getContent",
+            "summary": "",
+            "url": "classes/Jikan-Parser-News-NewsParser.html#method_getContent"
+        },                {
+            "fqsen": "\\Jikan\\Parser\\News\\NewsParser\u003A\u003AgetRelatedEntries\u0028\u0029",
+            "name": "getRelatedEntries",
+            "summary": "",
+            "url": "classes/Jikan-Parser-News-NewsParser.html#method_getRelatedEntries"
+        },                {
+            "fqsen": "\\Jikan\\Parser\\News\\NewsParser\u003A\u003AgetRelatedNews\u0028\u0029",
+            "name": "getRelatedNews",
+            "summary": "",
+            "url": "classes/Jikan-Parser-News-NewsParser.html#method_getRelatedNews"
+        },                {
+            "fqsen": "\\Jikan\\Parser\\News\\NewsParser\u003A\u003A\u0024crawler",
+            "name": "crawler",
+            "summary": "",
+            "url": "classes/Jikan-Parser-News-NewsParser.html#property_crawler"
+        },                {
+            "fqsen": "\\Jikan\\Parser\\News\\NewsTagsParser",
+            "name": "NewsTagsParser",
+            "summary": "Class\u0020NewsTagsParser",
+            "url": "classes/Jikan-Parser-News-NewsTagsParser.html"
+        },                {
+            "fqsen": "\\Jikan\\Parser\\News\\NewsTagsParser\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "NewsListParser\u0020constructor.",
+            "url": "classes/Jikan-Parser-News-NewsTagsParser.html#method___construct"
+        },                {
+            "fqsen": "\\Jikan\\Parser\\News\\NewsTagsParser\u003A\u003AgetModel\u0028\u0029",
+            "name": "getModel",
+            "summary": "Return\u0020the\u0020model",
+            "url": "classes/Jikan-Parser-News-NewsTagsParser.html#method_getModel"
+        },                {
+            "fqsen": "\\Jikan\\Parser\\News\\NewsTagsParser\u003A\u003A\u0024crawler",
+            "name": "crawler",
+            "summary": "",
+            "url": "classes/Jikan-Parser-News-NewsTagsParser.html#property_crawler"
+        },                {
+            "fqsen": "\\Jikan\\Parser\\News\\ResourceNewsListItemParser",
+            "name": "ResourceNewsListItemParser",
+            "summary": "Class\u0020ResourceNewsListParser",
+            "url": "classes/Jikan-Parser-News-ResourceNewsListItemParser.html"
+        },                {
+            "fqsen": "\\Jikan\\Parser\\News\\ResourceNewsListItemParser\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "MangaParser\u0020constructor.",
+            "url": "classes/Jikan-Parser-News-ResourceNewsListItemParser.html#method___construct"
+        },                {
+            "fqsen": "\\Jikan\\Parser\\News\\ResourceNewsListItemParser\u003A\u003AgetModel\u0028\u0029",
+            "name": "getModel",
+            "summary": "Return\u0020the\u0020model",
+            "url": "classes/Jikan-Parser-News-ResourceNewsListItemParser.html#method_getModel"
+        },                {
+            "fqsen": "\\Jikan\\Parser\\News\\ResourceNewsListItemParser\u003A\u003AgetTitle\u0028\u0029",
+            "name": "getTitle",
+            "summary": "",
+            "url": "classes/Jikan-Parser-News-ResourceNewsListItemParser.html#method_getTitle"
+        },                {
+            "fqsen": "\\Jikan\\Parser\\News\\ResourceNewsListItemParser\u003A\u003AgetMalId\u0028\u0029",
+            "name": "getMalId",
+            "summary": "",
+            "url": "classes/Jikan-Parser-News-ResourceNewsListItemParser.html#method_getMalId"
+        },                {
+            "fqsen": "\\Jikan\\Parser\\News\\ResourceNewsListItemParser\u003A\u003AgetUrl\u0028\u0029",
+            "name": "getUrl",
+            "summary": "",
+            "url": "classes/Jikan-Parser-News-ResourceNewsListItemParser.html#method_getUrl"
+        },                {
+            "fqsen": "\\Jikan\\Parser\\News\\ResourceNewsListItemParser\u003A\u003AgetImage\u0028\u0029",
+            "name": "getImage",
+            "summary": "",
+            "url": "classes/Jikan-Parser-News-ResourceNewsListItemParser.html#method_getImage"
+        },                {
+            "fqsen": "\\Jikan\\Parser\\News\\ResourceNewsListItemParser\u003A\u003AgetDate\u0028\u0029",
+            "name": "getDate",
+            "summary": "",
+            "url": "classes/Jikan-Parser-News-ResourceNewsListItemParser.html#method_getDate"
+        },                {
+            "fqsen": "\\Jikan\\Parser\\News\\ResourceNewsListItemParser\u003A\u003AgetAuthor\u0028\u0029",
+            "name": "getAuthor",
+            "summary": "",
+            "url": "classes/Jikan-Parser-News-ResourceNewsListItemParser.html#method_getAuthor"
+        },                {
+            "fqsen": "\\Jikan\\Parser\\News\\ResourceNewsListItemParser\u003A\u003AgetDiscussionLink\u0028\u0029",
+            "name": "getDiscussionLink",
+            "summary": "",
+            "url": "classes/Jikan-Parser-News-ResourceNewsListItemParser.html#method_getDiscussionLink"
+        },                {
+            "fqsen": "\\Jikan\\Parser\\News\\ResourceNewsListItemParser\u003A\u003AgetComments\u0028\u0029",
+            "name": "getComments",
+            "summary": "",
+            "url": "classes/Jikan-Parser-News-ResourceNewsListItemParser.html#method_getComments"
+        },                {
+            "fqsen": "\\Jikan\\Parser\\News\\ResourceNewsListItemParser\u003A\u003AgetIntro\u0028\u0029",
+            "name": "getIntro",
+            "summary": "",
+            "url": "classes/Jikan-Parser-News-ResourceNewsListItemParser.html#method_getIntro"
+        },                {
+            "fqsen": "\\Jikan\\Parser\\News\\ResourceNewsListItemParser\u003A\u003A\u0024crawler",
+            "name": "crawler",
+            "summary": "",
+            "url": "classes/Jikan-Parser-News-ResourceNewsListItemParser.html#property_crawler"
+        },                {
+            "fqsen": "\\Jikan\\Parser\\News\\ResourceNewsListParser",
+            "name": "ResourceNewsListParser",
+            "summary": "Class\u0020ResourceNewsListParser",
+            "url": "classes/Jikan-Parser-News-ResourceNewsListParser.html"
+        },                {
+            "fqsen": "\\Jikan\\Parser\\News\\ResourceNewsListParser\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "MangaParser\u0020constructor.",
+            "url": "classes/Jikan-Parser-News-ResourceNewsListParser.html#method___construct"
+        },                {
+            "fqsen": "\\Jikan\\Parser\\News\\ResourceNewsListParser\u003A\u003AgetModel\u0028\u0029",
+            "name": "getModel",
+            "summary": "Return\u0020the\u0020model",
+            "url": "classes/Jikan-Parser-News-ResourceNewsListParser.html#method_getModel"
+        },                {
+            "fqsen": "\\Jikan\\Parser\\News\\ResourceNewsListParser\u003A\u003AgetResults\u0028\u0029",
+            "name": "getResults",
+            "summary": "",
+            "url": "classes/Jikan-Parser-News-ResourceNewsListParser.html#method_getResults"
+        },                {
+            "fqsen": "\\Jikan\\Parser\\News\\ResourceNewsListParser\u003A\u003AgetHasNextPage\u0028\u0029",
+            "name": "getHasNextPage",
+            "summary": "",
+            "url": "classes/Jikan-Parser-News-ResourceNewsListParser.html#method_getHasNextPage"
+        },                {
+            "fqsen": "\\Jikan\\Parser\\News\\ResourceNewsListParser\u003A\u003A\u0024crawler",
+            "name": "crawler",
+            "summary": "",
+            "url": "classes/Jikan-Parser-News-ResourceNewsListParser.html#property_crawler"
         },                {
             "fqsen": "\\Jikan\\Parser\\ParserInterface",
             "name": "ParserInterface",
@@ -17791,6 +18686,101 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Jikan-Request-Manga-MangaStatsRequest.html#property_id"
         },                {
+            "fqsen": "\\Jikan\\Request\\News\\NewsByTagRequest",
+            "name": "NewsByTagRequest",
+            "summary": "Class\u0020RecentNewsRequest",
+            "url": "classes/Jikan-Request-News-NewsByTagRequest.html"
+        },                {
+            "fqsen": "\\Jikan\\Request\\News\\NewsByTagRequest\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "AnimeRequest\u0020constructor.",
+            "url": "classes/Jikan-Request-News-NewsByTagRequest.html#method___construct"
+        },                {
+            "fqsen": "\\Jikan\\Request\\News\\NewsByTagRequest\u003A\u003AgetPath\u0028\u0029",
+            "name": "getPath",
+            "summary": "Get\u0020the\u0020path\u0020to\u0020request",
+            "url": "classes/Jikan-Request-News-NewsByTagRequest.html#method_getPath"
+        },                {
+            "fqsen": "\\Jikan\\Request\\News\\NewsByTagRequest\u003A\u003AgetPage\u0028\u0029",
+            "name": "getPage",
+            "summary": "",
+            "url": "classes/Jikan-Request-News-NewsByTagRequest.html#method_getPage"
+        },                {
+            "fqsen": "\\Jikan\\Request\\News\\NewsByTagRequest\u003A\u003AgetMalId\u0028\u0029",
+            "name": "getMalId",
+            "summary": "",
+            "url": "classes/Jikan-Request-News-NewsByTagRequest.html#method_getMalId"
+        },                {
+            "fqsen": "\\Jikan\\Request\\News\\NewsByTagRequest\u003A\u003A\u0024page",
+            "name": "page",
+            "summary": "",
+            "url": "classes/Jikan-Request-News-NewsByTagRequest.html#property_page"
+        },                {
+            "fqsen": "\\Jikan\\Request\\News\\NewsByTagRequest\u003A\u003A\u0024malId",
+            "name": "malId",
+            "summary": "",
+            "url": "classes/Jikan-Request-News-NewsByTagRequest.html#property_malId"
+        },                {
+            "fqsen": "\\Jikan\\Request\\News\\NewsRequest",
+            "name": "NewsRequest",
+            "summary": "Class\u0020RecentNewsRequest",
+            "url": "classes/Jikan-Request-News-NewsRequest.html"
+        },                {
+            "fqsen": "\\Jikan\\Request\\News\\NewsRequest\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Jikan-Request-News-NewsRequest.html#method___construct"
+        },                {
+            "fqsen": "\\Jikan\\Request\\News\\NewsRequest\u003A\u003AgetPath\u0028\u0029",
+            "name": "getPath",
+            "summary": "Get\u0020the\u0020path\u0020to\u0020request",
+            "url": "classes/Jikan-Request-News-NewsRequest.html#method_getPath"
+        },                {
+            "fqsen": "\\Jikan\\Request\\News\\NewsRequest\u003A\u003AgetMalId\u0028\u0029",
+            "name": "getMalId",
+            "summary": "",
+            "url": "classes/Jikan-Request-News-NewsRequest.html#method_getMalId"
+        },                {
+            "fqsen": "\\Jikan\\Request\\News\\NewsRequest\u003A\u003A\u0024malId",
+            "name": "malId",
+            "summary": "",
+            "url": "classes/Jikan-Request-News-NewsRequest.html#property_malId"
+        },                {
+            "fqsen": "\\Jikan\\Request\\News\\NewsTagsRequest",
+            "name": "NewsTagsRequest",
+            "summary": "Class\u0020NewsTagsRequest",
+            "url": "classes/Jikan-Request-News-NewsTagsRequest.html"
+        },                {
+            "fqsen": "\\Jikan\\Request\\News\\NewsTagsRequest\u003A\u003AgetPath\u0028\u0029",
+            "name": "getPath",
+            "summary": "Get\u0020the\u0020path\u0020to\u0020request",
+            "url": "classes/Jikan-Request-News-NewsTagsRequest.html#method_getPath"
+        },                {
+            "fqsen": "\\Jikan\\Request\\News\\RecentNewsRequest",
+            "name": "RecentNewsRequest",
+            "summary": "Class\u0020RecentNewsRequest",
+            "url": "classes/Jikan-Request-News-RecentNewsRequest.html"
+        },                {
+            "fqsen": "\\Jikan\\Request\\News\\RecentNewsRequest\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "AnimeRequest\u0020constructor.",
+            "url": "classes/Jikan-Request-News-RecentNewsRequest.html#method___construct"
+        },                {
+            "fqsen": "\\Jikan\\Request\\News\\RecentNewsRequest\u003A\u003AgetPath\u0028\u0029",
+            "name": "getPath",
+            "summary": "Get\u0020the\u0020path\u0020to\u0020request",
+            "url": "classes/Jikan-Request-News-RecentNewsRequest.html#method_getPath"
+        },                {
+            "fqsen": "\\Jikan\\Request\\News\\RecentNewsRequest\u003A\u003AgetPage\u0028\u0029",
+            "name": "getPage",
+            "summary": "",
+            "url": "classes/Jikan-Request-News-RecentNewsRequest.html#method_getPage"
+        },                {
+            "fqsen": "\\Jikan\\Request\\News\\RecentNewsRequest\u003A\u003A\u0024page",
+            "name": "page",
+            "summary": "",
+            "url": "classes/Jikan-Request-News-RecentNewsRequest.html#property_page"
+        },                {
             "fqsen": "\\Jikan\\Request\\Person\\PersonPicturesRequest",
             "name": "PersonPicturesRequest",
             "summary": "Class\u0020PersonPicturesRequest",
@@ -18485,6 +19475,41 @@ Search.appendIndex(
             "name": "sort",
             "summary": "",
             "url": "classes/Jikan-Request-Search-MangaSearchRequest.html#property_sort"
+        },                {
+            "fqsen": "\\Jikan\\Request\\Search\\NewsSearchRequest",
+            "name": "NewsSearchRequest",
+            "summary": "Class\u0020NewsSearchRequest",
+            "url": "classes/Jikan-Request-Search-NewsSearchRequest.html"
+        },                {
+            "fqsen": "\\Jikan\\Request\\Search\\NewsSearchRequest\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "AnimeRequest\u0020constructor.",
+            "url": "classes/Jikan-Request-Search-NewsSearchRequest.html#method___construct"
+        },                {
+            "fqsen": "\\Jikan\\Request\\Search\\NewsSearchRequest\u003A\u003AgetPath\u0028\u0029",
+            "name": "getPath",
+            "summary": "Get\u0020the\u0020path\u0020to\u0020request",
+            "url": "classes/Jikan-Request-Search-NewsSearchRequest.html#method_getPath"
+        },                {
+            "fqsen": "\\Jikan\\Request\\Search\\NewsSearchRequest\u003A\u003AgetPage\u0028\u0029",
+            "name": "getPage",
+            "summary": "",
+            "url": "classes/Jikan-Request-Search-NewsSearchRequest.html#method_getPage"
+        },                {
+            "fqsen": "\\Jikan\\Request\\Search\\NewsSearchRequest\u003A\u003AgetQuery\u0028\u0029",
+            "name": "getQuery",
+            "summary": "",
+            "url": "classes/Jikan-Request-Search-NewsSearchRequest.html#method_getQuery"
+        },                {
+            "fqsen": "\\Jikan\\Request\\Search\\NewsSearchRequest\u003A\u003A\u0024page",
+            "name": "page",
+            "summary": "",
+            "url": "classes/Jikan-Request-Search-NewsSearchRequest.html#property_page"
+        },                {
+            "fqsen": "\\Jikan\\Request\\Search\\NewsSearchRequest\u003A\u003A\u0024query",
+            "name": "query",
+            "summary": "",
+            "url": "classes/Jikan-Request-Search-NewsSearchRequest.html#property_query"
         },                {
             "fqsen": "\\Jikan\\Request\\Search\\PersonSearchRequest",
             "name": "PersonSearchRequest",
@@ -19581,6 +20606,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/jikan-model-resource-commonimageresource.html"
         },                {
+            "fqsen": "\\Jikan\\Model\\Resource\\NewsImageResource",
+            "name": "NewsImageResource",
+            "summary": "",
+            "url": "namespaces/jikan-model-resource-newsimageresource.html"
+        },                {
             "fqsen": "\\Jikan\\Model\\Resource\\PersonImageResource",
             "name": "PersonImageResource",
             "summary": "",
@@ -19805,6 +20835,11 @@ Search.appendIndex(
             "name": "Manga",
             "summary": "",
             "url": "namespaces/jikan-request-manga.html"
+        },                {
+            "fqsen": "\\Jikan\\Request\\News",
+            "name": "News",
+            "summary": "",
+            "url": "namespaces/jikan-request-news.html"
         },                {
             "fqsen": "\\Jikan\\Request\\Person",
             "name": "Person",
