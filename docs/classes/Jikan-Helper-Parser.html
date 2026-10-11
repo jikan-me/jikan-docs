@@ -6,7 +6,10 @@
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <base href="../">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png"/>
     <link rel="icon" href="images/favicon.ico"/>
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png"/>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
             <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -54,7 +57,7 @@
     Menu
 </label>
 <aside class="phpdocumentor-column -three phpdocumentor-sidebar">
-                    <section class="phpdocumentor-sidebar__category">
+                    <section class="phpdocumentor-sidebar__category -namespaces">
             <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="namespaces/jikan.html" class="">Jikan</a>
@@ -91,7 +94,7 @@
             </ul>
 
                         </section>
-                <section class="phpdocumentor-sidebar__category">
+                <section class="phpdocumentor-sidebar__category -packages">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="packages/Application.html" class="">Application</a>
@@ -129,14 +132,14 @@
 
                         </section>
             
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -reports">
         <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
                 <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
     </section>
 
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -indices">
         <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
     </section>
@@ -171,7 +174,7 @@
 </div>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Helper/Parser.php"><a href="files/src-helper-parser.html"><abbr title="src/Helper/Parser.php">Parser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Helper/Parser.php"><a href="files/helper-parser.html"><abbr title="Helper/Parser.php">Parser.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">12</span>
 
@@ -183,7 +186,8 @@
 
 
 
-
+    
+    
 <h3 id="toc">
     Table of Contents
     <a href="classes/Jikan-Helper-Parser.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
@@ -203,9 +207,9 @@
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -constant -private">
-    <a href="classes/Jikan-Helper-Parser.html#constant_ALLOWED_NODES">ALLOWED_NODES</a>
+    <a class="" href="classes/Jikan-Helper-Parser.html#constant_ALLOWED_NODES">ALLOWED_NODES</a>
     <span>
-        &nbsp;= [&#039;p&#039;, &#039;i&#039;, &#039;b&#039;, &#039;br&#039;, &#039;strong&#039;, &#039;u&#039;]                            </span>
+        &nbsp;: mixed&nbsp;= [&#039;p&#039;, &#039;i&#039;, &#039;b&#039;, &#039;br&#039;, &#039;strong&#039;, &#039;u&#039;]                            </span>
 </dt>
 
     </dl>
@@ -219,102 +223,101 @@
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Jikan-Helper-Parser.html#method_clubIdFromUrl">clubIdFromUrl()</a>
+    <a class="" href="classes/Jikan-Helper-Parser.html#method_clubIdFromUrl">clubIdFromUrl()</a>
     <span>
                                 &nbsp;: int    </span>
 </dt>
 <dd>Extract club ID from MAL URl</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Jikan-Helper-Parser.html#method_idFromUrl">idFromUrl()</a>
+    <a class="" href="classes/Jikan-Helper-Parser.html#method_idFromUrl">idFromUrl()</a>
     <span>
                                 &nbsp;: int    </span>
 </dt>
 <dd>Extract the id from a mal url</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Jikan-Helper-Parser.html#method_parseDate">parseDate()</a>
+    <a class="" href="classes/Jikan-Helper-Parser.html#method_parseDate">parseDate()</a>
     <span>
                                 &nbsp;: <abbr title="\DateTimeImmutable">DateTimeImmutable</abbr>|null    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Jikan-Helper-Parser.html#method_parseDateDMY">parseDateDMY()</a>
+    <a class="" href="classes/Jikan-Helper-Parser.html#method_parseDateDMY">parseDateDMY()</a>
     <span>
                                 &nbsp;: <abbr title="\DateTimeImmutable">DateTimeImmutable</abbr>|null    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Jikan-Helper-Parser.html#method_parseDateMDY">parseDateMDY()</a>
+    <a class="" href="classes/Jikan-Helper-Parser.html#method_parseDateMDY">parseDateMDY()</a>
     <span>
                                 &nbsp;: <abbr title="\DateTimeImmutable">DateTimeImmutable</abbr>|null    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Jikan-Helper-Parser.html#method_parseDateMDYReadable">parseDateMDYReadable()</a>
+    <a class="" href="classes/Jikan-Helper-Parser.html#method_parseDateMDYReadable">parseDateMDYReadable()</a>
     <span>
                                 &nbsp;: <abbr title="\DateTimeImmutable">DateTimeImmutable</abbr>|null    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Jikan-Helper-Parser.html#method_parseDateTimePST">parseDateTimePST()</a>
+    <a class="" href="classes/Jikan-Helper-Parser.html#method_parseDateTimePST">parseDateTimePST()</a>
     <span>
                                 &nbsp;: <abbr title="\DateTimeImmutable">DateTimeImmutable</abbr>|null    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Jikan-Helper-Parser.html#method_parseDurationToSeconds">parseDurationToSeconds()</a>
+    <a class="" href="classes/Jikan-Helper-Parser.html#method_parseDurationToSeconds">parseDurationToSeconds()</a>
     <span>
                                 &nbsp;: int|null    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Jikan-Helper-Parser.html#method_parseForumDate">parseForumDate()</a>
+    <a class="" href="classes/Jikan-Helper-Parser.html#method_parseForumDate">parseForumDate()</a>
     <span>
                                 &nbsp;: <abbr title="\DateTimeImmutable">DateTimeImmutable</abbr>|null    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Jikan-Helper-Parser.html#method_parseImageQuality">parseImageQuality()</a>
+    <a class="" href="classes/Jikan-Helper-Parser.html#method_parseImageQuality">parseImageQuality()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Jikan-Helper-Parser.html#method_parseImageThumbToHQ">parseImageThumbToHQ()</a>
+    <a class="" href="classes/Jikan-Helper-Parser.html#method_parseImageThumbToHQ">parseImageThumbToHQ()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Jikan-Helper-Parser.html#method_removeChildNodes">removeChildNodes()</a>
+    <a class="" href="classes/Jikan-Helper-Parser.html#method_removeChildNodes">removeChildNodes()</a>
     <span>
                                 &nbsp;: <abbr title="\Symfony\Component\DomCrawler\Crawler">Crawler</abbr>    </span>
 </dt>
 <dd>Removes all html elements so the text is left over</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Jikan-Helper-Parser.html#method_stringIdFromUrl">stringIdFromUrl()</a>
+    <a class="" href="classes/Jikan-Helper-Parser.html#method_stringIdFromUrl">stringIdFromUrl()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 <dd>Extract a string id from a mal url</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Jikan-Helper-Parser.html#method_suffixIdFromUrl">suffixIdFromUrl()</a>
+    <a class="" href="classes/Jikan-Helper-Parser.html#method_suffixIdFromUrl">suffixIdFromUrl()</a>
     <span>
                                 &nbsp;: int    </span>
 </dt>
 <dd>Extract the last property id from a mal url (e.g episode ID)</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Jikan-Helper-Parser.html#method_textOrNull">textOrNull()</a>
+    <a class="" href="classes/Jikan-Helper-Parser.html#method_textOrNull">textOrNull()</a>
     <span>
                                 &nbsp;: null|string    </span>
 </dt>
 
     </dl>
-
 
 
 
@@ -333,12 +336,13 @@
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Helper/Parser.php"><a href="files/src-helper-parser.html"><abbr title="src/Helper/Parser.php">Parser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Helper/Parser.php"><a href="files/helper-parser.html"><abbr title="Helper/Parser.php">Parser.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">14</span>
 
     </aside>
 
+    
     
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">private</span>
@@ -352,7 +356,8 @@
     
     
 
-</article>
+        
+    </article>
             </section>
 
         
@@ -375,7 +380,7 @@
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Helper/Parser.php"><a href="files/src-helper-parser.html"><abbr title="src/Helper/Parser.php">Parser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Helper/Parser.php"><a href="files/helper-parser.html"><abbr title="Helper/Parser.php">Parser.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">73</span>
 
@@ -385,16 +390,17 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">clubIdFromUrl</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$url</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">clubIdFromUrl</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$url</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$url</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                <span class="phpdocumentor-argument-list__argument__name">$url</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -403,6 +409,8 @@
 
     
 
+        
+    
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">int</span>
@@ -421,7 +429,7 @@
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Helper/Parser.php"><a href="files/src-helper-parser.html"><abbr title="src/Helper/Parser.php">Parser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Helper/Parser.php"><a href="files/helper-parser.html"><abbr title="Helper/Parser.php">Parser.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">49</span>
 
@@ -431,16 +439,17 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">idFromUrl</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$url</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">idFromUrl</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$url</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$url</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                <span class="phpdocumentor-argument-list__argument__name">$url</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -449,6 +458,8 @@
 
     
 
+        
+    
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">int</span>
@@ -467,7 +478,7 @@
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Helper/Parser.php"><a href="files/src-helper-parser.html"><abbr title="src/Helper/Parser.php">Parser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Helper/Parser.php"><a href="files/helper-parser.html"><abbr title="Helper/Parser.php">Parser.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">109</span>
 
@@ -476,16 +487,17 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">parseDate</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$date</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\DateTimeImmutable">DateTimeImmutable</abbr>|null</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">parseDate</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$date</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\DateTimeImmutable">DateTimeImmutable</abbr>|null</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$date</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                <span class="phpdocumentor-argument-list__argument__name">$date</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -494,6 +506,8 @@
 
     
 
+        
+    
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><abbr title="\DateTimeImmutable">DateTimeImmutable</abbr>|null</span>
@@ -512,7 +526,7 @@
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Helper/Parser.php"><a href="files/src-helper-parser.html"><abbr title="src/Helper/Parser.php">Parser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Helper/Parser.php"><a href="files/helper-parser.html"><abbr title="Helper/Parser.php">Parser.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">157</span>
 
@@ -521,16 +535,17 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">parseDateDMY</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$date</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\DateTimeImmutable">DateTimeImmutable</abbr>|null</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">parseDateDMY</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$date</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\DateTimeImmutable">DateTimeImmutable</abbr>|null</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$date</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
+                <span class="phpdocumentor-argument-list__argument__name">$date</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string|null</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -539,6 +554,8 @@
 
     
 
+        
+    
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><abbr title="\DateTimeImmutable">DateTimeImmutable</abbr>|null</span>
@@ -557,7 +574,7 @@
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Helper/Parser.php"><a href="files/src-helper-parser.html"><abbr title="src/Helper/Parser.php">Parser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Helper/Parser.php"><a href="files/helper-parser.html"><abbr title="Helper/Parser.php">Parser.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">135</span>
 
@@ -566,16 +583,17 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">parseDateMDY</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$date</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\DateTimeImmutable">DateTimeImmutable</abbr>|null</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">parseDateMDY</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$date</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\DateTimeImmutable">DateTimeImmutable</abbr>|null</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$date</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
+                <span class="phpdocumentor-argument-list__argument__name">$date</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string|null</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -584,6 +602,8 @@
 
     
 
+        
+    
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><abbr title="\DateTimeImmutable">DateTimeImmutable</abbr>|null</span>
@@ -602,7 +622,7 @@
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Helper/Parser.php"><a href="files/src-helper-parser.html"><abbr title="src/Helper/Parser.php">Parser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Helper/Parser.php"><a href="files/helper-parser.html"><abbr title="Helper/Parser.php">Parser.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">180</span>
 
@@ -611,16 +631,17 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">parseDateMDYReadable</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$date</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\DateTimeImmutable">DateTimeImmutable</abbr>|null</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">parseDateMDYReadable</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$date</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\DateTimeImmutable">DateTimeImmutable</abbr>|null</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$date</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                <span class="phpdocumentor-argument-list__argument__name">$date</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -628,22 +649,23 @@
             </dl>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+    <h5 class="phpdocumentor-tag-list__heading" id="method_parseDateMDYReadable_tags">
         Tags
-        <a href="classes/Jikan-Helper-Parser.html#method_parseDateMDYReadable#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Jikan-Helper-Parser.html#method_parseDateMDYReadable_tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
-                                            </dl>
+                        </dl>
 
+        
+    
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><abbr title="\DateTimeImmutable">DateTimeImmutable</abbr>|null</span>
@@ -662,7 +684,7 @@
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Helper/Parser.php"><a href="files/src-helper-parser.html"><abbr title="src/Helper/Parser.php">Parser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Helper/Parser.php"><a href="files/helper-parser.html"><abbr title="Helper/Parser.php">Parser.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">201</span>
 
@@ -671,16 +693,17 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">parseDateTimePST</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$dateTime</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\DateTimeImmutable">DateTimeImmutable</abbr>|null</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">parseDateTimePST</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$dateTime</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\DateTimeImmutable">DateTimeImmutable</abbr>|null</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$dateTime</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                <span class="phpdocumentor-argument-list__argument__name">$dateTime</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -689,6 +712,8 @@
 
     
 
+        
+    
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><abbr title="\DateTimeImmutable">DateTimeImmutable</abbr>|null</span>
@@ -707,7 +732,7 @@
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Helper/Parser.php"><a href="files/src-helper-parser.html"><abbr title="src/Helper/Parser.php">Parser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Helper/Parser.php"><a href="files/helper-parser.html"><abbr title="Helper/Parser.php">Parser.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">255</span>
 
@@ -716,16 +741,17 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">parseDurationToSeconds</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$duration</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int|null</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">parseDurationToSeconds</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$duration</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int|null</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$duration</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                <span class="phpdocumentor-argument-list__argument__name">$duration</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -734,6 +760,8 @@
 
     
 
+        
+    
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">int|null</span>
@@ -752,7 +780,7 @@
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Helper/Parser.php"><a href="files/src-helper-parser.html"><abbr title="src/Helper/Parser.php">Parser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Helper/Parser.php"><a href="files/helper-parser.html"><abbr title="Helper/Parser.php">Parser.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">95</span>
 
@@ -761,16 +789,17 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">parseForumDate</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$date</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\DateTimeImmutable">DateTimeImmutable</abbr>|null</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">parseForumDate</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$date</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\DateTimeImmutable">DateTimeImmutable</abbr>|null</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$date</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                <span class="phpdocumentor-argument-list__argument__name">$date</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -779,6 +808,8 @@
 
     
 
+        
+    
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><abbr title="\DateTimeImmutable">DateTimeImmutable</abbr>|null</span>
@@ -797,7 +828,7 @@
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Helper/Parser.php"><a href="files/src-helper-parser.html"><abbr title="src/Helper/Parser.php">Parser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Helper/Parser.php"><a href="files/helper-parser.html"><abbr title="Helper/Parser.php">Parser.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">233</span>
 
@@ -806,16 +837,17 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">parseImageQuality</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$imageUrl</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">parseImageQuality</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$imageUrl</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$imageUrl</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                <span class="phpdocumentor-argument-list__argument__name">$imageUrl</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -823,22 +855,23 @@
             </dl>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+    <h5 class="phpdocumentor-tag-list__heading" id="method_parseImageQuality_tags">
         Tags
-        <a href="classes/Jikan-Helper-Parser.html#method_parseImageQuality#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Jikan-Helper-Parser.html#method_parseImageQuality_tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><abbr title="\InvalidArgumentException">InvalidArgumentException</abbr></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
-                                            </dl>
+                        </dl>
 
+        
+    
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string</span>
@@ -857,7 +890,7 @@
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Helper/Parser.php"><a href="files/src-helper-parser.html"><abbr title="src/Helper/Parser.php">Parser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Helper/Parser.php"><a href="files/helper-parser.html"><abbr title="Helper/Parser.php">Parser.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">246</span>
 
@@ -866,16 +899,17 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">parseImageThumbToHQ</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$imageUrl</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">parseImageThumbToHQ</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$imageUrl</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$imageUrl</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                <span class="phpdocumentor-argument-list__argument__name">$imageUrl</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -883,22 +917,23 @@
             </dl>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+    <h5 class="phpdocumentor-tag-list__heading" id="method_parseImageThumbToHQ_tags">
         Tags
-        <a href="classes/Jikan-Helper-Parser.html#method_parseImageThumbToHQ#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Jikan-Helper-Parser.html#method_parseImageThumbToHQ_tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><abbr title="\InvalidArgumentException">InvalidArgumentException</abbr></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
-                                            </dl>
+                        </dl>
 
+        
+    
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string</span>
@@ -917,7 +952,7 @@
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Helper/Parser.php"><a href="files/src-helper-parser.html"><abbr title="src/Helper/Parser.php">Parser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Helper/Parser.php"><a href="files/helper-parser.html"><abbr title="Helper/Parser.php">Parser.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">24</span>
 
@@ -927,39 +962,48 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">removeChildNodes</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Symfony\Component\DomCrawler\Crawler">Crawler</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$crawler</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Symfony\Component\DomCrawler\Crawler">Crawler</abbr></span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">removeChildNodes</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Symfony\Component\DomCrawler\Crawler">Crawler</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$crawler</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$removeAllNodes</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Symfony\Component\DomCrawler\Crawler">Crawler</abbr></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$crawler</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Symfony\Component\DomCrawler\Crawler">Crawler</abbr></span>
+                <span class="phpdocumentor-argument-list__argument__name">$crawler</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Symfony\Component\DomCrawler\Crawler">Crawler</abbr></span>
                             </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$removeAllNodes</span>
+                : <span class="phpdocumentor-argument-list__argument__type">bool</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">false</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
             </dl>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+    <h5 class="phpdocumentor-tag-list__heading" id="method_removeChildNodes_tags">
         Tags
-        <a href="classes/Jikan-Helper-Parser.html#method_removeChildNodes#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Jikan-Helper-Parser.html#method_removeChildNodes_tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><abbr title="\InvalidArgumentException">InvalidArgumentException</abbr></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
-                                            </dl>
+                        </dl>
 
+        
+    
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><abbr title="\Symfony\Component\DomCrawler\Crawler">Crawler</abbr></span>
@@ -978,7 +1022,7 @@
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Helper/Parser.php"><a href="files/src-helper-parser.html"><abbr title="src/Helper/Parser.php">Parser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Helper/Parser.php"><a href="files/helper-parser.html"><abbr title="Helper/Parser.php">Parser.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">61</span>
 
@@ -988,16 +1032,17 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">stringIdFromUrl</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$url</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">stringIdFromUrl</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$url</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$url</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                <span class="phpdocumentor-argument-list__argument__name">$url</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -1006,6 +1051,8 @@
 
     
 
+        
+    
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string</span>
@@ -1024,7 +1071,7 @@
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Helper/Parser.php"><a href="files/src-helper-parser.html"><abbr title="src/Helper/Parser.php">Parser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Helper/Parser.php"><a href="files/helper-parser.html"><abbr title="Helper/Parser.php">Parser.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">85</span>
 
@@ -1034,16 +1081,17 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">suffixIdFromUrl</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$url</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">suffixIdFromUrl</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$url</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$url</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                <span class="phpdocumentor-argument-list__argument__name">$url</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -1052,6 +1100,8 @@
 
     
 
+        
+    
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">int</span>
@@ -1070,7 +1120,7 @@
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Helper/Parser.php"><a href="files/src-helper-parser.html"><abbr title="src/Helper/Parser.php">Parser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Helper/Parser.php"><a href="files/helper-parser.html"><abbr title="Helper/Parser.php">Parser.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">218</span>
 
@@ -1079,16 +1129,17 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">textOrNull</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Symfony\Component\DomCrawler\Crawler">Crawler</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$crawler</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">null|string</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">textOrNull</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Symfony\Component\DomCrawler\Crawler">Crawler</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$crawler</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">null|string</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$crawler</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Symfony\Component\DomCrawler\Crawler">Crawler</abbr></span>
+                <span class="phpdocumentor-argument-list__argument__name">$crawler</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Symfony\Component\DomCrawler\Crawler">Crawler</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -1096,22 +1147,23 @@
             </dl>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+    <h5 class="phpdocumentor-tag-list__heading" id="method_textOrNull_tags">
         Tags
-        <a href="classes/Jikan-Helper-Parser.html#method_textOrNull#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Jikan-Helper-Parser.html#method_textOrNull_tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><abbr title="\InvalidArgumentException">InvalidArgumentException</abbr></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
-                                            </dl>
+                        </dl>
 
+        
+    
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">null|string</span>
@@ -1120,98 +1172,7 @@
 </article>
             </section>
 
-        <div class="phpdocumentor-modal" id="source-view">
-    <div class="phpdocumentor-modal-bg" data-exit-button></div>
-    <div class="phpdocumentor-modal-container">
-        <div class="phpdocumentor-modal-content">
-            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/src/Helper/Parser.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
-        </div>
-        <button data-exit-button class="phpdocumentor-modal__close">&times;</button>
-    </div>
-</div>
-
-    <script type="text/javascript">
-        (function () {
-            function loadExternalCodeSnippet(el, url, line) {
-                Array.prototype.slice.call(el.querySelectorAll('pre[data-src]')).forEach((pre) => {
-                    const src = url || pre.getAttribute('data-src').replace(/\\/g, '/');
-                    const language = 'php';
-
-                    const code = document.createElement('code');
-                    code.className = 'language-' + language;
-                    pre.textContent = '';
-                    pre.setAttribute('data-line', line)
-                    code.textContent = 'Loading…';
-                    pre.appendChild(code);
-
-                    var xhr = new XMLHttpRequest();
-
-                    xhr.open('GET', src, true);
-
-                    xhr.onreadystatechange = function () {
-                        if (xhr.readyState !== 4) {
-                            return;
-                        }
-
-                        if (xhr.status < 400 && xhr.responseText) {
-                            code.textContent = xhr.responseText;
-                            Prism.highlightElement(code);
-                            return;
-                        }
-
-                        if (xhr.status === 404) {
-                            code.textContent = '✖ Error: File could not be found';
-                            return;
-                        }
-
-                        if (xhr.status >= 400) {
-                            code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
-                            return;
-                        }
-
-                        code.textContent = '✖ Error: An unknown error occurred';
-                    };
-
-                    xhr.send(null);
-                });
-            }
-
-            const modalButtons = document.querySelectorAll("[data-modal]");
-            const openedAsLocalFile = window.location.protocol === 'file:';
-            if (modalButtons.length > 0 && openedAsLocalFile) {
-                console.warn(
-                    'Viewing the source code is unavailable because you are opening this page from the file:// scheme; ' +
-                    'browsers block XHR requests when a page is opened this way'
-                );
-            }
-
-            modalButtons.forEach(function (trigger) {
-                if (openedAsLocalFile) {
-                    trigger.setAttribute("hidden", "hidden");
-                }
-
-                trigger.addEventListener("click", function (event) {
-                    event.preventDefault();
-                    const modal = document.getElementById(trigger.dataset.modal);
-                    if (!modal) {
-                        console.error(`Modal with id "${trigger.dataset.modal}" could not be found`);
-                        return;
-                    }
-                    modal.classList.add("phpdocumentor-modal__open");
-
-                    loadExternalCodeSnippet(modal, trigger.dataset.src || null, trigger.dataset.line)
-                    const exits = modal.querySelectorAll("[data-exit-button]");
-                    exits.forEach(function (exit) {
-                        exit.addEventListener("click", function (event) {
-                            event.preventDefault();
-                            modal.classList.remove("phpdocumentor-modal__open");
-                        });
-                    });
-                });
-            });
-        })();
-    </script>
-
+        
     </article>
                                 </section>
                 <section class="phpdocumentor-on-this-page__sidebar">
@@ -1230,7 +1191,7 @@
                             <li class="phpdocumentor-on-this-page-section__title">Constants</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
-                                                    <li><a href="classes/Jikan-Helper-Parser.html#constant_ALLOWED_NODES">ALLOWED_NODES</a></li>
+                                                    <li class=""><a href="classes/Jikan-Helper-Parser.html#constant_ALLOWED_NODES">ALLOWED_NODES</a></li>
                                             </ul>
                 </li>
             
@@ -1238,21 +1199,21 @@
                         <li class="phpdocumentor-on-this-page-section__title">Methods</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                            <li><a href="classes/Jikan-Helper-Parser.html#method_clubIdFromUrl">clubIdFromUrl()</a></li>
-                                            <li><a href="classes/Jikan-Helper-Parser.html#method_idFromUrl">idFromUrl()</a></li>
-                                            <li><a href="classes/Jikan-Helper-Parser.html#method_parseDate">parseDate()</a></li>
-                                            <li><a href="classes/Jikan-Helper-Parser.html#method_parseDateDMY">parseDateDMY()</a></li>
-                                            <li><a href="classes/Jikan-Helper-Parser.html#method_parseDateMDY">parseDateMDY()</a></li>
-                                            <li><a href="classes/Jikan-Helper-Parser.html#method_parseDateMDYReadable">parseDateMDYReadable()</a></li>
-                                            <li><a href="classes/Jikan-Helper-Parser.html#method_parseDateTimePST">parseDateTimePST()</a></li>
-                                            <li><a href="classes/Jikan-Helper-Parser.html#method_parseDurationToSeconds">parseDurationToSeconds()</a></li>
-                                            <li><a href="classes/Jikan-Helper-Parser.html#method_parseForumDate">parseForumDate()</a></li>
-                                            <li><a href="classes/Jikan-Helper-Parser.html#method_parseImageQuality">parseImageQuality()</a></li>
-                                            <li><a href="classes/Jikan-Helper-Parser.html#method_parseImageThumbToHQ">parseImageThumbToHQ()</a></li>
-                                            <li><a href="classes/Jikan-Helper-Parser.html#method_removeChildNodes">removeChildNodes()</a></li>
-                                            <li><a href="classes/Jikan-Helper-Parser.html#method_stringIdFromUrl">stringIdFromUrl()</a></li>
-                                            <li><a href="classes/Jikan-Helper-Parser.html#method_suffixIdFromUrl">suffixIdFromUrl()</a></li>
-                                            <li><a href="classes/Jikan-Helper-Parser.html#method_textOrNull">textOrNull()</a></li>
+                                            <li class=""><a href="classes/Jikan-Helper-Parser.html#method_clubIdFromUrl">clubIdFromUrl()</a></li>
+                                            <li class=""><a href="classes/Jikan-Helper-Parser.html#method_idFromUrl">idFromUrl()</a></li>
+                                            <li class=""><a href="classes/Jikan-Helper-Parser.html#method_parseDate">parseDate()</a></li>
+                                            <li class=""><a href="classes/Jikan-Helper-Parser.html#method_parseDateDMY">parseDateDMY()</a></li>
+                                            <li class=""><a href="classes/Jikan-Helper-Parser.html#method_parseDateMDY">parseDateMDY()</a></li>
+                                            <li class=""><a href="classes/Jikan-Helper-Parser.html#method_parseDateMDYReadable">parseDateMDYReadable()</a></li>
+                                            <li class=""><a href="classes/Jikan-Helper-Parser.html#method_parseDateTimePST">parseDateTimePST()</a></li>
+                                            <li class=""><a href="classes/Jikan-Helper-Parser.html#method_parseDurationToSeconds">parseDurationToSeconds()</a></li>
+                                            <li class=""><a href="classes/Jikan-Helper-Parser.html#method_parseForumDate">parseForumDate()</a></li>
+                                            <li class=""><a href="classes/Jikan-Helper-Parser.html#method_parseImageQuality">parseImageQuality()</a></li>
+                                            <li class=""><a href="classes/Jikan-Helper-Parser.html#method_parseImageThumbToHQ">parseImageThumbToHQ()</a></li>
+                                            <li class=""><a href="classes/Jikan-Helper-Parser.html#method_removeChildNodes">removeChildNodes()</a></li>
+                                            <li class=""><a href="classes/Jikan-Helper-Parser.html#method_stringIdFromUrl">stringIdFromUrl()</a></li>
+                                            <li class=""><a href="classes/Jikan-Helper-Parser.html#method_suffixIdFromUrl">suffixIdFromUrl()</a></li>
+                                            <li class=""><a href="classes/Jikan-Helper-Parser.html#method_textOrNull">textOrNull()</a></li>
                                     </ul>
             </li>
                     </ul>
