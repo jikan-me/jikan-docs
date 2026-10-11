@@ -6,7 +6,10 @@
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <base href="../">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png"/>
     <link rel="icon" href="images/favicon.ico"/>
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png"/>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
             <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -54,7 +57,7 @@
     Menu
 </label>
 <aside class="phpdocumentor-column -three phpdocumentor-sidebar">
-                    <section class="phpdocumentor-sidebar__category">
+                    <section class="phpdocumentor-sidebar__category -namespaces">
             <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="namespaces/jikan.html" class="">Jikan</a>
@@ -91,7 +94,7 @@
             </ul>
 
                         </section>
-                <section class="phpdocumentor-sidebar__category">
+                <section class="phpdocumentor-sidebar__category -packages">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="packages/Application.html" class="">Application</a>
@@ -129,14 +132,14 @@
 
                         </section>
             
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -reports">
         <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
                 <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
     </section>
 
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -indices">
         <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
     </section>
@@ -175,9 +178,9 @@
 </div>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Parser/Manga/MangaParser.php"><a href="files/src-parser-manga-mangaparser.html"><abbr title="src/Parser/Manga/MangaParser.php">MangaParser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Parser/Manga/MangaParser.php"><a href="files/parser-manga-mangaparser.html"><abbr title="Parser/Manga/MangaParser.php">MangaParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">22</span>
+    <span class="phpdocumentor-element-found-in__line">24</span>
 
     </aside>
 
@@ -187,7 +190,8 @@
 
 
 
-
+    
+    
 <h3 id="toc">
     Table of Contents
     <a href="classes/Jikan-Parser-Manga-MangaParser.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
@@ -216,7 +220,7 @@
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
-    <a href="classes/Jikan-Parser-Manga-MangaParser.html#property_crawler">$crawler</a>
+    <a class="" href="classes/Jikan-Parser-Manga-MangaParser.html#property_crawler">$crawler</a>
     <span>
                         &nbsp;: <abbr title="\Symfony\Component\DomCrawler\Crawler">Crawler</abbr>            </span>
 </dt>
@@ -230,207 +234,206 @@
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Jikan-Parser-Manga-MangaParser.html#method___construct">__construct()</a>
+    <a class="" href="classes/Jikan-Parser-Manga-MangaParser.html#method___construct">__construct()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 <dd>MangaParser constructor.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getApproved">getApproved()</a>
+    <a class="" href="classes/Jikan-Parser-Manga-MangaParser.html#method_getApproved">getApproved()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getDemographics">getDemographics()</a>
+    <a class="" href="classes/Jikan-Parser-Manga-MangaParser.html#method_getDemographics">getDemographics()</a>
     <span>
                                 &nbsp;: array&lt;string|int, <a href="classes/Jikan-Model-Common-MalUrl.html"><abbr title="\Jikan\Model\Common\MalUrl">MalUrl</abbr></a>&gt;    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getExplicitGenres">getExplicitGenres()</a>
+    <a class="" href="classes/Jikan-Parser-Manga-MangaParser.html#method_getExplicitGenres">getExplicitGenres()</a>
     <span>
                                 &nbsp;: array&lt;string|int, <a href="classes/Jikan-Model-Common-MalUrl.html"><abbr title="\Jikan\Model\Common\MalUrl">MalUrl</abbr></a>&gt;    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getExternalLinks">getExternalLinks()</a>
+    <a class="" href="classes/Jikan-Parser-Manga-MangaParser.html#method_getExternalLinks">getExternalLinks()</a>
     <span>
                                 &nbsp;: array&lt;string|int, mixed&gt;|array&lt;string|int, <a href="classes/Jikan-Model-Common-MalUrl.html"><abbr title="\Jikan\Model\Common\MalUrl">MalUrl</abbr></a>&gt;    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getGenres">getGenres()</a>
+    <a class="" href="classes/Jikan-Parser-Manga-MangaParser.html#method_getGenres">getGenres()</a>
     <span>
                                 &nbsp;: array&lt;string|int, <a href="classes/Jikan-Model-Common-MalUrl.html"><abbr title="\Jikan\Model\Common\MalUrl">MalUrl</abbr></a>&gt;    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaAuthors">getMangaAuthors()</a>
+    <a class="" href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaAuthors">getMangaAuthors()</a>
     <span>
                                 &nbsp;: array&lt;string|int, <a href="classes/Jikan-Model-Common-MalUrl.html"><abbr title="\Jikan\Model\Common\MalUrl">MalUrl</abbr></a>&gt;    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaBackground">getMangaBackground()</a>
+    <a class="" href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaBackground">getMangaBackground()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaChapters">getMangaChapters()</a>
+    <a class="" href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaChapters">getMangaChapters()</a>
     <span>
                                 &nbsp;: int|null    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaFavorites">getMangaFavorites()</a>
+    <a class="" href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaFavorites">getMangaFavorites()</a>
     <span>
                                 &nbsp;: int    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaId">getMangaId()</a>
+    <a class="" href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaId">getMangaId()</a>
     <span>
                                 &nbsp;: int    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaImageURL">getMangaImageURL()</a>
+    <a class="" href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaImageURL">getMangaImageURL()</a>
+    <span>
+                                &nbsp;: string|null    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaMembers">getMangaMembers()</a>
+    <span>
+                                &nbsp;: int    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaPopularity">getMangaPopularity()</a>
+    <span>
+                                &nbsp;: int    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaPublishedString">getMangaPublishedString()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaMembers">getMangaMembers()</a>
+    <a class="" href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaRank">getMangaRank()</a>
     <span>
                                 &nbsp;: int    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaPopularity">getMangaPopularity()</a>
-    <span>
-                                &nbsp;: int    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaPublishedString">getMangaPublishedString()</a>
-    <span>
-                                &nbsp;: string    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaRank">getMangaRank()</a>
-    <span>
-                                &nbsp;: int    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaRelated">getMangaRelated()</a>
+    <a class="" href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaRelated">getMangaRelated()</a>
     <span>
                                 &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaSerialization">getMangaSerialization()</a>
+    <a class="" href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaSerialization">getMangaSerialization()</a>
     <span>
                                 &nbsp;: array&lt;string|int, <a href="classes/Jikan-Model-Common-MalUrl.html"><abbr title="\Jikan\Model\Common\MalUrl">MalUrl</abbr></a>&gt;    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaStatus">getMangaStatus()</a>
+    <a class="" href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaStatus">getMangaStatus()</a>
     <span>
                                 &nbsp;: string|null    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaSynopsis">getMangaSynopsis()</a>
+    <a class="" href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaSynopsis">getMangaSynopsis()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaTitle">getMangaTitle()</a>
+    <a class="" href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaTitle">getMangaTitle()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaTitleEnglish">getMangaTitleEnglish()</a>
+    <a class="" href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaTitleEnglish">getMangaTitleEnglish()</a>
     <span>
                                 &nbsp;: string|null    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaTitleJapanese">getMangaTitleJapanese()</a>
+    <a class="" href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaTitleJapanese">getMangaTitleJapanese()</a>
     <span>
                                 &nbsp;: string|null    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaTitleSynonyms">getMangaTitleSynonyms()</a>
+    <a class="" href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaTitleSynonyms">getMangaTitleSynonyms()</a>
     <span>
                                 &nbsp;: array&lt;string|int, string&gt;    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaType">getMangaType()</a>
+    <a class="" href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaType">getMangaType()</a>
     <span>
                                 &nbsp;: string|null    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaURL">getMangaURL()</a>
+    <a class="" href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaURL">getMangaURL()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaVolumes">getMangaVolumes()</a>
+    <a class="" href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaVolumes">getMangaVolumes()</a>
     <span>
                                 &nbsp;: int|null    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getModel">getModel()</a>
+    <a class="" href="classes/Jikan-Parser-Manga-MangaParser.html#method_getModel">getModel()</a>
     <span>
                                 &nbsp;: <a href="classes/Jikan-Model-Manga-Manga.html"><abbr title="\Jikan\Model\Manga\Manga">Manga</abbr></a>    </span>
 </dt>
 <dd>Return the model</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getPublished">getPublished()</a>
+    <a class="" href="classes/Jikan-Parser-Manga-MangaParser.html#method_getPublished">getPublished()</a>
     <span>
                                 &nbsp;: <a href="classes/Jikan-Model-Common-DateRange.html"><abbr title="\Jikan\Model\Common\DateRange">DateRange</abbr></a>    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getScore">getScore()</a>
+    <a class="" href="classes/Jikan-Parser-Manga-MangaParser.html#method_getScore">getScore()</a>
     <span>
                                 &nbsp;: float    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getScoredBy">getScoredBy()</a>
+    <a class="" href="classes/Jikan-Parser-Manga-MangaParser.html#method_getScoredBy">getScoredBy()</a>
     <span>
                                 &nbsp;: int    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getThemes">getThemes()</a>
+    <a class="" href="classes/Jikan-Parser-Manga-MangaParser.html#method_getThemes">getThemes()</a>
     <span>
                                 &nbsp;: array&lt;string|int, <a href="classes/Jikan-Model-Common-MalUrl.html"><abbr title="\Jikan\Model\Common\MalUrl">MalUrl</abbr></a>&gt;    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getTitles">getTitles()</a>
+    <a class="" href="classes/Jikan-Parser-Manga-MangaParser.html#method_getTitles">getTitles()</a>
     <span>
                                 &nbsp;: array&lt;string|int, <a href="classes/Jikan-Model-Common-Title.html"><abbr title="\Jikan\Model\Common\Title">Title</abbr></a>&gt;    </span>
 </dt>
 
     </dl>
-
 
 
 
@@ -448,32 +451,36 @@
             phpdocumentor-element
             -property
             -private
-                                                        "
+                                                                    "
 >
     <h4 class="phpdocumentor-element__name" id="property_crawler">
         $crawler
         <a href="classes/Jikan-Parser-Manga-MangaParser.html#property_crawler" class="headerlink"><i class="fas fa-link"></i></a>
 
         <span class="phpdocumentor-element__modifiers">
-                                </span>
+                                            </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Parser/Manga/MangaParser.php"><a href="files/src-parser-manga-mangaparser.html"><abbr title="src/Parser/Manga/MangaParser.php">MangaParser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Parser/Manga/MangaParser.php"><a href="files/parser-manga-mangaparser.html"><abbr title="Parser/Manga/MangaParser.php">MangaParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">27</span>
+    <span class="phpdocumentor-element-found-in__line">26</span>
 
     </aside>
 
     
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__type"><abbr title="\Symfony\Component\DomCrawler\Crawler">Crawler</abbr></span>
+        <span class="phpdocumentor-signature__visibility">private</span>
+            <span class="phpdocumentor-signature__type"><abbr title="\Symfony\Component\DomCrawler\Crawler">Crawler</abbr></span>
     <span class="phpdocumentor-signature__name">$crawler</span>
     </code>
 
     
     
     
+
+        
+        
 
 </article>
             </section>
@@ -496,9 +503,9 @@
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Parser/Manga/MangaParser.php"><a href="files/src-parser-manga-mangaparser.html"><abbr title="src/Parser/Manga/MangaParser.php">MangaParser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Parser/Manga/MangaParser.php"><a href="files/parser-manga-mangaparser.html"><abbr title="Parser/Manga/MangaParser.php">MangaParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">34</span>
+    <span class="phpdocumentor-element-found-in__line">33</span>
 
     </aside>
 
@@ -506,16 +513,17 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Symfony\Component\DomCrawler\Crawler">Crawler</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$crawler</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Symfony\Component\DomCrawler\Crawler">Crawler</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$crawler</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$crawler</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Symfony\Component\DomCrawler\Crawler">Crawler</abbr></span>
+                <span class="phpdocumentor-argument-list__argument__name">$crawler</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Symfony\Component\DomCrawler\Crawler">Crawler</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -524,6 +532,8 @@
 
     
 
+        
+    
     
 </article>
                     <article
@@ -538,9 +548,9 @@
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Parser/Manga/MangaParser.php"><a href="files/src-parser-manga-mangaparser.html"><abbr title="src/Parser/Manga/MangaParser.php">MangaParser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Parser/Manga/MangaParser.php"><a href="files/parser-manga-mangaparser.html"><abbr title="Parser/Manga/MangaParser.php">MangaParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">104</span>
+    <span class="phpdocumentor-element-found-in__line">111</span>
 
     </aside>
 
@@ -554,7 +564,10 @@
     
     
     
+    
 
+        
+    
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">bool</span>
@@ -573,9 +586,9 @@
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Parser/Manga/MangaParser.php"><a href="files/src-parser-manga-mangaparser.html"><abbr title="src/Parser/Manga/MangaParser.php">MangaParser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Parser/Manga/MangaParser.php"><a href="files/parser-manga-mangaparser.html"><abbr title="Parser/Manga/MangaParser.php">MangaParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">395</span>
+    <span class="phpdocumentor-element-found-in__line">398</span>
 
     </aside>
 
@@ -589,30 +602,28 @@
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_getDemographics_tags">
         Tags
-        <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getDemographics#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getDemographics_tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><abbr title="\InvalidArgumentException">InvalidArgumentException</abbr></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
-                            <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><abbr title="\RuntimeException">RuntimeException</abbr></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
-                                            </dl>
+                        </dl>
 
+        
+    
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">array&lt;string|int, <a href="classes/Jikan-Model-Common-MalUrl.html"><abbr title="\Jikan\Model\Common\MalUrl">MalUrl</abbr></a>&gt;</span>
@@ -631,9 +642,9 @@
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Parser/Manga/MangaParser.php"><a href="files/src-parser-manga-mangaparser.html"><abbr title="src/Parser/Manga/MangaParser.php">MangaParser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Parser/Manga/MangaParser.php"><a href="files/parser-manga-mangaparser.html"><abbr title="Parser/Manga/MangaParser.php">MangaParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">363</span>
+    <span class="phpdocumentor-element-found-in__line">366</span>
 
     </aside>
 
@@ -647,30 +658,28 @@
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_getExplicitGenres_tags">
         Tags
-        <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getExplicitGenres#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getExplicitGenres_tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><abbr title="\InvalidArgumentException">InvalidArgumentException</abbr></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
-                            <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><abbr title="\RuntimeException">RuntimeException</abbr></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
-                                            </dl>
+                        </dl>
 
+        
+    
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">array&lt;string|int, <a href="classes/Jikan-Model-Common-MalUrl.html"><abbr title="\Jikan\Model\Common\MalUrl">MalUrl</abbr></a>&gt;</span>
@@ -689,9 +698,9 @@
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Parser/Manga/MangaParser.php"><a href="files/src-parser-manga-mangaparser.html"><abbr title="src/Parser/Manga/MangaParser.php">MangaParser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Parser/Manga/MangaParser.php"><a href="files/parser-manga-mangaparser.html"><abbr title="Parser/Manga/MangaParser.php">MangaParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">591</span>
+    <span class="phpdocumentor-element-found-in__line">594</span>
 
     </aside>
 
@@ -705,22 +714,24 @@
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_getExternalLinks_tags">
         Tags
-        <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getExternalLinks#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getExternalLinks_tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><abbr title="\InvalidArgumentException">InvalidArgumentException</abbr></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
-                                            </dl>
+                        </dl>
 
+        
+    
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|array&lt;string|int, <a href="classes/Jikan-Model-Common-MalUrl.html"><abbr title="\Jikan\Model\Common\MalUrl">MalUrl</abbr></a>&gt;</span>
@@ -739,9 +750,9 @@
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Parser/Manga/MangaParser.php"><a href="files/src-parser-manga-mangaparser.html"><abbr title="src/Parser/Manga/MangaParser.php">MangaParser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Parser/Manga/MangaParser.php"><a href="files/parser-manga-mangaparser.html"><abbr title="Parser/Manga/MangaParser.php">MangaParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">331</span>
+    <span class="phpdocumentor-element-found-in__line">334</span>
 
     </aside>
 
@@ -755,30 +766,28 @@
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_getGenres_tags">
         Tags
-        <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getGenres#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getGenres_tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><abbr title="\InvalidArgumentException">InvalidArgumentException</abbr></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
-                            <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><abbr title="\RuntimeException">RuntimeException</abbr></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
-                                            </dl>
+                        </dl>
 
+        
+    
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">array&lt;string|int, <a href="classes/Jikan-Model-Common-MalUrl.html"><abbr title="\Jikan\Model\Common\MalUrl">MalUrl</abbr></a>&gt;</span>
@@ -797,9 +806,9 @@
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Parser/Manga/MangaParser.php"><a href="files/src-parser-manga-mangaparser.html"><abbr title="src/Parser/Manga/MangaParser.php">MangaParser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Parser/Manga/MangaParser.php"><a href="files/parser-manga-mangaparser.html"><abbr title="Parser/Manga/MangaParser.php">MangaParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">300</span>
+    <span class="phpdocumentor-element-found-in__line">303</span>
 
     </aside>
 
@@ -813,30 +822,28 @@
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_getMangaAuthors_tags">
         Tags
-        <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaAuthors#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaAuthors_tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><abbr title="\RuntimeException">RuntimeException</abbr></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
-                            <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><abbr title="\InvalidArgumentException">InvalidArgumentException</abbr></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
-                                            </dl>
+                        </dl>
 
+        
+    
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">array&lt;string|int, <a href="classes/Jikan-Model-Common-MalUrl.html"><abbr title="\Jikan\Model\Common\MalUrl">MalUrl</abbr></a>&gt;</span>
@@ -855,9 +862,9 @@
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Parser/Manga/MangaParser.php"><a href="files/src-parser-manga-mangaparser.html"><abbr title="src/Parser/Manga/MangaParser.php">MangaParser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Parser/Manga/MangaParser.php"><a href="files/parser-manga-mangaparser.html"><abbr title="Parser/Manga/MangaParser.php">MangaParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">696</span>
+    <span class="phpdocumentor-element-found-in__line">699</span>
 
     </aside>
 
@@ -871,30 +878,28 @@
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_getMangaBackground_tags">
         Tags
-        <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaBackground#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaBackground_tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><abbr title="\RuntimeException">RuntimeException</abbr></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
-                            <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><abbr title="\InvalidArgumentException">InvalidArgumentException</abbr></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
-                                            </dl>
+                        </dl>
 
+        
+    
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string</span>
@@ -913,9 +918,9 @@
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Parser/Manga/MangaParser.php"><a href="files/src-parser-manga-mangaparser.html"><abbr title="src/Parser/Manga/MangaParser.php">MangaParser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Parser/Manga/MangaParser.php"><a href="files/parser-manga-mangaparser.html"><abbr title="Parser/Manga/MangaParser.php">MangaParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">221</span>
+    <span class="phpdocumentor-element-found-in__line">228</span>
 
     </aside>
 
@@ -929,22 +934,24 @@
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_getMangaChapters_tags">
         Tags
-        <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaChapters#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaChapters_tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><abbr title="\InvalidArgumentException">InvalidArgumentException</abbr></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
-                                            </dl>
+                        </dl>
 
+        
+    
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">int|null</span>
@@ -963,9 +970,9 @@
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Parser/Manga/MangaParser.php"><a href="files/src-parser-manga-mangaparser.html"><abbr title="src/Parser/Manga/MangaParser.php">MangaParser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Parser/Manga/MangaParser.php"><a href="files/parser-manga-mangaparser.html"><abbr title="Parser/Manga/MangaParser.php">MangaParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">572</span>
+    <span class="phpdocumentor-element-found-in__line">575</span>
 
     </aside>
 
@@ -979,22 +986,24 @@
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_getMangaFavorites_tags">
         Tags
-        <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaFavorites#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaFavorites_tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><abbr title="\InvalidArgumentException">InvalidArgumentException</abbr></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
-                                            </dl>
+                        </dl>
 
+        
+    
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">int</span>
@@ -1013,9 +1022,9 @@
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Parser/Manga/MangaParser.php"><a href="files/src-parser-manga-mangaparser.html"><abbr title="src/Parser/Manga/MangaParser.php">MangaParser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Parser/Manga/MangaParser.php"><a href="files/parser-manga-mangaparser.html"><abbr title="Parser/Manga/MangaParser.php">MangaParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">54</span>
+    <span class="phpdocumentor-element-found-in__line">53</span>
 
     </aside>
 
@@ -1029,30 +1038,28 @@
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_getMangaId_tags">
         Tags
-        <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaId#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaId_tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><abbr title="\InvalidArgumentException">InvalidArgumentException</abbr></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
-                            <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><abbr title="\RuntimeException">RuntimeException</abbr></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
-                                            </dl>
+                        </dl>
 
+        
+    
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">int</span>
@@ -1071,41 +1078,43 @@
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Parser/Manga/MangaParser.php"><a href="files/src-parser-manga-mangaparser.html"><abbr title="src/Parser/Manga/MangaParser.php">MangaParser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Parser/Manga/MangaParser.php"><a href="files/parser-manga-mangaparser.html"><abbr title="Parser/Manga/MangaParser.php">MangaParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">83</span>
+    <span class="phpdocumentor-element-found-in__line">82</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getMangaImageURL</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                    <span class="phpdocumentor-signature__name">getMangaImageURL</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|null</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_getMangaImageURL_tags">
         Tags
-        <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaImageURL#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaImageURL_tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><abbr title="\InvalidArgumentException">InvalidArgumentException</abbr></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
-                                            </dl>
+                        </dl>
 
+        
+    
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">string</span>
+        <span class="phpdocumentor-signature__response_type">string|null</span>
             </section>
 
 </article>
@@ -1121,9 +1130,9 @@
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Parser/Manga/MangaParser.php"><a href="files/src-parser-manga-mangaparser.html"><abbr title="src/Parser/Manga/MangaParser.php">MangaParser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Parser/Manga/MangaParser.php"><a href="files/parser-manga-mangaparser.html"><abbr title="Parser/Manga/MangaParser.php">MangaParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">553</span>
+    <span class="phpdocumentor-element-found-in__line">556</span>
 
     </aside>
 
@@ -1137,22 +1146,24 @@
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_getMangaMembers_tags">
         Tags
-        <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaMembers#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaMembers_tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><abbr title="\InvalidArgumentException">InvalidArgumentException</abbr></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
-                                            </dl>
+                        </dl>
 
+        
+    
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">int</span>
@@ -1171,9 +1182,9 @@
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Parser/Manga/MangaParser.php"><a href="files/src-parser-manga-mangaparser.html"><abbr title="src/Parser/Manga/MangaParser.php">MangaParser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Parser/Manga/MangaParser.php"><a href="files/parser-manga-mangaparser.html"><abbr title="Parser/Manga/MangaParser.php">MangaParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">534</span>
+    <span class="phpdocumentor-element-found-in__line">537</span>
 
     </aside>
 
@@ -1187,22 +1198,24 @@
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_getMangaPopularity_tags">
         Tags
-        <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaPopularity#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaPopularity_tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><abbr title="\InvalidArgumentException">InvalidArgumentException</abbr></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
-                                            </dl>
+                        </dl>
 
+        
+    
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">int</span>
@@ -1221,9 +1234,9 @@
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Parser/Manga/MangaParser.php"><a href="files/src-parser-manga-mangaparser.html"><abbr title="src/Parser/Manga/MangaParser.php">MangaParser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Parser/Manga/MangaParser.php"><a href="files/parser-manga-mangaparser.html"><abbr title="Parser/Manga/MangaParser.php">MangaParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">723</span>
+    <span class="phpdocumentor-element-found-in__line">726</span>
 
     </aside>
 
@@ -1237,22 +1250,24 @@
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_getMangaPublishedString_tags">
         Tags
-        <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaPublishedString#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaPublishedString_tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><abbr title="\InvalidArgumentException">InvalidArgumentException</abbr></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
-                                            </dl>
+                        </dl>
 
+        
+    
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string</span>
@@ -1271,9 +1286,9 @@
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Parser/Manga/MangaParser.php"><a href="files/src-parser-manga-mangaparser.html"><abbr title="src/Parser/Manga/MangaParser.php">MangaParser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Parser/Manga/MangaParser.php"><a href="files/parser-manga-mangaparser.html"><abbr title="Parser/Manga/MangaParser.php">MangaParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">508</span>
+    <span class="phpdocumentor-element-found-in__line">511</span>
 
     </aside>
 
@@ -1287,22 +1302,24 @@
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_getMangaRank_tags">
         Tags
-        <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaRank#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaRank_tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><abbr title="\InvalidArgumentException">InvalidArgumentException</abbr></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
-                                            </dl>
+                        </dl>
 
+        
+    
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">int</span>
@@ -1321,9 +1338,9 @@
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Parser/Manga/MangaParser.php"><a href="files/src-parser-manga-mangaparser.html"><abbr title="src/Parser/Manga/MangaParser.php">MangaParser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Parser/Manga/MangaParser.php"><a href="files/parser-manga-mangaparser.html"><abbr title="Parser/Manga/MangaParser.php">MangaParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">611</span>
+    <span class="phpdocumentor-element-found-in__line">614</span>
 
     </aside>
 
@@ -1337,30 +1354,28 @@
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_getMangaRelated_tags">
         Tags
-        <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaRelated#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaRelated_tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><abbr title="\InvalidArgumentException">InvalidArgumentException</abbr></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
-                            <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><abbr title="\RuntimeException">RuntimeException</abbr></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
-                                            </dl>
+                        </dl>
 
+        
+    
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
@@ -1379,9 +1394,9 @@
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Parser/Manga/MangaParser.php"><a href="files/src-parser-manga-mangaparser.html"><abbr title="src/Parser/Manga/MangaParser.php">MangaParser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Parser/Manga/MangaParser.php"><a href="files/parser-manga-mangaparser.html"><abbr title="Parser/Manga/MangaParser.php">MangaParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">316</span>
+    <span class="phpdocumentor-element-found-in__line">319</span>
 
     </aside>
 
@@ -1395,30 +1410,28 @@
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_getMangaSerialization_tags">
         Tags
-        <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaSerialization#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaSerialization_tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><abbr title="\RuntimeException">RuntimeException</abbr></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
-                            <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><abbr title="\InvalidArgumentException">InvalidArgumentException</abbr></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
-                                            </dl>
+                        </dl>
 
+        
+    
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">array&lt;string|int, <a href="classes/Jikan-Model-Common-MalUrl.html"><abbr title="\Jikan\Model\Common\MalUrl">MalUrl</abbr></a>&gt;</span>
@@ -1437,9 +1450,9 @@
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Parser/Manga/MangaParser.php"><a href="files/src-parser-manga-mangaparser.html"><abbr title="src/Parser/Manga/MangaParser.php">MangaParser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Parser/Manga/MangaParser.php"><a href="files/parser-manga-mangaparser.html"><abbr title="Parser/Manga/MangaParser.php">MangaParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">281</span>
+    <span class="phpdocumentor-element-found-in__line">284</span>
 
     </aside>
 
@@ -1453,22 +1466,24 @@
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_getMangaStatus_tags">
         Tags
-        <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaStatus#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaStatus_tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><abbr title="\InvalidArgumentException">InvalidArgumentException</abbr></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
-                                            </dl>
+                        </dl>
 
+        
+    
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string|null</span>
@@ -1487,9 +1502,9 @@
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Parser/Manga/MangaParser.php"><a href="files/src-parser-manga-mangaparser.html"><abbr title="src/Parser/Manga/MangaParser.php">MangaParser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Parser/Manga/MangaParser.php"><a href="files/parser-manga-mangaparser.html"><abbr title="Parser/Manga/MangaParser.php">MangaParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">92</span>
+    <span class="phpdocumentor-element-found-in__line">93</span>
 
     </aside>
 
@@ -1503,22 +1518,24 @@
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_getMangaSynopsis_tags">
         Tags
-        <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaSynopsis#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaSynopsis_tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><abbr title="\InvalidArgumentException">InvalidArgumentException</abbr></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
-                                            </dl>
+                        </dl>
 
+        
+    
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string</span>
@@ -1537,9 +1554,9 @@
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Parser/Manga/MangaParser.php"><a href="files/src-parser-manga-mangaparser.html"><abbr title="src/Parser/Manga/MangaParser.php">MangaParser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Parser/Manga/MangaParser.php"><a href="files/parser-manga-mangaparser.html"><abbr title="Parser/Manga/MangaParser.php">MangaParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">74</span>
+    <span class="phpdocumentor-element-found-in__line">73</span>
 
     </aside>
 
@@ -1553,22 +1570,24 @@
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_getMangaTitle_tags">
         Tags
-        <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaTitle#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaTitle_tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><abbr title="\InvalidArgumentException">InvalidArgumentException</abbr></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
-                                            </dl>
+                        </dl>
 
+        
+    
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string</span>
@@ -1587,9 +1606,9 @@
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Parser/Manga/MangaParser.php"><a href="files/src-parser-manga-mangaparser.html"><abbr title="src/Parser/Manga/MangaParser.php">MangaParser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Parser/Manga/MangaParser.php"><a href="files/parser-manga-mangaparser.html"><abbr title="Parser/Manga/MangaParser.php">MangaParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">119</span>
+    <span class="phpdocumentor-element-found-in__line">126</span>
 
     </aside>
 
@@ -1603,22 +1622,24 @@
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_getMangaTitleEnglish_tags">
         Tags
-        <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaTitleEnglish#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaTitleEnglish_tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><abbr title="\InvalidArgumentException">InvalidArgumentException</abbr></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
-                                            </dl>
+                        </dl>
 
+        
+    
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string|null</span>
@@ -1637,9 +1658,9 @@
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Parser/Manga/MangaParser.php"><a href="files/src-parser-manga-mangaparser.html"><abbr title="src/Parser/Manga/MangaParser.php">MangaParser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Parser/Manga/MangaParser.php"><a href="files/parser-manga-mangaparser.html"><abbr title="Parser/Manga/MangaParser.php">MangaParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">161</span>
+    <span class="phpdocumentor-element-found-in__line">168</span>
 
     </aside>
 
@@ -1653,22 +1674,24 @@
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_getMangaTitleJapanese_tags">
         Tags
-        <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaTitleJapanese#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaTitleJapanese_tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><abbr title="\InvalidArgumentException">InvalidArgumentException</abbr></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
-                                            </dl>
+                        </dl>
 
+        
+    
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string|null</span>
@@ -1687,9 +1710,9 @@
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Parser/Manga/MangaParser.php"><a href="files/src-parser-manga-mangaparser.html"><abbr title="src/Parser/Manga/MangaParser.php">MangaParser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Parser/Manga/MangaParser.php"><a href="files/parser-manga-mangaparser.html"><abbr title="Parser/Manga/MangaParser.php">MangaParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">137</span>
+    <span class="phpdocumentor-element-found-in__line">144</span>
 
     </aside>
 
@@ -1703,22 +1726,24 @@
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_getMangaTitleSynonyms_tags">
         Tags
-        <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaTitleSynonyms#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaTitleSynonyms_tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><abbr title="\InvalidArgumentException">InvalidArgumentException</abbr></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
-                                            </dl>
+                        </dl>
 
+        
+    
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">array&lt;string|int, string&gt;</span>
@@ -1737,9 +1762,9 @@
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Parser/Manga/MangaParser.php"><a href="files/src-parser-manga-mangaparser.html"><abbr title="src/Parser/Manga/MangaParser.php">MangaParser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Parser/Manga/MangaParser.php"><a href="files/parser-manga-mangaparser.html"><abbr title="Parser/Manga/MangaParser.php">MangaParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">204</span>
+    <span class="phpdocumentor-element-found-in__line">211</span>
 
     </aside>
 
@@ -1753,22 +1778,24 @@
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_getMangaType_tags">
         Tags
-        <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaType#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaType_tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><abbr title="\InvalidArgumentException">InvalidArgumentException</abbr></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
-                                            </dl>
+                        </dl>
 
+        
+    
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string|null</span>
@@ -1787,9 +1814,9 @@
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Parser/Manga/MangaParser.php"><a href="files/src-parser-manga-mangaparser.html"><abbr title="src/Parser/Manga/MangaParser.php">MangaParser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Parser/Manga/MangaParser.php"><a href="files/parser-manga-mangaparser.html"><abbr title="Parser/Manga/MangaParser.php">MangaParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">65</span>
+    <span class="phpdocumentor-element-found-in__line">64</span>
 
     </aside>
 
@@ -1803,22 +1830,24 @@
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_getMangaURL_tags">
         Tags
-        <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaURL#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaURL_tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><abbr title="\InvalidArgumentException">InvalidArgumentException</abbr></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
-                                            </dl>
+                        </dl>
 
+        
+    
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string</span>
@@ -1837,9 +1866,9 @@
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Parser/Manga/MangaParser.php"><a href="files/src-parser-manga-mangaparser.html"><abbr title="src/Parser/Manga/MangaParser.php">MangaParser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Parser/Manga/MangaParser.php"><a href="files/parser-manga-mangaparser.html"><abbr title="Parser/Manga/MangaParser.php">MangaParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">251</span>
+    <span class="phpdocumentor-element-found-in__line">256</span>
 
     </aside>
 
@@ -1853,22 +1882,24 @@
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_getMangaVolumes_tags">
         Tags
-        <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaVolumes#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaVolumes_tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><abbr title="\InvalidArgumentException">InvalidArgumentException</abbr></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
-                                            </dl>
+                        </dl>
 
+        
+    
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">int|null</span>
@@ -1887,9 +1918,9 @@
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Parser/Manga/MangaParser.php"><a href="files/src-parser-manga-mangaparser.html"><abbr title="src/Parser/Manga/MangaParser.php">MangaParser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Parser/Manga/MangaParser.php"><a href="files/parser-manga-mangaparser.html"><abbr title="Parser/Manga/MangaParser.php">MangaParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">44</span>
+    <span class="phpdocumentor-element-found-in__line">43</span>
 
     </aside>
 
@@ -1904,30 +1935,28 @@
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_getModel_tags">
         Tags
-        <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getModel#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getModel_tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><abbr title="\RuntimeException">RuntimeException</abbr></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
-                            <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><abbr title="\InvalidArgumentException">InvalidArgumentException</abbr></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
-                                            </dl>
+                        </dl>
 
+        
+    
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><a href="classes/Jikan-Model-Manga-Manga.html"><abbr title="\Jikan\Model\Manga\Manga">Manga</abbr></a></span>
@@ -1946,9 +1975,9 @@
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Parser/Manga/MangaParser.php"><a href="files/src-parser-manga-mangaparser.html"><abbr title="src/Parser/Manga/MangaParser.php">MangaParser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Parser/Manga/MangaParser.php"><a href="files/parser-manga-mangaparser.html"><abbr title="Parser/Manga/MangaParser.php">MangaParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">714</span>
+    <span class="phpdocumentor-element-found-in__line">717</span>
 
     </aside>
 
@@ -1962,22 +1991,24 @@
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_getPublished_tags">
         Tags
-        <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getPublished#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getPublished_tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><abbr title="\InvalidArgumentException">InvalidArgumentException</abbr></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
-                                            </dl>
+                        </dl>
 
+        
+    
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><a href="classes/Jikan-Model-Common-DateRange.html"><abbr title="\Jikan\Model\Common\DateRange">DateRange</abbr></a></span>
@@ -1996,9 +2027,9 @@
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Parser/Manga/MangaParser.php"><a href="files/src-parser-manga-mangaparser.html"><abbr title="src/Parser/Manga/MangaParser.php">MangaParser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Parser/Manga/MangaParser.php"><a href="files/parser-manga-mangaparser.html"><abbr title="Parser/Manga/MangaParser.php">MangaParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">459</span>
+    <span class="phpdocumentor-element-found-in__line">462</span>
 
     </aside>
 
@@ -2012,30 +2043,28 @@
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_getScore_tags">
         Tags
-        <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getScore#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getScore_tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><abbr title="\RuntimeException">RuntimeException</abbr></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
-                            <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><abbr title="\InvalidArgumentException">InvalidArgumentException</abbr></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
-                                            </dl>
+                        </dl>
 
+        
+    
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">float</span>
@@ -2054,9 +2083,9 @@
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Parser/Manga/MangaParser.php"><a href="files/src-parser-manga-mangaparser.html"><abbr title="src/Parser/Manga/MangaParser.php">MangaParser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Parser/Manga/MangaParser.php"><a href="files/parser-manga-mangaparser.html"><abbr title="Parser/Manga/MangaParser.php">MangaParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">481</span>
+    <span class="phpdocumentor-element-found-in__line">484</span>
 
     </aside>
 
@@ -2070,30 +2099,28 @@
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_getScoredBy_tags">
         Tags
-        <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getScoredBy#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getScoredBy_tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><abbr title="\RuntimeException">RuntimeException</abbr></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
-                            <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><abbr title="\InvalidArgumentException">InvalidArgumentException</abbr></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
-                                            </dl>
+                        </dl>
 
+        
+    
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">int</span>
@@ -2112,9 +2139,9 @@
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Parser/Manga/MangaParser.php"><a href="files/src-parser-manga-mangaparser.html"><abbr title="src/Parser/Manga/MangaParser.php">MangaParser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Parser/Manga/MangaParser.php"><a href="files/parser-manga-mangaparser.html"><abbr title="Parser/Manga/MangaParser.php">MangaParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">427</span>
+    <span class="phpdocumentor-element-found-in__line">430</span>
 
     </aside>
 
@@ -2128,30 +2155,28 @@
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_getThemes_tags">
         Tags
-        <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getThemes#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getThemes_tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><abbr title="\InvalidArgumentException">InvalidArgumentException</abbr></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
-                            <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><abbr title="\RuntimeException">RuntimeException</abbr></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
-                                            </dl>
+                        </dl>
 
+        
+    
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">array&lt;string|int, <a href="classes/Jikan-Model-Common-MalUrl.html"><abbr title="\Jikan\Model\Common\MalUrl">MalUrl</abbr></a>&gt;</span>
@@ -2170,9 +2195,9 @@
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Parser/Manga/MangaParser.php"><a href="files/src-parser-manga-mangaparser.html"><abbr title="src/Parser/Manga/MangaParser.php">MangaParser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Parser/Manga/MangaParser.php"><a href="files/parser-manga-mangaparser.html"><abbr title="Parser/Manga/MangaParser.php">MangaParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">179</span>
+    <span class="phpdocumentor-element-found-in__line">186</span>
 
     </aside>
 
@@ -2186,22 +2211,24 @@
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_getTitles_tags">
         Tags
-        <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getTitles#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getTitles_tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
-                                            </dl>
+                        </dl>
 
+        
+    
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">array&lt;string|int, <a href="classes/Jikan-Model-Common-Title.html"><abbr title="\Jikan\Model\Common\Title">Title</abbr></a>&gt;</span>
@@ -2210,98 +2237,7 @@
 </article>
             </section>
 
-        <div class="phpdocumentor-modal" id="source-view">
-    <div class="phpdocumentor-modal-bg" data-exit-button></div>
-    <div class="phpdocumentor-modal-container">
-        <div class="phpdocumentor-modal-content">
-            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/src/Parser/Manga/MangaParser.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
-        </div>
-        <button data-exit-button class="phpdocumentor-modal__close">&times;</button>
-    </div>
-</div>
-
-    <script type="text/javascript">
-        (function () {
-            function loadExternalCodeSnippet(el, url, line) {
-                Array.prototype.slice.call(el.querySelectorAll('pre[data-src]')).forEach((pre) => {
-                    const src = url || pre.getAttribute('data-src').replace(/\\/g, '/');
-                    const language = 'php';
-
-                    const code = document.createElement('code');
-                    code.className = 'language-' + language;
-                    pre.textContent = '';
-                    pre.setAttribute('data-line', line)
-                    code.textContent = 'Loading…';
-                    pre.appendChild(code);
-
-                    var xhr = new XMLHttpRequest();
-
-                    xhr.open('GET', src, true);
-
-                    xhr.onreadystatechange = function () {
-                        if (xhr.readyState !== 4) {
-                            return;
-                        }
-
-                        if (xhr.status < 400 && xhr.responseText) {
-                            code.textContent = xhr.responseText;
-                            Prism.highlightElement(code);
-                            return;
-                        }
-
-                        if (xhr.status === 404) {
-                            code.textContent = '✖ Error: File could not be found';
-                            return;
-                        }
-
-                        if (xhr.status >= 400) {
-                            code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
-                            return;
-                        }
-
-                        code.textContent = '✖ Error: An unknown error occurred';
-                    };
-
-                    xhr.send(null);
-                });
-            }
-
-            const modalButtons = document.querySelectorAll("[data-modal]");
-            const openedAsLocalFile = window.location.protocol === 'file:';
-            if (modalButtons.length > 0 && openedAsLocalFile) {
-                console.warn(
-                    'Viewing the source code is unavailable because you are opening this page from the file:// scheme; ' +
-                    'browsers block XHR requests when a page is opened this way'
-                );
-            }
-
-            modalButtons.forEach(function (trigger) {
-                if (openedAsLocalFile) {
-                    trigger.setAttribute("hidden", "hidden");
-                }
-
-                trigger.addEventListener("click", function (event) {
-                    event.preventDefault();
-                    const modal = document.getElementById(trigger.dataset.modal);
-                    if (!modal) {
-                        console.error(`Modal with id "${trigger.dataset.modal}" could not be found`);
-                        return;
-                    }
-                    modal.classList.add("phpdocumentor-modal__open");
-
-                    loadExternalCodeSnippet(modal, trigger.dataset.src || null, trigger.dataset.line)
-                    const exits = modal.querySelectorAll("[data-exit-button]");
-                    exits.forEach(function (exit) {
-                        exit.addEventListener("click", function (event) {
-                            event.preventDefault();
-                            modal.classList.remove("phpdocumentor-modal__open");
-                        });
-                    });
-                });
-            });
-        })();
-    </script>
-
+        
     </article>
                                 </section>
                 <section class="phpdocumentor-on-this-page__sidebar">
@@ -2321,46 +2257,46 @@
                             <li class="phpdocumentor-on-this-page-section__title">Properties</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
-                                                    <li><a href="classes/Jikan-Parser-Manga-MangaParser.html#property_crawler">$crawler<a href="classes/Jikan-Parser-Manga-MangaParser.html"></li>
+                                                    <li class=""><a href="classes/Jikan-Parser-Manga-MangaParser.html#property_crawler">$crawler</a></li>
                                             </ul>
                 </li>
             
                         <li class="phpdocumentor-on-this-page-section__title">Methods</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                            <li><a href="classes/Jikan-Parser-Manga-MangaParser.html#method___construct">__construct()</a></li>
-                                            <li><a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getApproved">getApproved()</a></li>
-                                            <li><a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getDemographics">getDemographics()</a></li>
-                                            <li><a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getExplicitGenres">getExplicitGenres()</a></li>
-                                            <li><a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getExternalLinks">getExternalLinks()</a></li>
-                                            <li><a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getGenres">getGenres()</a></li>
-                                            <li><a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaAuthors">getMangaAuthors()</a></li>
-                                            <li><a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaBackground">getMangaBackground()</a></li>
-                                            <li><a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaChapters">getMangaChapters()</a></li>
-                                            <li><a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaFavorites">getMangaFavorites()</a></li>
-                                            <li><a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaId">getMangaId()</a></li>
-                                            <li><a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaImageURL">getMangaImageURL()</a></li>
-                                            <li><a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaMembers">getMangaMembers()</a></li>
-                                            <li><a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaPopularity">getMangaPopularity()</a></li>
-                                            <li><a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaPublishedString">getMangaPublishedString()</a></li>
-                                            <li><a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaRank">getMangaRank()</a></li>
-                                            <li><a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaRelated">getMangaRelated()</a></li>
-                                            <li><a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaSerialization">getMangaSerialization()</a></li>
-                                            <li><a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaStatus">getMangaStatus()</a></li>
-                                            <li><a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaSynopsis">getMangaSynopsis()</a></li>
-                                            <li><a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaTitle">getMangaTitle()</a></li>
-                                            <li><a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaTitleEnglish">getMangaTitleEnglish()</a></li>
-                                            <li><a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaTitleJapanese">getMangaTitleJapanese()</a></li>
-                                            <li><a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaTitleSynonyms">getMangaTitleSynonyms()</a></li>
-                                            <li><a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaType">getMangaType()</a></li>
-                                            <li><a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaURL">getMangaURL()</a></li>
-                                            <li><a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaVolumes">getMangaVolumes()</a></li>
-                                            <li><a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getModel">getModel()</a></li>
-                                            <li><a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getPublished">getPublished()</a></li>
-                                            <li><a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getScore">getScore()</a></li>
-                                            <li><a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getScoredBy">getScoredBy()</a></li>
-                                            <li><a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getThemes">getThemes()</a></li>
-                                            <li><a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getTitles">getTitles()</a></li>
+                                            <li class=""><a href="classes/Jikan-Parser-Manga-MangaParser.html#method___construct">__construct()</a></li>
+                                            <li class=""><a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getApproved">getApproved()</a></li>
+                                            <li class=""><a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getDemographics">getDemographics()</a></li>
+                                            <li class=""><a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getExplicitGenres">getExplicitGenres()</a></li>
+                                            <li class=""><a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getExternalLinks">getExternalLinks()</a></li>
+                                            <li class=""><a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getGenres">getGenres()</a></li>
+                                            <li class=""><a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaAuthors">getMangaAuthors()</a></li>
+                                            <li class=""><a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaBackground">getMangaBackground()</a></li>
+                                            <li class=""><a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaChapters">getMangaChapters()</a></li>
+                                            <li class=""><a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaFavorites">getMangaFavorites()</a></li>
+                                            <li class=""><a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaId">getMangaId()</a></li>
+                                            <li class=""><a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaImageURL">getMangaImageURL()</a></li>
+                                            <li class=""><a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaMembers">getMangaMembers()</a></li>
+                                            <li class=""><a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaPopularity">getMangaPopularity()</a></li>
+                                            <li class=""><a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaPublishedString">getMangaPublishedString()</a></li>
+                                            <li class=""><a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaRank">getMangaRank()</a></li>
+                                            <li class=""><a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaRelated">getMangaRelated()</a></li>
+                                            <li class=""><a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaSerialization">getMangaSerialization()</a></li>
+                                            <li class=""><a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaStatus">getMangaStatus()</a></li>
+                                            <li class=""><a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaSynopsis">getMangaSynopsis()</a></li>
+                                            <li class=""><a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaTitle">getMangaTitle()</a></li>
+                                            <li class=""><a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaTitleEnglish">getMangaTitleEnglish()</a></li>
+                                            <li class=""><a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaTitleJapanese">getMangaTitleJapanese()</a></li>
+                                            <li class=""><a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaTitleSynonyms">getMangaTitleSynonyms()</a></li>
+                                            <li class=""><a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaType">getMangaType()</a></li>
+                                            <li class=""><a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaURL">getMangaURL()</a></li>
+                                            <li class=""><a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getMangaVolumes">getMangaVolumes()</a></li>
+                                            <li class=""><a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getModel">getModel()</a></li>
+                                            <li class=""><a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getPublished">getPublished()</a></li>
+                                            <li class=""><a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getScore">getScore()</a></li>
+                                            <li class=""><a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getScoredBy">getScoredBy()</a></li>
+                                            <li class=""><a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getThemes">getThemes()</a></li>
+                                            <li class=""><a href="classes/Jikan-Parser-Manga-MangaParser.html#method_getTitles">getTitles()</a></li>
                                     </ul>
             </li>
                     </ul>

@@ -6,7 +6,10 @@
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <base href="../">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png"/>
     <link rel="icon" href="images/favicon.ico"/>
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png"/>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
             <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -54,7 +57,7 @@
     Menu
 </label>
 <aside class="phpdocumentor-column -three phpdocumentor-sidebar">
-                    <section class="phpdocumentor-sidebar__category">
+                    <section class="phpdocumentor-sidebar__category -namespaces">
             <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="namespaces/jikan.html" class="">Jikan</a>
@@ -91,7 +94,7 @@
             </ul>
 
                         </section>
-                <section class="phpdocumentor-sidebar__category">
+                <section class="phpdocumentor-sidebar__category -packages">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="packages/Application.html" class="">Application</a>
@@ -129,14 +132,14 @@
 
                         </section>
             
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -reports">
         <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
                 <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
     </section>
 
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -indices">
         <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
     </section>
@@ -173,9 +176,9 @@
 </div>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Parser/User/Profile/UserProfileParser.php"><a href="files/src-parser-user-profile-userprofileparser.html"><abbr title="src/Parser/User/Profile/UserProfileParser.php">UserProfileParser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Parser/User/Profile/UserProfileParser.php"><a href="files/parser-user-profile-userprofileparser.html"><abbr title="Parser/User/Profile/UserProfileParser.php">UserProfileParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">18</span>
+    <span class="phpdocumentor-element-found-in__line">19</span>
 
     </aside>
 
@@ -185,7 +188,8 @@
 
 
 
-
+    
+    
 <h3 id="toc">
     Table of Contents
     <a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
@@ -207,7 +211,7 @@
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
-    <a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#property_crawler">$crawler</a>
+    <a class="" href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#property_crawler">$crawler</a>
     <span>
                         &nbsp;: <abbr title="\Symfony\Component\DomCrawler\Crawler">Crawler</abbr>            </span>
 </dt>
@@ -221,111 +225,110 @@
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method___construct">__construct()</a>
+    <a class="" href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method___construct">__construct()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 <dd>PersonParser constructor.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getAbout">getAbout()</a>
+    <a class="" href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getAbout">getAbout()</a>
     <span>
                                 &nbsp;: string|null    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getAnimeStats">getAnimeStats()</a>
+    <a class="" href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getAnimeStats">getAnimeStats()</a>
     <span>
                                 &nbsp;: <a href="classes/Jikan-Model-User-AnimeStats.html"><abbr title="\Jikan\Model\User\AnimeStats">AnimeStats</abbr></a>    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getBirthday">getBirthday()</a>
+    <a class="" href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getBirthday">getBirthday()</a>
     <span>
                                 &nbsp;: <abbr title="\DateTimeImmutable">DateTimeImmutable</abbr>|null    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getFavorites">getFavorites()</a>
+    <a class="" href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getFavorites">getFavorites()</a>
     <span>
                                 &nbsp;: <a href="classes/Jikan-Model-User-Favorites.html"><abbr title="\Jikan\Model\User\Favorites">Favorites</abbr></a>    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getGender">getGender()</a>
+    <a class="" href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getGender">getGender()</a>
     <span>
                                 &nbsp;: string|null    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getImageUrl">getImageUrl()</a>
+    <a class="" href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getImageUrl">getImageUrl()</a>
     <span>
                                 &nbsp;: string|null    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getJoinDate">getJoinDate()</a>
+    <a class="" href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getJoinDate">getJoinDate()</a>
     <span>
                                 &nbsp;: <abbr title="\DateTimeImmutable">DateTimeImmutable</abbr>|null    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getLastOnline">getLastOnline()</a>
+    <a class="" href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getLastOnline">getLastOnline()</a>
     <span>
                                 &nbsp;: <abbr title="\DateTimeImmutable">DateTimeImmutable</abbr>|null    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getLocation">getLocation()</a>
+    <a class="" href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getLocation">getLocation()</a>
     <span>
                                 &nbsp;: string|null    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getMangaStats">getMangaStats()</a>
+    <a class="" href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getMangaStats">getMangaStats()</a>
     <span>
                                 &nbsp;: <a href="classes/Jikan-Model-User-MangaStats.html"><abbr title="\Jikan\Model\User\MangaStats">MangaStats</abbr></a>    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getModel">getModel()</a>
+    <a class="" href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getModel">getModel()</a>
     <span>
                                 &nbsp;: <a href="classes/Jikan-Model-User-Profile.html"><abbr title="\Jikan\Model\User\Profile">Profile</abbr></a>    </span>
 </dt>
 <dd>Return the model</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getProfileUrl">getProfileUrl()</a>
+    <a class="" href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getProfileUrl">getProfileUrl()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getUserExternalLinks">getUserExternalLinks()</a>
+    <a class="" href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getUserExternalLinks">getUserExternalLinks()</a>
     <span>
                                 &nbsp;: array&lt;string|int, mixed&gt;|array&lt;string|int, <a href="classes/Jikan-Model-Common-MalUrl.html"><abbr title="\Jikan\Model\Common\MalUrl">MalUrl</abbr></a>&gt;    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getUserId">getUserId()</a>
+    <a class="" href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getUserId">getUserId()</a>
     <span>
                                 &nbsp;: int|null    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getUserLastUpdates">getUserLastUpdates()</a>
+    <a class="" href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getUserLastUpdates">getUserLastUpdates()</a>
     <span>
                                 &nbsp;: <a href="classes/Jikan-Model-User-LastUpdates.html"><abbr title="\Jikan\Model\User\LastUpdates">LastUpdates</abbr></a>    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getUsername">getUsername()</a>
+    <a class="" href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getUsername">getUsername()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 
     </dl>
-
 
 
 
@@ -343,32 +346,36 @@
             phpdocumentor-element
             -property
             -private
-                                                        "
+                                                                    "
 >
     <h4 class="phpdocumentor-element__name" id="property_crawler">
         $crawler
         <a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#property_crawler" class="headerlink"><i class="fas fa-link"></i></a>
 
         <span class="phpdocumentor-element__modifiers">
-                                </span>
+                                            </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Parser/User/Profile/UserProfileParser.php"><a href="files/src-parser-user-profile-userprofileparser.html"><abbr title="src/Parser/User/Profile/UserProfileParser.php">UserProfileParser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Parser/User/Profile/UserProfileParser.php"><a href="files/parser-user-profile-userprofileparser.html"><abbr title="Parser/User/Profile/UserProfileParser.php">UserProfileParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">23</span>
+    <span class="phpdocumentor-element-found-in__line">24</span>
 
     </aside>
 
     
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__type"><abbr title="\Symfony\Component\DomCrawler\Crawler">Crawler</abbr></span>
+        <span class="phpdocumentor-signature__visibility">private</span>
+            <span class="phpdocumentor-signature__type"><abbr title="\Symfony\Component\DomCrawler\Crawler">Crawler</abbr></span>
     <span class="phpdocumentor-signature__name">$crawler</span>
     </code>
 
     
     
     
+
+        
+        
 
 </article>
             </section>
@@ -391,9 +398,9 @@
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Parser/User/Profile/UserProfileParser.php"><a href="files/src-parser-user-profile-userprofileparser.html"><abbr title="src/Parser/User/Profile/UserProfileParser.php">UserProfileParser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Parser/User/Profile/UserProfileParser.php"><a href="files/parser-user-profile-userprofileparser.html"><abbr title="Parser/User/Profile/UserProfileParser.php">UserProfileParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">30</span>
+    <span class="phpdocumentor-element-found-in__line">31</span>
 
     </aside>
 
@@ -401,16 +408,17 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Symfony\Component\DomCrawler\Crawler">Crawler</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$crawler</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Symfony\Component\DomCrawler\Crawler">Crawler</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$crawler</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$crawler</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Symfony\Component\DomCrawler\Crawler">Crawler</abbr></span>
+                <span class="phpdocumentor-argument-list__argument__name">$crawler</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Symfony\Component\DomCrawler\Crawler">Crawler</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -419,6 +427,8 @@
 
     
 
+        
+    
     
 </article>
                     <article
@@ -433,9 +443,9 @@
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Parser/User/Profile/UserProfileParser.php"><a href="files/src-parser-user-profile-userprofileparser.html"><abbr title="src/Parser/User/Profile/UserProfileParser.php">UserProfileParser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Parser/User/Profile/UserProfileParser.php"><a href="files/parser-user-profile-userprofileparser.html"><abbr title="Parser/User/Profile/UserProfileParser.php">UserProfileParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">196</span>
+    <span class="phpdocumentor-element-found-in__line">199</span>
 
     </aside>
 
@@ -449,22 +459,24 @@
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_getAbout_tags">
         Tags
-        <a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getAbout#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getAbout_tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><abbr title="\InvalidArgumentException">InvalidArgumentException</abbr></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
-                                            </dl>
+                        </dl>
 
+        
+    
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string|null</span>
@@ -483,9 +495,9 @@
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Parser/User/Profile/UserProfileParser.php"><a href="files/src-parser-user-profile-userprofileparser.html"><abbr title="src/Parser/User/Profile/UserProfileParser.php">UserProfileParser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Parser/User/Profile/UserProfileParser.php"><a href="files/parser-user-profile-userprofileparser.html"><abbr title="Parser/User/Profile/UserProfileParser.php">UserProfileParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">172</span>
+    <span class="phpdocumentor-element-found-in__line">175</span>
 
     </aside>
 
@@ -499,22 +511,24 @@
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_getAnimeStats_tags">
         Tags
-        <a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getAnimeStats#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getAnimeStats_tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><abbr title="\InvalidArgumentException">InvalidArgumentException</abbr></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
-                                            </dl>
+                        </dl>
 
+        
+    
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><a href="classes/Jikan-Model-User-AnimeStats.html"><abbr title="\Jikan\Model\User\AnimeStats">AnimeStats</abbr></a></span>
@@ -533,9 +547,9 @@
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Parser/User/Profile/UserProfileParser.php"><a href="files/src-parser-user-profile-userprofileparser.html"><abbr title="src/Parser/User/Profile/UserProfileParser.php">UserProfileParser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Parser/User/Profile/UserProfileParser.php"><a href="files/parser-user-profile-userprofileparser.html"><abbr title="Parser/User/Profile/UserProfileParser.php">UserProfileParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">140</span>
+    <span class="phpdocumentor-element-found-in__line">143</span>
 
     </aside>
 
@@ -549,30 +563,28 @@
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_getBirthday_tags">
         Tags
-        <a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getBirthday#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getBirthday_tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><abbr title="\InvalidArgumentException">InvalidArgumentException</abbr></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
-                            <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
-                                            </dl>
+                        </dl>
 
+        
+    
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><abbr title="\DateTimeImmutable">DateTimeImmutable</abbr>|null</span>
@@ -591,9 +603,9 @@
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Parser/User/Profile/UserProfileParser.php"><a href="files/src-parser-user-profile-userprofileparser.html"><abbr title="src/Parser/User/Profile/UserProfileParser.php">UserProfileParser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Parser/User/Profile/UserProfileParser.php"><a href="files/parser-user-profile-userprofileparser.html"><abbr title="Parser/User/Profile/UserProfileParser.php">UserProfileParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">214</span>
+    <span class="phpdocumentor-element-found-in__line">217</span>
 
     </aside>
 
@@ -607,22 +619,24 @@
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_getFavorites_tags">
         Tags
-        <a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getFavorites#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getFavorites_tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><abbr title="\InvalidArgumentException">InvalidArgumentException</abbr></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
-                                            </dl>
+                        </dl>
 
+        
+    
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><a href="classes/Jikan-Model-User-Favorites.html"><abbr title="\Jikan\Model\User\Favorites">Favorites</abbr></a></span>
@@ -641,9 +655,9 @@
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Parser/User/Profile/UserProfileParser.php"><a href="files/src-parser-user-profile-userprofileparser.html"><abbr title="src/Parser/User/Profile/UserProfileParser.php">UserProfileParser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Parser/User/Profile/UserProfileParser.php"><a href="files/parser-user-profile-userprofileparser.html"><abbr title="Parser/User/Profile/UserProfileParser.php">UserProfileParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">123</span>
+    <span class="phpdocumentor-element-found-in__line">126</span>
 
     </aside>
 
@@ -657,22 +671,24 @@
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_getGender_tags">
         Tags
-        <a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getGender#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getGender_tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><abbr title="\InvalidArgumentException">InvalidArgumentException</abbr></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
-                                            </dl>
+                        </dl>
 
+        
+    
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string|null</span>
@@ -691,9 +707,9 @@
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Parser/User/Profile/UserProfileParser.php"><a href="files/src-parser-user-profile-userprofileparser.html"><abbr title="src/Parser/User/Profile/UserProfileParser.php">UserProfileParser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Parser/User/Profile/UserProfileParser.php"><a href="files/parser-user-profile-userprofileparser.html"><abbr title="Parser/User/Profile/UserProfileParser.php">UserProfileParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">85</span>
+    <span class="phpdocumentor-element-found-in__line">86</span>
 
     </aside>
 
@@ -707,22 +723,24 @@
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_getImageUrl_tags">
         Tags
-        <a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getImageUrl#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getImageUrl_tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><abbr title="\InvalidArgumentException">InvalidArgumentException</abbr></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
-                                            </dl>
+                        </dl>
 
+        
+    
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string|null</span>
@@ -741,9 +759,9 @@
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Parser/User/Profile/UserProfileParser.php"><a href="files/src-parser-user-profile-userprofileparser.html"><abbr title="src/Parser/User/Profile/UserProfileParser.php">UserProfileParser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Parser/User/Profile/UserProfileParser.php"><a href="files/parser-user-profile-userprofileparser.html"><abbr title="Parser/User/Profile/UserProfileParser.php">UserProfileParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">99</span>
+    <span class="phpdocumentor-element-found-in__line">102</span>
 
     </aside>
 
@@ -757,30 +775,28 @@
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_getJoinDate_tags">
         Tags
-        <a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getJoinDate#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getJoinDate_tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><abbr title="\InvalidArgumentException">InvalidArgumentException</abbr></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
-                            <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
-                                            </dl>
+                        </dl>
 
+        
+    
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><abbr title="\DateTimeImmutable">DateTimeImmutable</abbr>|null</span>
@@ -799,9 +815,9 @@
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Parser/User/Profile/UserProfileParser.php"><a href="files/src-parser-user-profile-userprofileparser.html"><abbr title="src/Parser/User/Profile/UserProfileParser.php">UserProfileParser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Parser/User/Profile/UserProfileParser.php"><a href="files/parser-user-profile-userprofileparser.html"><abbr title="Parser/User/Profile/UserProfileParser.php">UserProfileParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">111</span>
+    <span class="phpdocumentor-element-found-in__line">114</span>
 
     </aside>
 
@@ -815,22 +831,24 @@
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_getLastOnline_tags">
         Tags
-        <a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getLastOnline#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getLastOnline_tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
-                                            </dl>
+                        </dl>
 
+        
+    
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><abbr title="\DateTimeImmutable">DateTimeImmutable</abbr>|null</span>
@@ -849,9 +867,9 @@
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Parser/User/Profile/UserProfileParser.php"><a href="files/src-parser-user-profile-userprofileparser.html"><abbr title="src/Parser/User/Profile/UserProfileParser.php">UserProfileParser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Parser/User/Profile/UserProfileParser.php"><a href="files/parser-user-profile-userprofileparser.html"><abbr title="Parser/User/Profile/UserProfileParser.php">UserProfileParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">156</span>
+    <span class="phpdocumentor-element-found-in__line">159</span>
 
     </aside>
 
@@ -865,22 +883,24 @@
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_getLocation_tags">
         Tags
-        <a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getLocation#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getLocation_tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><abbr title="\InvalidArgumentException">InvalidArgumentException</abbr></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
-                                            </dl>
+                        </dl>
 
+        
+    
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string|null</span>
@@ -899,9 +919,9 @@
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Parser/User/Profile/UserProfileParser.php"><a href="files/src-parser-user-profile-userprofileparser.html"><abbr title="src/Parser/User/Profile/UserProfileParser.php">UserProfileParser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Parser/User/Profile/UserProfileParser.php"><a href="files/parser-user-profile-userprofileparser.html"><abbr title="Parser/User/Profile/UserProfileParser.php">UserProfileParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">184</span>
+    <span class="phpdocumentor-element-found-in__line">187</span>
 
     </aside>
 
@@ -915,22 +935,24 @@
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_getMangaStats_tags">
         Tags
-        <a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getMangaStats#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getMangaStats_tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><abbr title="\InvalidArgumentException">InvalidArgumentException</abbr></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
-                                            </dl>
+                        </dl>
 
+        
+    
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><a href="classes/Jikan-Model-User-MangaStats.html"><abbr title="\Jikan\Model\User\MangaStats">MangaStats</abbr></a></span>
@@ -949,9 +971,9 @@
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Parser/User/Profile/UserProfileParser.php"><a href="files/src-parser-user-profile-userprofileparser.html"><abbr title="src/Parser/User/Profile/UserProfileParser.php">UserProfileParser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Parser/User/Profile/UserProfileParser.php"><a href="files/parser-user-profile-userprofileparser.html"><abbr title="Parser/User/Profile/UserProfileParser.php">UserProfileParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">42</span>
+    <span class="phpdocumentor-element-found-in__line">43</span>
 
     </aside>
 
@@ -966,38 +988,32 @@
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_getModel_tags">
         Tags
-        <a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getModel#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getModel_tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><abbr title="\InvalidArgumentException">InvalidArgumentException</abbr></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
-                            <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
-                            <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
-                                            </dl>
+                        </dl>
 
+        
+    
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><a href="classes/Jikan-Model-User-Profile.html"><abbr title="\Jikan\Model\User\Profile">Profile</abbr></a></span>
@@ -1016,9 +1032,9 @@
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Parser/User/Profile/UserProfileParser.php"><a href="files/src-parser-user-profile-userprofileparser.html"><abbr title="src/Parser/User/Profile/UserProfileParser.php">UserProfileParser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Parser/User/Profile/UserProfileParser.php"><a href="files/parser-user-profile-userprofileparser.html"><abbr title="Parser/User/Profile/UserProfileParser.php">UserProfileParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">76</span>
+    <span class="phpdocumentor-element-found-in__line">77</span>
 
     </aside>
 
@@ -1032,22 +1048,24 @@
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_getProfileUrl_tags">
         Tags
-        <a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getProfileUrl#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getProfileUrl_tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><abbr title="\InvalidArgumentException">InvalidArgumentException</abbr></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
-                                            </dl>
+                        </dl>
 
+        
+    
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string</span>
@@ -1066,9 +1084,9 @@
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Parser/User/Profile/UserProfileParser.php"><a href="files/src-parser-user-profile-userprofileparser.html"><abbr title="src/Parser/User/Profile/UserProfileParser.php">UserProfileParser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Parser/User/Profile/UserProfileParser.php"><a href="files/parser-user-profile-userprofileparser.html"><abbr title="Parser/User/Profile/UserProfileParser.php">UserProfileParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">234</span>
+    <span class="phpdocumentor-element-found-in__line">237</span>
 
     </aside>
 
@@ -1082,22 +1100,24 @@
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_getUserExternalLinks_tags">
         Tags
-        <a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getUserExternalLinks#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getUserExternalLinks_tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><abbr title="\InvalidArgumentException">InvalidArgumentException</abbr></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
-                                            </dl>
+                        </dl>
 
+        
+    
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|array&lt;string|int, <a href="classes/Jikan-Model-Common-MalUrl.html"><abbr title="\Jikan\Model\Common\MalUrl">MalUrl</abbr></a>&gt;</span>
@@ -1116,9 +1136,9 @@
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Parser/User/Profile/UserProfileParser.php"><a href="files/src-parser-user-profile-userprofileparser.html"><abbr title="src/Parser/User/Profile/UserProfileParser.php">UserProfileParser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Parser/User/Profile/UserProfileParser.php"><a href="files/parser-user-profile-userprofileparser.html"><abbr title="Parser/User/Profile/UserProfileParser.php">UserProfileParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">47</span>
+    <span class="phpdocumentor-element-found-in__line">48</span>
 
     </aside>
 
@@ -1132,7 +1152,10 @@
     
     
     
+    
 
+        
+    
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">int|null</span>
@@ -1151,9 +1174,9 @@
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Parser/User/Profile/UserProfileParser.php"><a href="files/src-parser-user-profile-userprofileparser.html"><abbr title="src/Parser/User/Profile/UserProfileParser.php">UserProfileParser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Parser/User/Profile/UserProfileParser.php"><a href="files/parser-user-profile-userprofileparser.html"><abbr title="Parser/User/Profile/UserProfileParser.php">UserProfileParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">225</span>
+    <span class="phpdocumentor-element-found-in__line">228</span>
 
     </aside>
 
@@ -1167,7 +1190,10 @@
     
     
     
+    
 
+        
+    
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><a href="classes/Jikan-Model-User-LastUpdates.html"><abbr title="\Jikan\Model\User\LastUpdates">LastUpdates</abbr></a></span>
@@ -1186,9 +1212,9 @@
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Parser/User/Profile/UserProfileParser.php"><a href="files/src-parser-user-profile-userprofileparser.html"><abbr title="src/Parser/User/Profile/UserProfileParser.php">UserProfileParser.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Parser/User/Profile/UserProfileParser.php"><a href="files/parser-user-profile-userprofileparser.html"><abbr title="Parser/User/Profile/UserProfileParser.php">UserProfileParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">67</span>
+    <span class="phpdocumentor-element-found-in__line">68</span>
 
     </aside>
 
@@ -1202,22 +1228,24 @@
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_getUsername_tags">
         Tags
-        <a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getUsername#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getUsername_tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><abbr title="\InvalidArgumentException">InvalidArgumentException</abbr></span>
-                                                            
-                                             
+                                                                                    
                                     </dd>
-                                            </dl>
+                        </dl>
 
+        
+    
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string</span>
@@ -1226,98 +1254,7 @@
 </article>
             </section>
 
-        <div class="phpdocumentor-modal" id="source-view">
-    <div class="phpdocumentor-modal-bg" data-exit-button></div>
-    <div class="phpdocumentor-modal-container">
-        <div class="phpdocumentor-modal-content">
-            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/src/Parser/User/Profile/UserProfileParser.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
-        </div>
-        <button data-exit-button class="phpdocumentor-modal__close">&times;</button>
-    </div>
-</div>
-
-    <script type="text/javascript">
-        (function () {
-            function loadExternalCodeSnippet(el, url, line) {
-                Array.prototype.slice.call(el.querySelectorAll('pre[data-src]')).forEach((pre) => {
-                    const src = url || pre.getAttribute('data-src').replace(/\\/g, '/');
-                    const language = 'php';
-
-                    const code = document.createElement('code');
-                    code.className = 'language-' + language;
-                    pre.textContent = '';
-                    pre.setAttribute('data-line', line)
-                    code.textContent = 'Loading…';
-                    pre.appendChild(code);
-
-                    var xhr = new XMLHttpRequest();
-
-                    xhr.open('GET', src, true);
-
-                    xhr.onreadystatechange = function () {
-                        if (xhr.readyState !== 4) {
-                            return;
-                        }
-
-                        if (xhr.status < 400 && xhr.responseText) {
-                            code.textContent = xhr.responseText;
-                            Prism.highlightElement(code);
-                            return;
-                        }
-
-                        if (xhr.status === 404) {
-                            code.textContent = '✖ Error: File could not be found';
-                            return;
-                        }
-
-                        if (xhr.status >= 400) {
-                            code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
-                            return;
-                        }
-
-                        code.textContent = '✖ Error: An unknown error occurred';
-                    };
-
-                    xhr.send(null);
-                });
-            }
-
-            const modalButtons = document.querySelectorAll("[data-modal]");
-            const openedAsLocalFile = window.location.protocol === 'file:';
-            if (modalButtons.length > 0 && openedAsLocalFile) {
-                console.warn(
-                    'Viewing the source code is unavailable because you are opening this page from the file:// scheme; ' +
-                    'browsers block XHR requests when a page is opened this way'
-                );
-            }
-
-            modalButtons.forEach(function (trigger) {
-                if (openedAsLocalFile) {
-                    trigger.setAttribute("hidden", "hidden");
-                }
-
-                trigger.addEventListener("click", function (event) {
-                    event.preventDefault();
-                    const modal = document.getElementById(trigger.dataset.modal);
-                    if (!modal) {
-                        console.error(`Modal with id "${trigger.dataset.modal}" could not be found`);
-                        return;
-                    }
-                    modal.classList.add("phpdocumentor-modal__open");
-
-                    loadExternalCodeSnippet(modal, trigger.dataset.src || null, trigger.dataset.line)
-                    const exits = modal.querySelectorAll("[data-exit-button]");
-                    exits.forEach(function (exit) {
-                        exit.addEventListener("click", function (event) {
-                            event.preventDefault();
-                            modal.classList.remove("phpdocumentor-modal__open");
-                        });
-                    });
-                });
-            });
-        })();
-    </script>
-
+        
     </article>
                                 </section>
                 <section class="phpdocumentor-on-this-page__sidebar">
@@ -1337,30 +1274,30 @@
                             <li class="phpdocumentor-on-this-page-section__title">Properties</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
-                                                    <li><a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#property_crawler">$crawler<a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html"></li>
+                                                    <li class=""><a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#property_crawler">$crawler</a></li>
                                             </ul>
                 </li>
             
                         <li class="phpdocumentor-on-this-page-section__title">Methods</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                            <li><a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method___construct">__construct()</a></li>
-                                            <li><a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getAbout">getAbout()</a></li>
-                                            <li><a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getAnimeStats">getAnimeStats()</a></li>
-                                            <li><a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getBirthday">getBirthday()</a></li>
-                                            <li><a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getFavorites">getFavorites()</a></li>
-                                            <li><a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getGender">getGender()</a></li>
-                                            <li><a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getImageUrl">getImageUrl()</a></li>
-                                            <li><a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getJoinDate">getJoinDate()</a></li>
-                                            <li><a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getLastOnline">getLastOnline()</a></li>
-                                            <li><a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getLocation">getLocation()</a></li>
-                                            <li><a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getMangaStats">getMangaStats()</a></li>
-                                            <li><a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getModel">getModel()</a></li>
-                                            <li><a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getProfileUrl">getProfileUrl()</a></li>
-                                            <li><a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getUserExternalLinks">getUserExternalLinks()</a></li>
-                                            <li><a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getUserId">getUserId()</a></li>
-                                            <li><a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getUserLastUpdates">getUserLastUpdates()</a></li>
-                                            <li><a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getUsername">getUsername()</a></li>
+                                            <li class=""><a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method___construct">__construct()</a></li>
+                                            <li class=""><a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getAbout">getAbout()</a></li>
+                                            <li class=""><a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getAnimeStats">getAnimeStats()</a></li>
+                                            <li class=""><a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getBirthday">getBirthday()</a></li>
+                                            <li class=""><a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getFavorites">getFavorites()</a></li>
+                                            <li class=""><a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getGender">getGender()</a></li>
+                                            <li class=""><a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getImageUrl">getImageUrl()</a></li>
+                                            <li class=""><a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getJoinDate">getJoinDate()</a></li>
+                                            <li class=""><a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getLastOnline">getLastOnline()</a></li>
+                                            <li class=""><a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getLocation">getLocation()</a></li>
+                                            <li class=""><a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getMangaStats">getMangaStats()</a></li>
+                                            <li class=""><a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getModel">getModel()</a></li>
+                                            <li class=""><a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getProfileUrl">getProfileUrl()</a></li>
+                                            <li class=""><a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getUserExternalLinks">getUserExternalLinks()</a></li>
+                                            <li class=""><a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getUserId">getUserId()</a></li>
+                                            <li class=""><a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getUserLastUpdates">getUserLastUpdates()</a></li>
+                                            <li class=""><a href="classes/Jikan-Parser-User-Profile-UserProfileParser.html#method_getUsername">getUsername()</a></li>
                                     </ul>
             </li>
                     </ul>
